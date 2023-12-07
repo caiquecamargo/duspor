@@ -77,6 +77,8 @@ collections:
         file: src/content/home/index.md
         delete: false
         extension: md
+        editor:
+          preview: false
         fields:
           - widget: markdown
             name: title
@@ -144,6 +146,8 @@ collections:
         file: src/content/about/index.md
         delete: false
         extension: md
+        editor:
+          preview: false
         fields:
           - widget: markdown
             name: title
@@ -208,3 +212,21 @@ collections:
             allow_add: true
             max: 5
             min: 5
+            fields:
+              - widget: string
+                name: title
+                label: Título
+                required: true
+              - widget: string
+                name: title_en
+                label: Título (Inglês)
+                required: true
+              - widget: string
+                name: title_es
+                label: Título (Espanhol)
+                required: true
+              - widget: image
+                name: image
+                label: Imagem
+                required: true
+                allow_multiple: false

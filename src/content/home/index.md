@@ -17,5 +17,8 @@ clients_es: |-
   Conoce algunos de 
 
   **nuestros clientes**
-images: ../../assets/images/logo-brf-1024.png
+images: 
+  - ../../assets/images/logo-brf-1024.png
+  - ../../assets/images/logo-jbs-1024.png
+  - ../../assets/images/aurora-alimentos-1024.png
 ---

@@ -68,6 +68,9 @@ const homePage = defineFileCollectionEntry({
   file: 'src/content/home/index.md',
   delete: false,
   extension: 'md',
+  editor: {
+    preview: false,
+  },
   fields: [
     ...createLocalizedField(
       defineMarkdownWidget({
@@ -110,6 +113,9 @@ const aboutPage = defineFileCollectionEntry({
   file: 'src/content/about/index.md',
   delete: false,
   extension: 'md',
+  editor: {
+    preview: false,
+  },
   fields: [
     ...createLocalizedField(
       defineMarkdownWidget({
@@ -144,6 +150,21 @@ const aboutPage = defineFileCollectionEntry({
       allow_add: true,
       max: 5,
       min: 5,
+      fields: [
+        ...createLocalizedField(
+          defineStringWidget({
+            name: 'title',
+            label: 'Título',
+            required: true,
+          })
+        ),
+        defineImageWidget({
+          name: 'image',
+          label: 'Imagem',
+          required: true,
+          allow_multiple: false
+        })
+      ]
     })
   ]
 })
@@ -165,6 +186,7 @@ export default defineConfig({
   locale: 'pt-BR',
   media_folder: 'src/assets/images',
   public_folder: '../../assets/images',
+
   collections: [
     products,
     pages,
