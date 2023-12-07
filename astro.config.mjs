@@ -17,7 +17,7 @@ export default defineConfig({
   site: "https://duspor.caiquedecamargo.dev.br",
   prefetch: true,
   experimental: {
-    contentCollectionCache: true,
+    contentCollectionCache: false,
   },
   vite: {
     plugins: [
