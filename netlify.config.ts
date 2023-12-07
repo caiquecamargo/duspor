@@ -1,4 +1,4 @@
-import { defineConfig, defineFileCollection, defineFileCollectionEntry, defineFolderCollection, defineImageWidget, defineListWidget, defineMarkdownWidget, defineStringWidget } from "@caiquecamargo/vite-plugin-netlify-cms";
+import { defineConfig, defineFileCollection, defineFileCollectionEntry, defineFolderCollection, defineImageWidget, defineListWidget, defineMarkdownWidget, defineObjectWidget, defineStringWidget } from "@caiquecamargo/vite-plugin-netlify-cms";
 
 const createLocalizedField = (widget: any) => {
   return [
@@ -178,6 +178,90 @@ const pages = defineFileCollection({
   ]
 })
 
+const config = defineFileCollection({
+  name: 'config',
+  label: 'Configurações gerais',
+  files: [
+    defineFileCollectionEntry({
+      name: 'config',
+      label: 'Configurações gerais',
+      file: 'src/content/config/index.md',
+      editor: {
+        preview: false,
+      },
+      extension: 'md',
+      fields: [
+        defineObjectWidget({
+          name: 'address',
+          label: 'Endereço',
+          fields: [
+            defineStringWidget({
+              name: 'address',
+              label: 'Endereço',
+              required: true,
+            }),
+            defineStringWidget({
+              name: 'maps',
+              label: 'Link do Google Maps',
+              required: true,
+            }),
+          ]
+        }),
+        defineObjectWidget({
+          name: 'instagram',
+          label: 'Instagram',
+          required: true,
+          fields: [
+            defineStringWidget({
+              name: 'url',
+              label: 'URL',
+              required: true,
+            }),
+            defineStringWidget({
+              name: 'arroba',
+              label: 'Arroba',
+              required: true,
+            }),
+          ]
+        }),
+        defineObjectWidget({
+          name: 'facebook',
+          label: 'Facebook',
+          required: true,
+          fields: [
+            defineStringWidget({
+              name: 'url',
+              label: 'URL',
+              required: true,
+            }),
+            defineStringWidget({
+              name: 'arroba',
+              label: 'Arroba',
+              required: true,
+            }),
+          ]
+        }),
+        defineObjectWidget({
+          name: 'linkedin',
+          label: 'Linkedin',
+          fields: [
+            defineStringWidget({
+              name: 'url',
+              label: 'URL',
+              required: true,
+            }),
+            defineStringWidget({
+              name: 'arroba',
+              label: 'Arroba',
+              required: true,
+            }),
+          ]
+        })
+      ]
+    })
+  ]
+})
+
 export default defineConfig({
   backend: {
     name: 'git-gateway',
@@ -190,5 +274,6 @@ export default defineConfig({
   collections: [
     products,
     pages,
+    config
   ],
 })

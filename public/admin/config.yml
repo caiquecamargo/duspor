@@ -230,3 +230,63 @@ collections:
                 label: Imagem
                 required: true
                 allow_multiple: false
+  - name: config
+    label: Configurações gerais
+    files:
+      - name: config
+        label: Configurações gerais
+        file: src/content/config/index.md
+        editor:
+          preview: false
+        extension: md
+        fields:
+          - widget: object
+            name: address
+            label: Endereço
+            fields:
+              - widget: string
+                name: address
+                label: Endereço
+                required: true
+              - widget: string
+                name: maps
+                label: Link do Google Maps
+                required: true
+          - widget: object
+            name: instagram
+            label: Instagram
+            required: true
+            fields:
+              - widget: string
+                name: url
+                label: URL
+                required: true
+              - widget: string
+                name: arroba
+                label: Arroba
+                required: true
+          - widget: object
+            name: facebook
+            label: Facebook
+            required: true
+            fields:
+              - widget: string
+                name: url
+                label: URL
+                required: true
+              - widget: string
+                name: arroba
+                label: Arroba
+                required: true
+          - widget: object
+            name: linkedin
+            label: Linkedin
+            fields:
+              - widget: string
+                name: url
+                label: URL
+                required: true
+              - widget: string
+                name: arroba
+                label: Arroba
+                required: true
