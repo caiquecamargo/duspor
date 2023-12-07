@@ -1,0 +1,41 @@
+{
+  "routes": {
+    "about": {
+      "path": "/about",
+      "page": "about",
+      "title": "About"
+    },
+    "products": {
+      "path": "/products",
+      "page": "products",
+      "title": "Products"
+    },
+    "budget": {
+      "path": "/budget",
+      "page": "budget",
+      "title": "Budget"
+    },
+    "contact": {
+      "path": "/contact",
+      "page": "contact",
+      "title": "Contact"
+    }
+  },
+  "home": {
+    "budget": "Request a quote",
+    "contact": "Contact"
+  },
+  "products": {
+    "title": "Our products",
+    "applications": "applications"
+  },
+  "contact": {
+    "talkToUs": "Contact us"
+  },
+  "budget": {
+    "title": "Request a",
+    "name": "budget",
+    "subtitle": "Talk to our team and increase your company's agility and productivity",
+    "send": "Send"
+  }
+}

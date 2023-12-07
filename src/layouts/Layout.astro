@@ -1,51 +1,68 @@
 ---
+import { ViewTransitions } from "astro:transitions";
+import "@/assets/style.css";
+
 interface Props {
-	title: string;
+	title?: string;
+	description?: string;
+	colored?: boolean;
 }
 
-const { title } = Astro.props;
+const { title, description, colored = false } = Astro.props;
+const resolvedTitle = `DUSPOR${title ? " | " + title : ""}`;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="description" content={description ?? ""} />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<meta property="og:url" content="https://duspor.caiquedecamargo.com.br" />
+		<meta property="og:description" content={description} />
+		<meta property="og:title" content={title} />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<script
+			is:inline
+			src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+		<link rel="icon" type="image/svg+xml" href="/logo-min.svg" />
+		<title>{resolvedTitle}</title>
+
+		<ViewTransitions />
+
+		<slot name="head" />
 	</head>
-	<body>
+
+	<body
+		class:list={[
+			"w-screen overflow-x-hidden font-helvetica",
+			colored ? "bg-primary" : "bg-white",
+		]}
+	>
+		<script
+			is:inline
+			src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+		></script>
+		<script is:inline>
+			const loadFont = () => {
+				WebFont.load({
+					custom: {
+						families: ["Helvetica", "Basement Grotesque"],
+						urls: ["/fonts.css"],
+					},
+				});
+			};
+
+			loadFont();
+
+			document.addEventListener("astro:after-swap", () => {
+				loadFont();
+			});
+		</script>
+
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>

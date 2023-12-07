@@ -1,0 +1,106 @@
+---
+import PortaRapida from "@/assets/images/porta-rapida.png";
+import Container from "@/components/container.astro";
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import Hexagon from "@/components/hexagon.astro";
+import Separator from "@/components/separator.astro";
+import { $t, locales, resolveLocaleURL } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { match } from "ts-pattern";
+import IcSharpWhatsapp from "~icons/ic/sharp-whatsapp";
+import Logo from "~icons/local/logo";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+
+const images = Array.from({ length: 4 }, () => PortaRapida);
+
+const resolveStyle = (index: number) =>
+  match(index)
+    .with(0, () => ({ top: "0", left: "25px" }))
+    .with(1, () => ({ top: "65px", left: "calc(183px + 25px)" }))
+    .with(2, () => ({ top: "190px", left: "calc(33px + 25px)" }))
+    .with(3, () => ({ top: "255px", left: "calc(218px + 25px)" }))
+    .otherwise(() => ({}));
+---
+
+<Layout title="home">
+  <Header page="home" locale={locale} />
+
+  <Container class="my-24">
+    <div class="relative h-80 overflow-hidden flex flex-col justify-center">
+      <div
+        class="z-0 absolute right-0 w-[75%] flex justify-center items-center"
+      >
+        <Image
+          class="w-full h-auto object-cover absolute"
+          src={PortaRapida}
+          alt="Porta Rápida"
+        />
+      </div>
+
+      <div
+        class="z-10 absolute inset-0 bg-gradient-to-r from-white from-30% to-transparent"
+      >
+      </div>
+
+      <p
+        class="relative z-10 uppercase text-7xl max-w-[75%] [&_b]:text-primary [&_b]:font-extrabold tracking-wide"
+      >
+        Crie espaços e <b>Construa possibilidades</b>
+      </p>
+    </div>
+
+    <Separator
+      href={resolveLocaleURL("routes.budget.path", locale)}
+      text={$t("home.budget", locale)}
+    />
+
+    <div class="grid grid-cols-2">
+      <div class="relative">
+        {
+          images.map((image, index) => (
+            <Hexagon class="w-52 h-52 absolute" style={resolveStyle(index)}>
+              <Image
+                class="w-full h-auto object-cover"
+                src={image}
+                alt="Porta Rápida"
+              />
+            </Hexagon>
+          ))
+        }
+      </div>
+
+      <div
+        class="uppercase text-right text-6xl [&_b]:text-primary [&_b]:font-extrabold tracking-wide py-12"
+      >
+        <p><b>Agilidade</b> na montagem e <b>facilidade</b> na operação</p>
+
+        <div class="float-right mt-6">
+          <span class="sr-only">Duspor logo</span>
+          <Logo class="w-[420px] h-20 text-primary" />
+          <!-- <Image class="w-10/12 h-auto mt-6 float-right" src={Logo} alt="Logo" /> -->
+        </div>
+      </div>
+    </div>
+
+    <Separator
+      href=""
+      icon={IcSharpWhatsapp}
+      text={$t("home.contact", locale)}
+    />
+
+    <div
+      class="uppercase text-center text-7xl [&_b]:text-primary [&_b]:font-extrabold tracking-wide"
+    >
+      <p>Conheça alguns de <b>nossso clientes</b></p>
+    </div>
+  </Container>
+
+  <Footer />
+</Layout>

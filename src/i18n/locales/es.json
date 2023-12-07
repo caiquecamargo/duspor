@@ -1,0 +1,41 @@
+{
+  "routes": {
+    "about": {
+      "path": "/acerca-de",
+      "page": "acerca-de",
+      "title": "Acerca de"
+    },
+    "products": {
+      "path": "/productos",
+      "page": "productos",
+      "title": "Productos"
+    },
+    "budget": {
+      "path": "/presupuesto",
+      "page": "presupuesto",
+      "title": "Presupuesto"
+    },
+    "contact": {
+      "path": "/contacto",
+      "page": "contacto",
+      "title": "Contacto"
+    }
+  },
+  "home": {
+    "budget": "Solicitar presupuesto",
+    "contact": "Entre en contacto"
+  },
+  "products": {
+    "title": "Nuestros productos",
+    "applications": "Aplicaciones"
+  },
+  "contact": {
+    "talkToUs": "Hable con nosotros"
+  },
+  "budget": {
+    "title": "Solicitar uno",
+    "name": "presupuesto",
+    "subtitle": "Habla con nuestro equipo y aumenta la agilidad y productividad de tu empresa",
+    "send": "Mandar"
+  }
+}

@@ -1,0 +1,11 @@
+---
+type Props = {
+  class?: string;
+};
+
+const { class: _class } = Astro.props as Props;
+---
+
+<main class:list={["container md:max-w-5xl mx-auto", _class]}>
+  <slot />
+</main>

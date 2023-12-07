@@ -1,0 +1,117 @@
+---
+import MobileMenu from "@/components/v-mobile-menu.vue";
+import type { Locales, TranslationKey } from "@/i18n";
+import { $t, resolveLocaleURL } from "@/i18n";
+import Logo from "~icons/local/logo";
+import BaseHeader from "./base-header.astro";
+import TranslationButton from "./translation-button.astro";
+
+type Props = {
+  page: string;
+  locale?: Locales;
+  colored?: boolean;
+};
+
+const { page, locale = "pt", colored = false } = Astro.props as Props;
+
+const links = [
+  {
+    href: "routes.about.path",
+    name: "routes.about.page",
+    label: "routes.about.title",
+  },
+  {
+    href: "routes.products.path",
+    name: "routes.products.page",
+    label: "routes.products.title",
+  },
+  {
+    href: "routes.budget.path",
+    name: "routes.budget.page",
+    label: "routes.budget.title",
+  },
+  {
+    href: "routes.contact.path",
+    name: "routes.contact.page",
+    label: "routes.contact.title",
+  },
+] satisfies Array<Record<string, TranslationKey>>;
+---
+
+<BaseHeader
+  class="bg-transparent bg-opacity-70 backdrop-filter backdrop-blur-xl bg-clip-padding"
+>
+  <a href={`/${locale}`} slot="start" class="flex-grow-0">
+    <span class="sr-only">Duspor logo</span>
+    <Logo class:list={["w-32 h-8", colored ? "text-white" : "text-primary"]} />
+  </a>
+
+  <nav
+    class="hidden md:flex justify-end items-center gap-8 flex-grow max-w-2xl"
+    slot="end"
+  >
+    {
+      links.map((link) => (
+        <a
+          class:list={[
+            "whitespace-nowrap text-sm font-bold",
+            colored ? "hover:text-black" : "hover:text-primary",
+            page === $t(link.name)
+              ? colored
+                ? "text-black"
+                : "text-primary"
+              : colored
+              ? "text-white"
+              : "text-black",
+          ]}
+          href={resolveLocaleURL(link.href, locale)}
+        >
+          {$t(link.label, locale).toUpperCase()}
+        </a>
+      ))
+    }
+
+    <div><TranslationButton colored={colored} locale={locale} /></div>
+
+    <div class="block md:hidden" slot="end">
+      <MobileMenu client:only>
+        <div
+          class:list={[
+            "h-[100dvh] bg-white p-4 pr-1 w-[80vw] flex flex-col justify-between font-bold",
+            colored ? "text-white" : "text-black",
+          ]}
+        >
+          <nav class="flex flex-col gap-2">
+            <a href={`/${locale}`} slot="start" class="flex-grow-0 pb-4">
+              <span class="sr-only">Duspor logo</span>
+              <Logo
+                class:list={[
+                  "w-32 h-8",
+                  colored ? "text-white" : "text-primary",
+                ]}
+              />
+            </a>
+            {
+              links.map((link) => (
+                <a
+                  class:list={[
+                    "text-left",
+                    colored ? "hover:text-black" : "hover:text-primary",
+                    page === $t(link.name) ? "font-semibold" : "",
+                  ]}
+                  href={resolveLocaleURL(link.href, locale)}
+                >
+                  {$t(link.label, locale).toUpperCase()}
+                </a>
+              ))
+            }
+          </nav>
+
+          <nav class="self-start flex items-center justify-between w-full">
+            <div><TranslationButton locale={locale} /></div>
+          </nav>
+        </div>
+      </MobileMenu>
+    </div>
+  </nav>
+</BaseHeader>

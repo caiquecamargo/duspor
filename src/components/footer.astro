@@ -1,0 +1,67 @@
+---
+import Fa6BrandsLinkedinIn from "~icons/fa6-brands/linkedin-in";
+import MaterialSymbolsLocationOnOutlineRounded from "~icons/material-symbols/location-on-outline-rounded";
+import PhInstagramLogo from "~icons/ph/instagram-logo";
+import TypcnSocialFacebook from "~icons/typcn/social-facebook";
+import BaseFooter from "./base-footer.astro";
+
+type Props = {
+  colored?: boolean;
+  class?: string;
+};
+
+const { colored = false, class: _class } = Astro.props;
+
+const links = [
+  {
+    href: "https://www.google.com.br/maps/place/R.+Israel,+2995+E+-+Passo+dos+Fortes,+Chapec%C3%B3+-+SC,+89805-730/@-27.0758268,-52.6114012,17z/data=!3m1!4b1!4m6!3m5!1s0x94e4b67b7d958a8d:0xa62db411928f3d5a!8m2!3d-27.0758316!4d-52.6088263!16s%2Fg%2F11f0xvtjwv?entry=ttu",
+    icon: MaterialSymbolsLocationOnOutlineRounded,
+    label: "R. Insrael, 2995 E - Passo dos Fortes, Chapecó - SC",
+  },
+  {
+    href: "https://www.instagram.com/",
+    icon: PhInstagramLogo,
+    label: "@dusporportasindustriais",
+  },
+  {
+    href: "https://www.facebook.com/",
+    icon: TypcnSocialFacebook,
+    label: "duspor",
+  },
+  {
+    href: "https://www.linkedin.com/",
+    icon: Fa6BrandsLinkedinIn,
+    label: "duspor",
+  },
+];
+---
+
+<BaseFooter class:list={["mt-24 !justify-center", _class]}>
+  <div
+    class:list={["flex space-x-4", colored ? "text-white" : "text-primary"]}
+    slot="center"
+  >
+    {
+      links.map((link) => (
+        <a
+          class:list={[
+            "flex items-center group",
+            colored ? "hover:text-black" : "",
+          ]}
+          href={link.href}
+          target="_blank"
+        >
+          <div
+            class:list={[
+              "rounded-full p-[0.3rem] mr-2 bg-black",
+              colored ? "text-white" : "group-hover:bg-primary text-white",
+            ]}
+          >
+            <link.icon class="w-6 h-6" />
+          </div>
+          {link.label}
+        </a>
+      ))
+    }
+  </div>
+</BaseFooter>

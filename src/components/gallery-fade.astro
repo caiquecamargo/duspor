@@ -1,0 +1,100 @@
+---
+type Props = {
+  color?: "primary" | "secondary";
+  class?: string;
+};
+
+const { color = "secondary", class: _class } = Astro.props as Props;
+---
+
+<gallery-fade>
+  <div class:list={["swiper !pl-7", _class]} data-color={color}>
+    <div class="swiper-wrapper">
+      <slot />
+    </div>
+
+    <div class="swiper-pagination absolute !w-fit !left-16 !top-auto !bottom-8">
+    </div>
+  </div>
+</gallery-fade>
+
+<style is:global>
+  .swiper {
+    --swiper-pagination-bullet-border-radius: 0;
+    --swiper-pagination-bullet-width: 2rem;
+    --swiper-pagination-bullet-height: 0.18rem;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bottom: 12px;
+    --swiper-pagination-bullet-inactive-color: rgb(209 213 219);
+  }
+</style>
+
+<script>
+  import Swiper from "swiper";
+  import { Pagination, EffectFade } from "swiper/modules";
+  import "swiper/css";
+  import "swiper/css/pagination";
+  import "swiper/css/effect-fade";
+  import type { Props } from "astro";
+
+  class GalleryFade extends HTMLElement {
+    #swiper: Swiper | undefined;
+
+    constructor() {
+      super();
+
+      const element = this.querySelector(".swiper") as HTMLElement;
+      const color = element.dataset.color as Props["color"];
+      const wrapper = element.querySelector(".swiper-wrapper") as HTMLElement;
+      const pagination = element.querySelector(
+        ".swiper-pagination",
+      ) as HTMLElement;
+
+      if (
+        !element ||
+        !element.children.length ||
+        !wrapper ||
+        !wrapper.children.length ||
+        !pagination
+      ) {
+        return;
+      }
+
+      document.body.style.setProperty(
+        "--swiper-pagination-color",
+        `rgb(var(--color-${color}))`,
+      );
+
+      Array.from(wrapper.children).forEach((child) => {
+        const div = document.createElement("div");
+        div.classList.add("swiper-slide");
+
+        div.appendChild(child);
+        wrapper.appendChild(div);
+      });
+
+      this.#swiper = new Swiper(".swiper", {
+        modules: [Pagination, EffectFade],
+
+        effect: "fade",
+
+        pagination: {
+          el: pagination,
+          clickable: true,
+        },
+      });
+
+      document.addEventListener(
+        "astro:after-swap",
+        this.updateSwiper.bind(this),
+        { once: true },
+      );
+    }
+
+    updateSwiper() {
+      this.#swiper?.update();
+    }
+  }
+
+  customElements.define("gallery-fade", GalleryFade);
+</script>

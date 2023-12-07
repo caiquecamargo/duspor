@@ -1,0 +1,71 @@
+---
+type Props = {
+  text?: string;
+  href?: string;
+  class?: string;
+  containerClass?: string;
+  icon?: any;
+  colored?: boolean;
+};
+
+const {
+  text,
+  class: _class,
+  containerClass,
+  href,
+  icon: Icon,
+  colored = false,
+} = Astro.props;
+
+const Anchor = href ? "a" : "div";
+---
+
+<div
+  class:list={[
+    "my-20",
+    colored ? "text-gray-400" : "text-primary",
+    containerClass,
+  ]}
+>
+  <Anchor href={href}>
+    <div
+      class:list={[
+        "separator flex justify-center items-center group",
+        href ? "hover:text-black" : "",
+        _class,
+      ]}
+    >
+      {
+        text && (
+          <div
+            class:list={[
+              "flex-shrink-0 flex items-center px-6 py-3  group-hover:bg-black text-white uppercase font-bold text-3xl",
+              colored ? "bg-gray-400" : "bg-primary",
+            ]}
+          >
+            {Icon && <Icon class="w-10 h-10 mr-2" />}
+            {text}
+          </div>
+        )
+      }
+    </div>
+  </Anchor>
+</div>
+
+<style is:global>
+  .separator::before,
+  .separator::after {
+    content: "";
+    display: block;
+    height: 0.15rem;
+    flex-grow: 1;
+  }
+
+  .separator::before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), currentColor);
+  }
+
+  .separator::after {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), currentColor);
+  }
+</style>

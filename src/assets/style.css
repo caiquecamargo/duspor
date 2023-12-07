@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-appearance: none !important;
+  -webkit-text-size-adjust: none !important;
+}
+
+@layer base {
+  :root {
+    --color-primary: 254 89 68;
+    --color-primary-dark: 134 25 143;
+    --color-primary-light: 245 208 254;
+
+    --color-black: 61 61 61;
+    --color-white: 245 245 245;
+  }
+}
+
+.text-border {
+  filter: 
+    drop-shadow(1px 1px 0 rgb(var(--color-white)))
+    drop-shadow(-1px 1px 0 rgb(var(--color-white)))
+    drop-shadow(-1px -1px 0 rgb(var(--color-white)))
+    drop-shadow(1px -1px 0 rgb(var(--color-white)))
+    drop-shadow(1px 1px 0 rgb(var(--color-white)))
+    drop-shadow(-1px 1px 0 rgb(var(--color-white)))
+    drop-shadow(-1px -1px 0 rgb(var(--color-white)))
+    drop-shadow(1px -1px 0 rgb(var(--color-white)));
+}
+
+.text-border-primary {
+  filter: 
+    drop-shadow(1px 1px 0 rgb(var(--color-primary)))
+    drop-shadow(-1px 1px 0 rgb(var(--color-primary)))
+    drop-shadow(-1px -1px 0 rgb(var(--color-primary)))
+    drop-shadow(1px -1px 0 rgb(var(--color-primary)))
+    drop-shadow(1px 1px 0 rgb(var(--color-primary)))
+    drop-shadow(-1px 1px 0 rgb(var(--color-primary)))
+    drop-shadow(-1px -1px 0 rgb(var(--color-primary)))
+    drop-shadow(1px -1px 0 rgb(var(--color-primary)));
+}

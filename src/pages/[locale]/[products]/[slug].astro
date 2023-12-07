@@ -1,0 +1,102 @@
+---
+import Container from "@/components/container.astro";
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import Hexagon from "@/components/hexagon.astro";
+import { $t, locales, resolvePropByLocale } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { getCollection, getEntry } from "astro:content";
+import { marked } from "marked";
+import Logo from "~icons/local/logo";
+
+export async function getStaticPaths() {
+  const products = await getCollection("products");
+  return locales.flatMap((locale) => {
+    return products.map((product) => {
+      return {
+        params: {
+          locale,
+          products: $t("routes.products.page", locale),
+          slug: product.slug,
+        },
+      };
+    });
+  });
+}
+
+const page = "produtos";
+
+const { locale, slug } = Astro.params;
+
+const product = await getEntry("products", slug);
+
+const description =
+  resolvePropByLocale(product.data, "body" as any, locale) ?? product.body;
+const Description = await marked(description);
+---
+
+<Layout colored title={$t("routes.products.title", locale)}>
+  <Header colored locale={locale} page={page} />
+
+  <Container class="my-28">
+    <section class="flex items-center">
+      <div class="-ml-2">
+        <h1 class="uppercase font-bold text-6xl text-white">
+          {resolvePropByLocale(product.data, "title", locale)}
+        </h1>
+        <Logo class="w-[200px] h-20 text-white mt-4" />
+      </div>
+      {
+        product.data.images.map((image, index) => (
+          <div class="text-border-primary">
+            <Hexagon
+              size="3xl"
+              class:list={[
+                index > 0 &&
+                  "-ml-12 group-hover:translate-x-6 transition-all duration-300",
+              ]}
+            >
+              <Image
+                class="w-full h-auto"
+                src={image}
+                alt={product.data.title}
+              />
+            </Hexagon>
+          </div>
+        ))
+      }
+    </section>
+
+    <section
+      class="space-y-4 text-white leading-relaxed mt-12 text-lg"
+      set:html={Description}
+    />
+
+    <h3 class="mt-12 text-4xl uppercase text-white font-bold">
+      {$t("products.applications", locale)}:
+    </h3>
+
+    <ul class="mt-4 text-white">
+      {
+        product.data.applications.map((application) => (
+          <li class="flex items-center space-x-2 text-lg">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-2 w-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <circle cx="10" cy="10" r="10" />
+              </svg>
+            </span>
+            <span>{application}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </Container>
+
+  <Footer colored />
+</Layout>

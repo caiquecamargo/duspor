@@ -1,0 +1,132 @@
+---
+import Container from "@/components/container.astro";
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import Separator from "@/components/separator.astro";
+import { $t, locales } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import LogoMin from "~icons/local/logo-min";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({
+    params: { locale, budget: $t("routes.budget.page", locale) },
+  }));
+}
+
+const page = "orcamento";
+
+const { locale } = Astro.params;
+
+const form = [
+  {
+    name: "nome",
+    "text-pt": "Nome",
+    "text-en": "Name",
+    "text-es": "Nombre",
+    required: true,
+  },
+  {
+    name: "telefone",
+    "text-pt": "Telefone",
+    "text-en": "Phone",
+    "text-es": "Teléfono",
+    required: true,
+  },
+  {
+    name: "email",
+    "text-pt": "E-mail",
+    "text-en": "E-mail",
+    "text-es": "E-mail",
+    type: "email" as const,
+    required: true,
+  },
+  {
+    name: "empresa",
+    "text-pt": "Empresa",
+    "text-en": "Company",
+    "text-es": "Empresa",
+    required: true,
+  },
+  {
+    name: "produto",
+    "text-pt": "Qual o produto você procura?",
+    "text-en": "What product are you looking for?",
+    "text-es": "¿Qué producto estás buscando?",
+    required: true,
+  },
+];
+---
+
+<Layout title={$t("routes.budget.title", locale)}>
+  <Header locale={locale} page={page} />
+
+  <Container class="my-28">
+    <div class="relative flex flex-col items-center justify-center">
+      <LogoMin class="h-96 w-96 text-gray-400/20 absolute z-0" />
+      <h1
+        class="relative z-10 text-8xl text-black [&_b]:text-primary uppercase text-center"
+      >
+        {$t("budget.title", locale)}
+        <br /><b>{$t("budget.name", locale)}</b>
+      </h1>
+
+      <p class="relative z-10 text-center text-2xl text-black mt-8">
+        {$t("budget.subtitle", locale)}
+      </p>
+    </div>
+
+    <form
+      class="flex flex-col relative text-xs md:text-base mt-20"
+      name="Orçamento"
+      action="/sucesso"
+      method="POST"
+      netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
+      data-netlify="true"
+    >
+      <input type="hidden" name="form-name" value="budget-form" />
+      <input
+        type="hidden"
+        name="subject"
+        value="DUSPOR - Resposta do formulário de orçamento"
+      />
+      <p class="hidden">
+        <input name="bot-field" />
+      </p>
+
+      {
+        form.map((field) => (
+          <>
+            <label class="relative ml-12">
+              <input
+                class="bg-transparent ring-0 border-0 focus:outline-none focus:ring-0 focus:border-0 p-0 text-black  w-full placeholder-transparent peer"
+                type={field.type || "text"}
+                name={field.name}
+                placeholder={field.name}
+                required={field.required}
+              />
+              <span class="text-gray-400 absolute -top-4 text-sm peer-placeholder-shown:top-0 peer-placeholder-shown:text-base block uppercase font-medium peer-focus:-top-4 peer-focus:text-sm transition-all duration-300">
+                {field[`text-${locale}`]}
+              </span>
+            </label>
+
+            <Separator colored containerClass="!mt-1 !mb-8" />
+          </>
+        ))
+      }
+
+      <div data-netlify-recaptcha="true"></div>
+
+      <div class="flex justify-center">
+        <button
+          class="px-6 py-3 bg-primary text-white uppercase dark:text-dark hover:bg-black"
+          type="submit"
+        >
+          {$t("budget.send", locale)}
+        </button>
+      </div>
+    </form>
+  </Container>
+
+  <Footer />
+</Layout>

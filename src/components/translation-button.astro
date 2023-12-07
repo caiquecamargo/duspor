@@ -1,0 +1,103 @@
+---
+import type { Locales } from "@/i18n";
+import ptIcon from "~icons/twemoji/flag-for-flag-brazil";
+import enIcon from "~icons/twemoji/flag-for-flag-united-states";
+import esIcon from "~icons/twemoji/flag-spain";
+
+type Props = {
+  locale?: Locales;
+  colored?: boolean;
+};
+
+const { locale = "pt", colored = false } = Astro.props;
+
+const flags = [
+  {
+    locale: "pt",
+    Icon: ptIcon,
+    label: "PT",
+  },
+  {
+    locale: "en",
+    Icon: enIcon,
+    label: "US",
+  },
+  {
+    locale: "es",
+    Icon: esIcon,
+    label: "ES",
+  },
+];
+---
+
+<translation-button class="flex items-center">
+  {
+    flags.map(({ locale: flagLocale, Icon, label }) => (
+      <button
+        class:list={[
+          "flex items-center mx-1 font-bold text-sm group",
+          colored ? "text-white" : "text-black",
+        ]}
+        aria-label={`Change language to ${label}`}
+        data-locale={flagLocale}
+      >
+        <div
+          class:list={[
+            "rounded-full w-3 h-3 mr-1 group-hover:border-4",
+            colored ? "border-white" : "border-primary",
+            flagLocale === locale
+              ? "border-4"
+              : colored
+              ? "bg-white group-hover:bg-primary"
+              : "bg-primary group-hover:bg-white",
+          ]}
+        />
+        {label}
+        <Icon class="w-5 h-5 ml-1 grayscale" />
+      </button>
+    ))
+  }
+</translation-button>
+
+<script>
+  import type { Locales } from "@/i18n";
+  import { translateRoute } from "@/i18n";
+
+  class TranslationButton extends HTMLElement {
+    constructor() {
+      super();
+
+      const buttons = this.querySelectorAll("button");
+
+      for (const button of buttons) {
+        button.addEventListener("click", () => {
+          const locale = button.dataset.locale as Locales | undefined;
+
+          this.#changeLocale(locale);
+        });
+      }
+    }
+
+    #changeLocale(locale?: Locales) {
+      if (!locale) return;
+
+      const url = new URL(window.location.href);
+      const [_, currentLocale, route, item] = url.pathname.split("/") as [
+        string,
+        Locales,
+        string,
+        string,
+      ];
+      const hash = url.hash;
+      const search = url.search;
+
+      window.location.href = `/${locale}/${translateRoute(
+        route,
+        currentLocale,
+        locale,
+      )}${item ? "/" + item : ""}${search}${hash}`;
+    }
+  }
+
+  customElements.define("translation-button", TranslationButton);
+</script>

@@ -16,6 +16,9 @@ export default defineConfig({
   integrations: [tailwind(), vue(), sitemap()],
   site: "https://duspor.caiquedecamargo.dev.br",
   prefetch: true,
+  experimental: {
+    contentCollectionCache: true,
+  },
   vite: {
     plugins: [
       Icons({
@@ -28,8 +31,8 @@ export default defineConfig({
       }),
       NetlifyCMS(),
       I18nPlugin({
-        locales: ["pt-BR", "en-US", "es-ES"],
-        defaultLocale: "pt-BR",
+        locales: ["pt", "en", "es"],
+        defaultLocale: "pt",
         folder: "./src/i18n/locales",
         projectId: "fresh-yen-404517"
       }),

@@ -3,25 +3,42 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "astro dev --host",
+    "start": "astro dev --host",
     "build": "astro check && astro build",
-    "preview": "astro preview",
+    "preview": "astro preview --host",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.3.1",
     "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.2",
-    "@astrojs/vue": "^3.0.4",
+    "@astrojs/tailwind": "^5.0.3",
+    "@astrojs/vue": "^4.0.2",
     "@caiquecamargo/utils": "^0.1.5",
     "@caiquecamargo/vite-plugin-i18n": "^0.0.5",
     "@caiquecamargo/vite-plugin-netlify-cms": "^0.0.14",
+    "@headlessui/vue": "^1.7.16",
     "@nanostores/vue": "^0.10.0",
     "@vueuse/core": "^10.6.1",
-    "astro": "^3.6.0",
+    "astro": "^4.0.3",
+    "marked": "^11.0.0",
     "nanostores": "^0.9.5",
-    "tailwindcss": "^3.0.24",
-    "unplugin-icons": "^0.17.4",
-    "vue": "^3.2.30"
+    "sharp": "^0.33.0",
+    "swiper": "^11.0.5",
+    "tailwindcss": "^3.3.5",
+    "ts-pattern": "^5.0.5",
+    "typescript": "^5.3.2",
+    "unplugin-icons": "^0.18.0",
+    "vue": "^3.3.9"
+  },
+  "devDependencies": {
+    "@iconify-json/akar-icons": "^1.1.20",
+    "@iconify-json/fa6-brands": "^1.1.16",
+    "@iconify-json/heroicons": "^1.1.13",
+    "@iconify-json/ic": "^1.1.14",
+    "@iconify-json/material-symbols": "^1.1.62",
+    "@iconify-json/ph": "^1.1.6",
+    "@iconify-json/twemoji": "^1.1.14",
+    "@iconify-json/typcn": "^1.1.8"
   }
 }

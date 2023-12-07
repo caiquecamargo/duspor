@@ -1,0 +1,128 @@
+---
+import PortaRapida from "@/assets/images/porta-rapida.png";
+import Container from "@/components/container.astro";
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import Hexagon from "@/components/hexagon.astro";
+import Separator from "@/components/separator.astro";
+import { $t, locales } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import { even } from "@/utils";
+import { Image } from "astro:assets";
+import IcSharpWhatsapp from "~icons/ic/sharp-whatsapp";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({
+    params: { locale, about: $t("routes.about.page", locale) },
+  }));
+}
+
+const page = "sobre";
+
+const { locale } = Astro.params;
+
+const dnas = [
+  {
+    image: PortaRapida,
+    text: "Tranquilidade",
+  },
+  {
+    image: PortaRapida,
+    text: "Visão sistêmica",
+  },
+  {
+    image: PortaRapida,
+    text: "Realista",
+  },
+  {
+    image: PortaRapida,
+    text: "Compromisso",
+  },
+  {
+    image: PortaRapida,
+    text: "Olhar consultivo",
+  },
+];
+---
+
+<Layout colored title={$t("routes.about.title", locale)}>
+  <Header colored locale={locale} page={page} />
+
+  <Container class="my-24">
+    <section class="relative h-80 overflow-hidden flex flex-col justify-center">
+      <div
+        class="z-0 absolute right-0 w-[75%] flex justify-center items-center"
+      >
+        <Image
+          class="w-full h-auto object-cover absolute"
+          src={PortaRapida}
+          alt="Porta Rápida"
+        />
+      </div>
+
+      <div
+        class="z-10 absolute inset-0 bg-gradient-to-r from-primary from-30% to-transparent"
+      >
+      </div>
+
+      <p
+        class="relative z-10 uppercase text-8xl max-w-[75%] [&_b]:text-white [&_b]:font-extrabold tracking-wide"
+      >
+        <b>Nossa história</b>
+      </p>
+    </section>
+
+    <section class="text-white mt-12 text-justify leading-relaxed text-lg">
+      <p>
+        Somos uma empresa completa e especializada na montagem e manutenção de <b
+          >Portas Industriais</b
+        >. Nossa trajetória começou com a <b>Dinâmica Montagem Industrial</b> e,
+        com o objetivo de proporcionar excelência aos nossos clientes, evoluímos
+        para a <b>Duspor</b>. Concebemos e desencolvemos nossos produtos com
+        foco em proporcionar <b>segurança</b>, <b>eficiência</b> e <b
+          >qualidade</b
+        > para nossos clientes.
+      </p>
+    </section>
+
+    <Separator colored />
+
+    <section class="text-white">
+      <h3 class="text-center uppercase text-7xl font-bold">Nosso DNA</h3>
+
+      <div class="relative h-64 mt-16">
+        {
+          dnas.map((dna, index) => (
+            <div
+              class:list={[
+                "flex justify-center items-center absolute",
+                even(index) ? "flex-col top-0" : "flex-col-reverse bottom-0",
+              ]}
+              style={{ right: `calc(50% - ${100 + (index - 2) * 190}px)` }}
+            >
+              <Hexagon class="h-52 w-52" size="md">
+                <Image
+                  class="w-full h-auto object-cover"
+                  src={dna.image}
+                  alt={dna.text}
+                />
+              </Hexagon>
+              <div class="text-xl w-4/5 uppercase font-semibold text-center">
+                {dna.text}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <Separator
+      colored
+      href="#"
+      icon={IcSharpWhatsapp}
+      text={$t("home.contact", locale)}
+    />
+  </Container>
+
+  <Footer colored />
+</Layout>

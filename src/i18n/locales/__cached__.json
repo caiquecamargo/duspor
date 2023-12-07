@@ -1,0 +1,41 @@
+{
+  "routes": {
+    "about": {
+      "path": "/sobre",
+      "page": "sobre",
+      "title": "Sobre"
+    },
+    "products": {
+      "path": "/produtos",
+      "page": "produtos",
+      "title": "Produtos"
+    },
+    "budget": {
+      "path": "/orcamento",
+      "page": "orcamento",
+      "title": "Orçamento"
+    },
+    "contact": {
+      "path": "/contato",
+      "page": "contato",
+      "title": "Contato"
+    }
+  },
+  "home": {
+    "budget": "Solicite um orçamento",
+    "contact": "Entre em contato"
+  },
+  "products": {
+    "title": "Nossos produtos",
+    "applications": "Aplicações"
+  },
+  "contact": {
+    "talkToUs": "Fale conosco"
+  },
+  "budget": {
+    "title": "Solicite um",
+    "name": "orçamento",
+    "subtitle": "Converse com nossa equipe e aumente a agilidade e a produtividade da sua empresa",
+    "send": "Enviar"
+  }
+}

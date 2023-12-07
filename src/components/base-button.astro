@@ -1,0 +1,14 @@
+---
+type Props = {
+  type?: "button" | "submit" | "reset";
+  label: string;
+};
+
+const { type = "button", label } = Astro.props as Props;
+---
+
+<button
+  type={type}
+  class="bg-black dark:bg-white text-white dark:text-black p-2 w-full uppercase"
+  >{label}</button
+>

@@ -1,0 +1,210 @@
+backend:
+  name: git-gateway
+  branch: main
+locale: pt-BR
+media_folder: src/assets/images
+public_folder: ../../assets/images
+collections:
+  - name: products
+    label: Produtos
+    folder: src/content/products
+    extension: md
+    label_singular: Produto
+    create: true
+    delete: true
+    editor:
+      preview: false
+    fields:
+      - widget: string
+        name: title
+        label: Título
+        required: true
+      - widget: string
+        name: title_en
+        label: Título (Inglês)
+        required: true
+      - widget: string
+        name: title_es
+        label: Título (Espanhol)
+        required: true
+      - widget: markdown
+        name: body
+        label: Descrição
+        editor_components: &a1 []
+        modes: &a2
+          - rich_text
+        required: true
+      - widget: markdown
+        name: body_en
+        label: Descrição (Inglês)
+        editor_components: *a1
+        modes: *a2
+        required: true
+      - widget: markdown
+        name: body_es
+        label: Descrição (Espanhol)
+        editor_components: *a1
+        modes: *a2
+        required: true
+      - widget: list
+        name: applications
+        label: Aplicações
+        allow_add: true
+        label_singular: Aplicação
+        required: true
+      - widget: list
+        name: applications_en
+        label: Aplicações (Inglês)
+        allow_add: true
+        label_singular: Aplicação
+        required: true
+      - widget: list
+        name: applications_es
+        label: Aplicações (Espanhol)
+        allow_add: true
+        label_singular: Aplicação
+        required: true
+      - widget: image
+        name: images
+        allow_multiple: true
+        label: Imagens
+        required: true
+  - name: pages
+    label: Configuração das páginas
+    files:
+      - name: home
+        label: Página inicial
+        file: src/content/home/index.md
+        delete: false
+        extension: md
+        fields:
+          - widget: markdown
+            name: title
+            label: Título
+            editor_components: &a3 []
+            modes: &a4
+              - rich_text
+            required: true
+          - widget: markdown
+            name: title_en
+            label: Título (Inglês)
+            editor_components: *a3
+            modes: *a4
+            required: true
+          - widget: markdown
+            name: title_es
+            label: Título (Espanhol)
+            editor_components: *a3
+            modes: *a4
+            required: true
+          - widget: markdown
+            name: description
+            label: Descrição
+            editor_components: &a5 []
+            modes: &a6
+              - rich_text
+            required: true
+          - widget: markdown
+            name: description_en
+            label: Descrição (Inglês)
+            editor_components: *a5
+            modes: *a6
+            required: true
+          - widget: markdown
+            name: description_es
+            label: Descrição (Espanhol)
+            editor_components: *a5
+            modes: *a6
+            required: true
+          - widget: markdown
+            name: clients
+            label: Clientes
+            editor_components: &a7 []
+            modes: &a8
+              - rich_text
+            required: true
+          - widget: markdown
+            name: clients_en
+            label: Clientes (Inglês)
+            editor_components: *a7
+            modes: *a8
+            required: true
+          - widget: markdown
+            name: clients_es
+            label: Clientes (Espanhol)
+            editor_components: *a7
+            modes: *a8
+            required: true
+          - widget: image
+            name: images
+            allow_multiple: true
+            label: Logo dos clients
+      - name: about
+        label: Página sobre
+        file: src/content/about/index.md
+        delete: false
+        extension: md
+        fields:
+          - widget: markdown
+            name: title
+            label: Título
+            editor_components: &a9 []
+            modes: &a10
+              - rich_text
+            required: true
+          - widget: markdown
+            name: title_en
+            label: Título (Inglês)
+            editor_components: *a9
+            modes: *a10
+            required: true
+          - widget: markdown
+            name: title_es
+            label: Título (Espanhol)
+            editor_components: *a9
+            modes: *a10
+            required: true
+          - widget: markdown
+            name: description
+            label: Descrição
+            editor_components: &a11 []
+            modes: &a12
+              - rich_text
+            required: true
+          - widget: markdown
+            name: description_en
+            label: Descrição (Inglês)
+            editor_components: *a11
+            modes: *a12
+            required: true
+          - widget: markdown
+            name: description_es
+            label: Descrição (Espanhol)
+            editor_components: *a11
+            modes: *a12
+            required: true
+          - widget: markdown
+            name: dna
+            label: Nosso DNA
+            editor_components: &a13 []
+            modes: &a14
+              - rich_text
+            required: true
+          - widget: markdown
+            name: dna_en
+            label: Nosso DNA (Inglês)
+            editor_components: *a13
+            modes: *a14
+            required: true
+          - widget: markdown
+            name: dna_es
+            label: Nosso DNA (Espanhol)
+            editor_components: *a13
+            modes: *a14
+            required: true
+          - widget: list
+            name: values
+            label: DNAs
+            allow_add: true
+            max: 5
+            min: 5

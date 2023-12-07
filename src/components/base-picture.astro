@@ -1,0 +1,62 @@
+---
+type Props = {
+  src: string;
+  alt: string;
+  aspect?: string;
+  alignment?: string;
+  divide?: number;
+  class?: string;
+};
+
+const {
+  src,
+  alt,
+  aspect,
+  alignment = "center",
+  divide = 1,
+  class: customClass = "",
+} = Astro.props as Props;
+
+const widths = [640, 768, 1024, 1280, 1536, 2048].reverse();
+
+const getWidth = (index: number) => {
+  return index === 0 ? widths[index] : widths[index - 1];
+};
+
+const createSource = (width: number, type: "smart" | "smart_retina") => {
+  width = Math.trunc(
+    (type === "smart" ? width : Math.min(width * 2, 3000)) / divide
+  );
+  const crop = aspect ? `-/crop/${aspect}/${alignment}/` : "";
+  return `${src}-/resize/${width}x/${crop}-/format/webp/-/quality/${type}/-/progressive/yes/ `;
+};
+---
+
+<picture class={customClass}>
+  <source
+    srcset={`${createSource(640, "smart")} 1x, ${createSource(
+      640,
+      "smart_retina"
+    )} 2x`}
+    media="(max-width: 639px)"
+  />
+  {
+    widths.map((width, index) => (
+      <source
+        srcset={`${createSource(getWidth(index), "smart")} 1x, ${createSource(
+          getWidth(index),
+          "smart_retina"
+        )} 2x`}
+        media={`(min-width: ${width}px)`}
+      />
+    ))
+  }
+  <img
+    class="w-full h-full"
+    src={`${createSource(1000, "smart")}`}
+    srcset={`${createSource(1000, "smart_retina")} 2x`}
+    loading="lazy"
+    decoding="async"
+    alt={alt}
+  />
+</picture>

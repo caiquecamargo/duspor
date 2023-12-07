@@ -1,0 +1,99 @@
+---
+import Container from "@/components/container.astro";
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import Hexagon from "@/components/hexagon.astro";
+import Separator from "@/components/separator.astro";
+import { $t, locales, resolveLocaleURL, resolvePropByLocale } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import { even } from "@/utils";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import IcSharpWhatsapp from "~icons/ic/sharp-whatsapp";
+import Logo from "~icons/local/logo";
+import LogoMin from "~icons/local/logo-min";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({
+    params: { locale, products: $t("routes.products.page", locale) },
+  }));
+}
+
+const page = "produtos";
+
+const { locale } = Astro.params;
+
+const products = await getCollection("products");
+---
+
+<Layout title={$t("routes.products.title", locale)}>
+  <Header locale={locale} page={page} />
+
+  <Container class="my-28">
+    <section class="flex items-center">
+      <LogoMin class="h-96 w-96 text-gray-400 flex-shrink-0" />
+      <div class="-ml-2">
+        <h1 class="uppercase font-bold text-8xl text-primary text-border">
+          {$t("products.title", locale)}
+        </h1>
+        <Logo class="w-[300px] h-20 text-primary" />
+      </div>
+    </section>
+
+    <section class="mb-28 space-y-12 divide-y-2 divide-y-gray-400">
+      {
+        products.map((product, index) => (
+          <a
+            href={`${resolveLocaleURL("routes.products.path", locale)}/${
+              product.slug
+            }`}
+            class:list={[
+              "flex items-center pt-12 group",
+              even(index) ? "flex-row" : "flex-row-reverse",
+            ]}
+          >
+            <h2
+              class:list={[
+                "w-1/3 uppercase text-primary text-4xl font-bold group-hover:text-black transition-colors duration-150 group-hover:duration-150",
+                !even(index) && "text-right",
+              ]}
+            >
+              {resolvePropByLocale(product.data, "title", locale)}
+            </h2>
+            <div class="flex flex-grow justify-center">
+              {product.data.images.map((image, index) => (
+                <div class="text-border">
+                  <Hexagon
+                    size="xl"
+                    class:list={[
+                      index > 0 &&
+                        "-ml-12 group-hover:translate-x-6 transition-all duration-300",
+                    ]}
+                  >
+                    <Image
+                      class={
+                        image.height < image.width
+                          ? "h-full w-auto"
+                          : "w-full h-auto"
+                      }
+                      src={image}
+                      alt={product.data.title}
+                    />
+                  </Hexagon>
+                </div>
+              ))}
+            </div>
+          </a>
+        ))
+      }
+    </section>
+
+    <Separator
+      href="#"
+      icon={IcSharpWhatsapp}
+      text={$t("home.contact", locale)}
+    />
+  </Container>
+
+  <Footer />
+</Layout>

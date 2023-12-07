@@ -1,0 +1,72 @@
+---
+type Props = {
+  class?: string;
+  style?: Record<string, string>;
+  size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
+};
+
+const { class: _class, style, size = "md" } = Astro.props as Props;
+---
+
+<div
+  class:list={[
+    `hexagon hexagon-${size} flex items-center justify-center`,
+    _class,
+  ]}
+  style={style}
+>
+  <slot />
+</div>
+
+<style is:global>
+  .hexagon {
+    mask-image: url(/assets/hexagon.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    --default-mask-size: 200px;
+    --mask-size-variation: 25px;
+    mask-size: var(--mask-size);
+    width: var(--mask-size);
+    height: var(--mask-size);
+  }
+
+  .hexagon-xs {
+    --mask-size: calc(
+      var(--default-mask-size) - 2 * var(--mask-size-variation)
+    );
+  }
+
+  .hexagon-sm {
+    --mask-size: calc(
+      var(--default-mask-size) - 1 * var(--mask-size-variation)
+    );
+  }
+
+  .hexagon-md {
+    --mask-size: var(--default-mask-size);
+  }
+
+  .hexagon-lg {
+    --mask-size: calc(
+      var(--default-mask-size) + 1 * var(--mask-size-variation)
+    );
+  }
+
+  .hexagon-xl {
+    --mask-size: calc(
+      var(--default-mask-size) + 2 * var(--mask-size-variation)
+    );
+  }
+
+  .hexagon-2xl {
+    --mask-size: calc(
+      var(--default-mask-size) + 3 * var(--mask-size-variation)
+    );
+  }
+
+  .hexagon-3xl {
+    --mask-size: calc(
+      var(--default-mask-size) + 4 * var(--mask-size-variation)
+    );
+  }
+</style>

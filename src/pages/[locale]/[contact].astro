@@ -1,0 +1,66 @@
+---
+import Container from "@/components/container.astro";
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import { $t, locales } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import IcBaselineCall from "~icons/ic/baseline-call";
+import IcSharpMailOutline from "~icons/ic/sharp-mail-outline";
+import IcSharpWhatsapp from "~icons/ic/sharp-whatsapp";
+import LogoMin from "~icons/local/logo-min";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({
+    params: { locale, contact: $t("routes.contact.page", locale) },
+  }));
+}
+
+const page = "contato";
+
+const { locale } = Astro.params;
+
+const contacts = [
+  {
+    Icon: IcSharpMailOutline,
+    text: "duspor@duspor.com.br",
+  },
+  {
+    Icon: IcSharpWhatsapp,
+    text: "+55 (49) 9 9134-9624",
+  },
+  {
+    Icon: IcBaselineCall,
+    text: "+55 (49) 9 9134-9624",
+  },
+];
+---
+
+<Layout colored title={$t("routes.contact.title", locale)}>
+  <Header colored locale={locale} page={page} />
+
+  <Container class="h-[calc(100vh-6rem)] flex items-center justify-center">
+    <section class="flex items-center">
+      <LogoMin class="h-96 w-96 text-gray-400 flex-shrink-0" />
+      <div class="-ml-4">
+        <h1 class="uppercase font-bold text-8xl text-white">
+          {$t("contact.talkToUs", locale)}
+        </h1>
+
+        <div class="space-y-3 mt-8 ml-8">
+          {
+            contacts.map(({ Icon, text }) => (
+              <div class="flex items-center">
+                <div class="rounded-full p-[0.4rem] bg-gray-400">
+                  <Icon class="h-6 w-6 text-white" />
+                </div>
+                <span class="ml-4 text-white text-4xl">{text}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </Container>
+
+  <Footer class="!mt-0" colored />
+</Layout>

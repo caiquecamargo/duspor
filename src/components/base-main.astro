@@ -1,0 +1,16 @@
+---
+type Props = {
+  class?: string;
+};
+
+const { class: customClass = "" } = Astro.props as Props;
+---
+
+<main
+  class:list={[
+    "min-h-[calc(100dvh-6rem)] md:min-h-screen overflow-hidden mt-10 p-2 md:mb-24",
+    customClass,
+  ]}
+>
+  <slot />
+</main>
