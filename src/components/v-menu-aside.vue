@@ -41,9 +41,9 @@
 </template>
 
 <script setup lang="ts">
+import { Dialog, DialogOverlay, TransitionChild, TransitionRoot } from '@headlessui/vue';
 import type { PropType, Ref } from 'vue';
 import { computed, onMounted } from 'vue';
-import { Dialog, DialogOverlay, TransitionChild, TransitionRoot } from '@headlessui/vue';
 
 interface AsideMenuStore {
   isOpen: Ref<boolean>

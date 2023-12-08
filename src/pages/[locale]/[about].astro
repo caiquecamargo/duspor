@@ -29,8 +29,10 @@ const config = await getEntry("config", "index");
 <Layout colored title={$t("routes.about.title", locale)}>
   <Header colored locale={locale} page={page} />
 
-  <Container class="my-24">
-    <section class="relative h-80 overflow-hidden flex flex-col justify-center">
+  <Container class="my-12 md:my-24 p-1">
+    <section
+      class="relative h-48 md:h-80 overflow-hidden flex flex-col justify-center"
+    >
       <div
         class="z-0 absolute right-0 w-[75%] flex justify-center items-center"
       >
@@ -47,13 +49,13 @@ const config = await getEntry("config", "index");
       </div>
 
       <div
-        class="relative z-10 uppercase text-8xl max-w-[75%] text-white font-extrabold tracking-wide"
+        class="relative z-10 uppercase text-4xl md:text-8xl max-w-[75%] text-white font-extrabold tracking-wide"
         set:html={marked(resolvePropByLocale(about.data, "title", locale))}
       />
     </section>
 
     <section
-      class="text-white mt-12 text-justify leading-relaxed text-lg [&_strong]:text-black [&_strong]:font-bold"
+      class="text-white mt-12 text-justify leading-relaxed md:text-lg [&_strong]:text-black [&_strong]:font-bold"
       set:html={marked(resolvePropByLocale(about.data, "description", locale))}
     />
 
@@ -61,11 +63,11 @@ const config = await getEntry("config", "index");
 
     <section class="text-white">
       <h3
-        class="text-center uppercase text-7xl font-bold"
+        class="text-center uppercase text-4xl md:text-7xl font-bold"
         set:html={marked(resolvePropByLocale(about.data, "dna", locale))}
       />
 
-      <div class="relative h-64 mt-16">
+      <div class="relative h-64 mt-16 hidden lg:block">
         {
           about.data.values.map((dna, index) => (
             <div
@@ -75,7 +77,7 @@ const config = await getEntry("config", "index");
               ]}
               style={{ right: `calc(50% - ${100 + (index - 2) * 190}px)` }}
             >
-              <Hexagon class="h-52 w-52 grayscale" size="md">
+              <Hexagon class="grayscale" size="md">
                 <Image
                   class={
                     dna.image.height < dna.image.width
@@ -87,6 +89,64 @@ const config = await getEntry("config", "index");
                 />
               </Hexagon>
               <div class="text-xl w-4/5 uppercase font-semibold text-center">
+                {resolvePropByLocale(dna, "title", locale)}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="relative h-80 mt-16 hidden md:block lg:hidden">
+        {
+          about.data.values.map((dna, index) => (
+            <div
+              class:list={[
+                "flex justify-center items-center absolute w-[150px]",
+                even(index) ? "flex-col top-0" : "flex-col top-[175px]",
+              ]}
+              style={{ right: `calc(50% - ${75 + (index - 2) * 80}px)` }}
+            >
+              <Hexagon class="grayscale" size="xs">
+                <Image
+                  class={
+                    dna.image.height < dna.image.width
+                      ? "h-full w-auto"
+                      : "w-full h-auto"
+                  }
+                  src={dna.image}
+                  alt={resolvePropByLocale(dna, "title", locale)}
+                />
+              </Hexagon>
+              <div class="text-xs w-4/5 uppercase font-semibold text-center">
+                {resolvePropByLocale(dna, "title", locale)}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="relative h-72 mt-8 block md:hidden">
+        {
+          about.data.values.map((dna, index) => (
+            <div
+              class:list={[
+                "flex justify-center items-center absolute w-[100px]",
+                even(index) ? "flex-col top-0" : "flex-col top-[130px]",
+              ]}
+              style={{ right: `calc(50% - ${50 + (index - 2) * 52}px)` }}
+            >
+              <Hexagon class="grayscale" size="xxs">
+                <Image
+                  class={
+                    dna.image.height < dna.image.width
+                      ? "h-full w-auto"
+                      : "w-full h-auto"
+                  }
+                  src={dna.image}
+                  alt={resolvePropByLocale(dna, "title", locale)}
+                />
+              </Hexagon>
+              <div class="text-xs w-4/5 uppercase font-semibold text-center">
                 {resolvePropByLocale(dna, "title", locale)}
               </div>
             </div>

@@ -72,46 +72,43 @@ const links = [
     }
 
     <div><TranslationButton colored={colored} locale={locale} /></div>
-
-    <div class="block md:hidden" slot="end">
-      <MobileMenu client:only>
-        <div
-          class:list={[
-            "h-[100dvh] bg-white p-4 pr-1 w-[80vw] flex flex-col justify-between font-bold",
-            colored ? "text-white" : "text-black",
-          ]}
-        >
-          <nav class="flex flex-col gap-2">
-            <a href={`/${locale}`} slot="start" class="flex-grow-0 pb-4">
-              <span class="sr-only">Duspor logo</span>
-              <Logo
-                class:list={[
-                  "w-32 h-8",
-                  colored ? "text-white" : "text-primary",
-                ]}
-              />
-            </a>
-            {
-              links.map((link) => (
-                <a
-                  class:list={[
-                    "text-left",
-                    colored ? "hover:text-black" : "hover:text-primary",
-                    page === $t(link.name) ? "font-semibold" : "",
-                  ]}
-                  href={resolveLocaleURL(link.href, locale)}
-                >
-                  {$t(link.label, locale).toUpperCase()}
-                </a>
-              ))
-            }
-          </nav>
-
-          <nav class="self-start flex items-center justify-between w-full">
-            <div><TranslationButton locale={locale} /></div>
-          </nav>
-        </div>
-      </MobileMenu>
-    </div>
   </nav>
+
+  <div class="block md:hidden" slot="end">
+    <MobileMenu client:only>
+      <div
+        class:list={[
+          "h-[100dvh] p-4 pr-1 w-[80vw] flex flex-col justify-between font-bold",
+          colored ? "text-white bg-primary" : "text-primary bg-white",
+        ]}
+      >
+        <nav class="flex flex-col gap-2">
+          <a href={`/${locale}`} slot="start" class="flex-grow-0 pb-4">
+            <span class="sr-only">Duspor logo</span>
+            <Logo
+              class:list={["w-32 h-8", colored ? "text-white" : "text-primary"]}
+            />
+          </a>
+          {
+            links.map((link) => (
+              <a
+                class:list={[
+                  "text-left",
+                  colored ? "hover:text-black" : "hover:text-primary",
+                  page === $t(link.name) ? "font-semibold" : "",
+                ]}
+                href={resolveLocaleURL(link.href, locale)}
+              >
+                {$t(link.label, locale).toUpperCase()}
+              </a>
+            ))
+          }
+        </nav>
+
+        <nav class="self-start flex items-center justify-between w-full">
+          <div><TranslationButton colored={colored} locale={locale} /></div>
+        </nav>
+      </div>
+    </MobileMenu>
+  </div>
 </BaseHeader>

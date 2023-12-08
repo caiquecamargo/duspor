@@ -39,13 +39,15 @@ const Description = await marked(description);
 <Layout colored title={$t("routes.products.title", locale)}>
   <Header colored locale={locale} page={page} />
 
-  <Container class="my-28">
+  <Container class="my-16 md:my-28 p-1">
     <section class="flex items-center">
-      <div class="-ml-2">
-        <h1 class="uppercase font-bold text-6xl text-white">
+      <div class="lg:-ml-2">
+        <h1
+          class="uppercase font-bold text-lg md:text-4xl lg:text-6xl text-white"
+        >
           {resolvePropByLocale(product.data, "title", locale)}
         </h1>
-        <Logo class="w-[200px] h-20 text-white mt-4" />
+        <Logo class="w-[100px] md:w-[200px] h-10 md:h-20 text-white md:mt-4" />
       </div>
       {
         product.data.images.map((image, index) => (
@@ -55,10 +57,31 @@ const Description = await marked(description);
           >
             <Hexagon
               size="3xl"
-              class:list={[
-                index > 0 &&
-                  "-ml-12 group-hover:translate-x-6 transition-all duration-300",
-              ]}
+              class:list={["hidden lg:flex", index > 0 && "-ml-12"]}
+            >
+              <Image
+                class={
+                  image.height < image.width ? "h-full w-auto" : "w-full h-auto"
+                }
+                src={image}
+                alt={product.data.title}
+              />
+            </Hexagon>
+            <Hexagon
+              size="lg"
+              class:list={["hidden md:flex lg:hidden", index > 0 && "-ml-8"]}
+            >
+              <Image
+                class={
+                  image.height < image.width ? "h-full w-auto" : "w-full h-auto"
+                }
+                src={image}
+                alt={product.data.title}
+              />
+            </Hexagon>
+            <Hexagon
+              size="xxs"
+              class:list={["flex md:hidden", index > 0 && "-ml-4"]}
             >
               <Image
                 class={
@@ -74,18 +97,18 @@ const Description = await marked(description);
     </section>
 
     <section
-      class="space-y-4 text-white leading-relaxed mt-12 text-lg"
+      class="space-y-4 text-white leading-relaxed mt-4 md:mt-12 md:text-lg"
       set:html={Description}
     />
 
-    <h3 class="mt-12 text-4xl uppercase text-white font-bold">
+    <h3 class="mt-12 text-xl md:text-4xl uppercase text-white font-bold">
       {$t("products.applications", locale)}:
     </h3>
 
     <ul class="mt-4 text-white">
       {
         product.data.applications.map((application) => (
-          <li class="flex items-center space-x-2 text-lg">
+          <li class="flex items-center space-x-2 md:text-lg">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

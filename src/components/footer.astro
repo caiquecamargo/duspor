@@ -41,14 +41,17 @@ const links = [
 
 <BaseFooter class:list={["mt-24 !justify-center", _class]}>
   <div
-    class:list={["flex space-x-4", colored ? "text-white" : "text-primary"]}
+    class:list={[
+      "flex gap-4 flex-wrap",
+      colored ? "text-white" : "text-primary",
+    ]}
     slot="center"
   >
     {
       links.map((link) => (
         <a
           class:list={[
-            "flex items-center group",
+            "flex items-center group text-sm md:text-base",
             colored ? "hover:text-black" : "",
           ]}
           href={link.href}
@@ -60,7 +63,7 @@ const links = [
               colored ? "text-white" : "group-hover:bg-primary text-white",
             ]}
           >
-            <link.icon class="w-6 h-6" />
+            <link.icon class="w-4 md:w-6 h-4 md:h-6" />
           </div>
           {link.label}
         </a>

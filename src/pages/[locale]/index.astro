@@ -1,5 +1,4 @@
 ---
-import PortaRapida from "@/assets/images/porta-rapida.png";
 import Container from "@/components/container.astro";
 import Footer from "@/components/footer.astro";
 import Header from "@/components/header.astro";
@@ -21,8 +20,6 @@ export function getStaticPaths() {
 
 const { locale } = Astro.params;
 
-const images = Array.from({ length: 4 }, () => PortaRapida);
-
 const home = await getEntry("home", "index");
 const config = await getEntry("config", "index");
 
@@ -33,13 +30,23 @@ const resolveStyle = (index: number) =>
     .with(2, () => ({ top: "190px", left: "calc(33px + 25px)" }))
     .with(3, () => ({ top: "255px", left: "calc(218px + 25px)" }))
     .otherwise(() => ({}));
+
+const resolveMobileStyle = (index: number) =>
+  match(index)
+    .with(0, () => ({ top: "0", left: "25px" }))
+    .with(1, () => ({ top: "55px", left: "calc(135px + 25px)" }))
+    .with(2, () => ({ top: "140px", left: "calc(15px + 25px)" }))
+    .with(3, () => ({ top: "200px", left: "calc(155px + 25px)" }))
+    .otherwise(() => ({}));
 ---
 
 <Layout title="home">
   <Header page="home" locale={locale} />
 
-  <Container class="my-24">
-    <div class="relative h-80 overflow-hidden flex flex-col justify-center">
+  <Container class="my-12 md:my-24 p-1">
+    <div
+      class="relative h-48 md:h-80 overflow-hidden flex flex-col justify-center"
+    >
       <div
         class="z-0 absolute right-0 w-[75%] flex justify-center items-center"
       >
@@ -56,7 +63,7 @@ const resolveStyle = (index: number) =>
       </div>
 
       <div
-        class="relative z-10 uppercase text-7xl max-w-[75%] [&_strong]:text-primary [&_strong]:font-extrabold tracking-wide"
+        class="relative z-10 uppercase text-4xl md:text-7xl max-w-[75%] [&_strong]:text-primary [&_strong]:font-extrabold tracking-wide"
         set:html={marked(resolvePropByLocale(home.data, "title", locale))}
       />
     </div>
@@ -66,23 +73,39 @@ const resolveStyle = (index: number) =>
       text={$t("home.budget", locale)}
     />
 
-    <div class="grid grid-cols-2">
+    <div class="grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2">
       <div class="relative">
         {
           home.data.descriptionBackgrounds.slice(0, 4).map((image, index) => (
-            <Hexagon class="w-52 h-52 absolute" style={resolveStyle(index)}>
-              <Image
-                class="w-full h-auto object-cover"
-                src={image}
-                alt={`Duspor, portas industriais ${index}`}
-              />
-            </Hexagon>
+            <>
+              <Hexagon
+                class="absolute hidden md:flex"
+                style={resolveStyle(index)}
+              >
+                <Image
+                  class="w-full h-auto object-cover"
+                  src={image}
+                  alt={`Duspor, portas industriais ${index}`}
+                />
+              </Hexagon>
+              <Hexagon
+                size="xs"
+                class="absolute flex md:hidden"
+                style={resolveMobileStyle(index)}
+              >
+                <Image
+                  class="w-full h-auto object-cover"
+                  src={image}
+                  alt={`Duspor, portas industriais ${index}`}
+                />
+              </Hexagon>
+            </>
           ))
         }
       </div>
 
       <div
-        class="uppercase text-right text-6xl [&_strong]:text-primary [&_strong]:font-extrabold tracking-wide py-12"
+        class="uppercase text-right text-2xl md:text-5xl lg:text-6xl [&_strong]:text-primary [&_strong]:font-extrabold tracking-wide pt-20 md:pt-12 pb-12"
       >
         <div
           set:html={marked(
@@ -90,9 +113,9 @@ const resolveStyle = (index: number) =>
           )}
         />
 
-        <div class="float-right mt-6">
+        <div class="float-right mt-4 md:mt-6">
           <span class="sr-only">Duspor logo</span>
-          <Logo class="w-[420px] h-20 text-primary" />
+          <Logo class="w-[210px] md:w-[315px] lg:w-[420px] h-20 text-primary" />
         </div>
       </div>
     </div>
@@ -108,7 +131,7 @@ const resolveStyle = (index: number) =>
     />
 
     <div
-      class="uppercase text-center text-7xl [&_strong]:text-primary [&_strong]:font-extrabold tracking-wide"
+      class="uppercase text-center text-2xl sm:text-4xl md:text-5xl lg:text-7xl [&_strong]:text-primary [&_strong]:font-extrabold tracking-wide"
       set:html={marked(resolvePropByLocale(home.data, "clients", locale))}
     />
   </Container>
