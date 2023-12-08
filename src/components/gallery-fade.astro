@@ -4,17 +4,18 @@ type Props = {
   class?: string;
 };
 
-const { color = "secondary", class: _class } = Astro.props as Props;
+const { color = "primary", class: _class } = Astro.props as Props;
 ---
 
 <gallery-fade>
-  <div class:list={["swiper !pl-7", _class]} data-color={color}>
+  <div class:list={["swiper", _class]} data-color={color}>
     <div class="swiper-wrapper">
       <slot />
     </div>
 
-    <div class="swiper-pagination absolute !w-fit !left-16 !top-auto !bottom-8">
-    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
 </gallery-fade>
 
@@ -30,12 +31,13 @@ const { color = "secondary", class: _class } = Astro.props as Props;
 </style>
 
 <script>
-  import Swiper from "swiper";
-  import { Pagination, EffectFade } from "swiper/modules";
-  import "swiper/css";
-  import "swiper/css/pagination";
-  import "swiper/css/effect-fade";
   import type { Props } from "astro";
+  import Swiper from "swiper";
+  import "swiper/css";
+  import "swiper/css/effect-fade";
+  import "swiper/css/navigation";
+  import "swiper/css/pagination";
+  import { Navigation, Pagination } from "swiper/modules";
 
   class GalleryFade extends HTMLElement {
     #swiper: Swiper | undefined;
@@ -65,6 +67,13 @@ const { color = "secondary", class: _class } = Astro.props as Props;
         `rgb(var(--color-${color}))`,
       );
 
+      document.body.style.setProperty(
+        "--swiper-navigation-color",
+        `rgb(var(--color-${color}))`,
+      );
+
+      const slidesPerView = wrapper.children.length > 3 ? 3 : 2;
+
       Array.from(wrapper.children).forEach((child) => {
         const div = document.createElement("div");
         div.classList.add("swiper-slide");
@@ -74,9 +83,16 @@ const { color = "secondary", class: _class } = Astro.props as Props;
       });
 
       this.#swiper = new Swiper(".swiper", {
-        modules: [Pagination, EffectFade],
+        modules: [Pagination, Navigation],
 
         effect: "fade",
+
+        slidesPerView,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
 
         pagination: {
           el: pagination,

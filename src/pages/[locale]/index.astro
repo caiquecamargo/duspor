@@ -1,6 +1,7 @@
 ---
 import Container from "@/components/container.astro";
 import Footer from "@/components/footer.astro";
+import GalleryFade from "@/components/gallery-fade.astro";
 import Header from "@/components/header.astro";
 import Hexagon from "@/components/hexagon.astro";
 import Separator from "@/components/separator.astro";
@@ -134,6 +135,20 @@ const resolveMobileStyle = (index: number) =>
       class="uppercase text-center text-2xl sm:text-4xl md:text-5xl lg:text-7xl [&_strong]:text-primary [&_strong]:font-extrabold tracking-wide"
       set:html={marked(resolvePropByLocale(home.data, "clients", locale))}
     />
+
+    <GalleryFade class="my-4 md:my-12">
+      {
+        home.data.images.map((image) => (
+          <div class="flex items-center justify-center py-6">
+            <Image
+              class="w-28 md:w-60 h-auto"
+              src={image}
+              alt="Duspor, portas industriais"
+            />
+          </div>
+        ))
+      }
+    </GalleryFade>
   </Container>
 
   <Footer />
