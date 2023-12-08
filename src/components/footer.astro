@@ -1,4 +1,5 @@
 ---
+import { getEntry } from "astro:content";
 import Fa6BrandsLinkedinIn from "~icons/fa6-brands/linkedin-in";
 import MaterialSymbolsLocationOnOutlineRounded from "~icons/material-symbols/location-on-outline-rounded";
 import PhInstagramLogo from "~icons/ph/instagram-logo";
@@ -12,26 +13,28 @@ type Props = {
 
 const { colored = false, class: _class } = Astro.props;
 
+const config = await getEntry("config", "index");
+
 const links = [
   {
-    href: "https://www.google.com.br/maps/place/R.+Israel,+2995+E+-+Passo+dos+Fortes,+Chapec%C3%B3+-+SC,+89805-730/@-27.0758268,-52.6114012,17z/data=!3m1!4b1!4m6!3m5!1s0x94e4b67b7d958a8d:0xa62db411928f3d5a!8m2!3d-27.0758316!4d-52.6088263!16s%2Fg%2F11f0xvtjwv?entry=ttu",
+    href: config.data.address.maps,
     icon: MaterialSymbolsLocationOnOutlineRounded,
-    label: "R. Insrael, 2995 E - Passo dos Fortes, Chapecó - SC",
+    label: config.data.address.address,
   },
   {
-    href: "https://www.instagram.com/",
+    href: config.data.instagram.url,
     icon: PhInstagramLogo,
-    label: "@dusporportasindustriais",
+    label: config.data.instagram.arroba,
   },
   {
-    href: "https://www.facebook.com/",
+    href: config.data.facebook.url,
     icon: TypcnSocialFacebook,
-    label: "duspor",
+    label: config.data.facebook.arroba,
   },
   {
-    href: "https://www.linkedin.com/",
+    href: config.data.linkedin.url,
     icon: Fa6BrandsLinkedinIn,
-    label: "duspor",
+    label: config.data.linkedin.arroba,
   },
 ];
 ---

@@ -49,7 +49,10 @@ const Description = await marked(description);
       </div>
       {
         product.data.images.map((image, index) => (
-          <div class="text-border-primary">
+          <div
+            class="text-border-primary"
+            transition:name={`product-${product.slug}-${index}`}
+          >
             <Hexagon
               size="3xl"
               class:list={[
@@ -58,7 +61,9 @@ const Description = await marked(description);
               ]}
             >
               <Image
-                class="w-full h-auto"
+                class={
+                  image.height < image.width ? "h-full w-auto" : "w-full h-auto"
+                }
                 src={image}
                 alt={product.data.title}
               />

@@ -34,3 +34,9 @@ export const ifRequired = (required?: boolean, placeholder?: string) => {
 export const formatDate = (date: Date | string) => {
   return new Date(date).toLocaleDateString('pt-BR', { dateStyle: 'short' })
 }
+
+export const generateWhatsappLink = (number: string, message: string) => {
+  const clenedNumber = number.replace(/\D/g, '')
+  
+  return `https://wa.me/${clenedNumber}?text=${encodeURIComponent(message)}`
+}

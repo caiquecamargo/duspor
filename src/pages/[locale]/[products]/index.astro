@@ -6,9 +6,9 @@ import Hexagon from "@/components/hexagon.astro";
 import Separator from "@/components/separator.astro";
 import { $t, locales, resolveLocaleURL, resolvePropByLocale } from "@/i18n";
 import Layout from "@/layouts/Layout.astro";
-import { even } from "@/utils";
+import { even, generateWhatsappLink } from "@/utils";
 import { Image } from "astro:assets";
-import { getCollection } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
 import IcSharpWhatsapp from "~icons/ic/sharp-whatsapp";
 import Logo from "~icons/local/logo";
 import LogoMin from "~icons/local/logo-min";
@@ -24,6 +24,7 @@ const page = "produtos";
 const { locale } = Astro.params;
 
 const products = await getCollection("products");
+const config = await getEntry("config", "index");
 ---
 
 <Layout title={$t("routes.products.title", locale)}>
@@ -62,7 +63,10 @@ const products = await getCollection("products");
             </h2>
             <div class="flex flex-grow justify-center">
               {product.data.images.map((image, index) => (
-                <div class="text-border">
+                <div
+                  class="text-border"
+                  transition:name={`product-${product.slug}-${index}`}
+                >
                   <Hexagon
                     size="xl"
                     class:list={[
@@ -89,7 +93,11 @@ const products = await getCollection("products");
     </section>
 
     <Separator
-      href="#"
+      href={generateWhatsappLink(
+        config.data.whatsapp.number,
+        config.data.whatsapp.message,
+      )}
+      external
       icon={IcSharpWhatsapp}
       text={$t("home.contact", locale)}
     />

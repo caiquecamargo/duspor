@@ -99,6 +99,11 @@ collections:
             editor_components: *a3
             modes: *a4
             required: true
+          - widget: image
+            name: titleBackground
+            label: Imagem de fundo do título
+            required: true
+            allow_multiple: false
           - widget: markdown
             name: description
             label: Descrição
@@ -118,6 +123,11 @@ collections:
             editor_components: *a5
             modes: *a6
             required: true
+          - widget: image
+            name: descriptionBackgrounds
+            label: Imagem da descrição
+            required: true
+            allow_multiple: true
           - widget: markdown
             name: clients
             label: Clientes
@@ -168,6 +178,11 @@ collections:
             editor_components: *a9
             modes: *a10
             required: true
+          - widget: image
+            name: titleBackground
+            label: Imagem de fundo do título
+            required: true
+            allow_multiple: false
           - widget: markdown
             name: description
             label: Descrição
@@ -240,6 +255,27 @@ collections:
           preview: false
         extension: md
         fields:
+          - widget: string
+            name: email
+            label: Email
+            required: true
+          - widget: string
+            name: phone
+            label: Telefone
+            required: true
+          - widget: object
+            name: whatsapp
+            label: Whatsapp
+            required: true
+            fields:
+              - widget: string
+                name: number
+                label: Número
+                required: true
+              - widget: string
+                name: message
+                label: Mensagem
+                required: true
           - widget: object
             name: address
             label: Endereço

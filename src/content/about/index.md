@@ -11,6 +11,7 @@ title_es: |-
   Nuestra
 
   Historia
+titleBackground: ../../assets/images/kelly-sikkema-xcvXS6wDCAY-unsplash.jpg
 description: Somos uma empresa completa e especializada na montagem e manutenção
   de Portas Industriais. Nossa trajetória começou com a Dinâmica Montagem
   Industrial e, com o objetivo de proporcionar excelência aos nossos clientes,

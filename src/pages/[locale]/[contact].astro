@@ -4,6 +4,7 @@ import Footer from "@/components/footer.astro";
 import Header from "@/components/header.astro";
 import { $t, locales } from "@/i18n";
 import Layout from "@/layouts/Layout.astro";
+import { getEntry } from "astro:content";
 import IcBaselineCall from "~icons/ic/baseline-call";
 import IcSharpMailOutline from "~icons/ic/sharp-mail-outline";
 import IcSharpWhatsapp from "~icons/ic/sharp-whatsapp";
@@ -18,19 +19,20 @@ export function getStaticPaths() {
 const page = "contato";
 
 const { locale } = Astro.params;
+const config = await getEntry("config", "index");
 
 const contacts = [
   {
     Icon: IcSharpMailOutline,
-    text: "duspor@duspor.com.br",
+    text: config.data.email,
   },
   {
     Icon: IcSharpWhatsapp,
-    text: "+55 (49) 9 9134-9624",
+    text: config.data.whatsapp.number,
   },
   {
     Icon: IcBaselineCall,
-    text: "+55 (49) 9 9134-9624",
+    text: config.data.phone,
   },
 ];
 ---

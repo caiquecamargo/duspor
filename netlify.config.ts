@@ -81,6 +81,12 @@ const homePage = defineFileCollectionEntry({
         required: true,
       })
     ),
+    defineImageWidget({
+      name: 'titleBackground',
+      label: 'Imagem de fundo do título',
+      required: true,
+      allow_multiple: false
+    }),
     ...createLocalizedField(
       defineMarkdownWidget({
         name: 'description',
@@ -90,6 +96,12 @@ const homePage = defineFileCollectionEntry({
         required: true,
       })
     ),
+    defineImageWidget({
+      name: 'descriptionBackgrounds',
+      label: 'Imagem da descrição',
+      required: true,
+      allow_multiple: true,
+    }),
     ...createLocalizedField(
       defineMarkdownWidget({
         name: 'clients',
@@ -126,6 +138,12 @@ const aboutPage = defineFileCollectionEntry({
         required: true,
       })
     ),
+    defineImageWidget({
+      name: 'titleBackground',
+      label: 'Imagem de fundo do título',
+      required: true,
+      allow_multiple: false
+    }),
     ...createLocalizedField(
       defineMarkdownWidget({
         name: 'description',
@@ -191,6 +209,33 @@ const config = defineFileCollection({
       },
       extension: 'md',
       fields: [
+        defineStringWidget({
+          name: 'email',
+          label: 'Email',
+          required: true,
+        }),
+        defineStringWidget({
+          name: 'phone',
+          label: 'Telefone',
+          required: true,
+        }),
+        defineObjectWidget({
+          name: 'whatsapp',
+          label: 'Whatsapp',
+          required: true,
+          fields: [
+            defineStringWidget({
+              name: 'number',
+              label: 'Número',
+              required: true,
+            }),
+            defineStringWidget({
+              name: 'message',
+              label: 'Mensagem',
+              required: true,
+            }),
+          ]
+        }),
         defineObjectWidget({
           name: 'address',
           label: 'Endereço',
