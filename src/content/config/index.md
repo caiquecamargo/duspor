@@ -1,7 +1,7 @@
 ---
 email: duspor@duspor.com.br
-phone: +55 (49) 9 9134-9624
-whatsapp: 
+phone: +55 (49) 3329 2933
+whatsapp:
   number: +55 (49) 9 9134-9624
   message: Gostaria de informações sobre os produtos da Duspor!
 address:
