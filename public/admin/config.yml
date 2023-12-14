@@ -64,6 +64,11 @@ collections:
         allow_add: true
         label_singular: Aplicação
         required: true
+      - widget: number
+        name: position
+        label: Posição
+        min: 1
+        default: 100
       - widget: image
         name: images
         allow_multiple: true

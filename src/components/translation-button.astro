@@ -48,12 +48,14 @@ const flags = [
             flagLocale === locale
               ? "border-4"
               : colored
-              ? "bg-white group-hover:bg-primary"
-              : "bg-primary group-hover:bg-white",
+                ? "bg-white group-hover:bg-primary"
+                : "bg-primary group-hover:bg-white",
           ]}
         />
         {label}
-        <Icon class="w-5 h-5 ml-1 grayscale" />
+        <Icon
+          class:list={["w-5 h-5 ml-1", locale !== flagLocale && "grayscale"]}
+        />
       </button>
     ))
   }

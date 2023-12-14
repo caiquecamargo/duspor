@@ -1,5 +1,10 @@
 {
   "routes": {
+    "home": {
+      "path": "/",
+      "page": "home",
+      "title": "Página inicial"
+    },
     "about": {
       "path": "/sobre",
       "page": "sobre",

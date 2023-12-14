@@ -16,6 +16,11 @@ const { page, locale = "pt", colored = false } = Astro.props as Props;
 
 const links = [
   {
+    href: "routes.home.path",
+    name: "routes.home.page",
+    label: "routes.home.title",
+  },
+  {
     href: "routes.about.path",
     name: "routes.about.page",
     label: "routes.about.title",
@@ -38,12 +43,10 @@ const links = [
 ] satisfies Array<Record<string, TranslationKey>>;
 ---
 
-<BaseHeader
-  class="bg-transparent bg-opacity-70 backdrop-filter backdrop-blur-xl bg-clip-padding"
->
+<BaseHeader class:list={[colored ? "bg-primary" : "bg-white"]}>
   <a href={`/${locale}`} slot="start" class="flex-grow-0">
     <span class="sr-only">Duspor logo</span>
-    <Logo class:list={["w-32 h-8", colored ? "text-white" : "text-primary"]} />
+    <Logo class:list={["w-40 h-10", colored ? "text-white" : "text-primary"]} />
   </a>
 
   <nav
@@ -61,8 +64,8 @@ const links = [
                 ? "text-black"
                 : "text-primary"
               : colored
-              ? "text-white"
-              : "text-black",
+                ? "text-white"
+                : "text-black",
           ]}
           href={resolveLocaleURL(link.href, locale)}
         >
@@ -86,7 +89,10 @@ const links = [
           <a href={`/${locale}`} slot="start" class="flex-grow-0 pb-4">
             <span class="sr-only">Duspor logo</span>
             <Logo
-              class:list={["w-32 h-8", colored ? "text-white" : "text-primary"]}
+              class:list={[
+                "w-40 h-10",
+                colored ? "text-white" : "text-primary",
+              ]}
             />
           </a>
           {

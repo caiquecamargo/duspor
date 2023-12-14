@@ -19,6 +19,11 @@
       "path": "/contacto",
       "page": "contacto",
       "title": "Contacto"
+    },
+    "home": {
+      "path": "/",
+      "page": "hogar",
+      "title": "Página de inicio"
     }
   },
   "home": {

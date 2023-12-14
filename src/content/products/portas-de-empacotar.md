@@ -21,6 +21,7 @@ body_en: |-
   Fast and intelligent solutions for the most diverse locations that need to divide environments and special rooms, which generates better use of spaces and processes. They can also act as true sanitary barriers and prevent contaminants from entering the environment. They guarantee quick passage of people and equipment, in addition to protecting the environment against temperature variations, contamination and the entry of insects.
 body_es: |-
   Soluciones rápidas e inteligentes para las más diversas ubicaciones que necesitan dividir ambientes y salas especiales, lo que genera un mejor aprovechamiento de espacios y procesos. También pueden actuar como verdaderas barreras sanitarias e impedir la entrada de contaminantes al medio ambiente. Garantizan el rápido paso de personas y equipos, además de proteger el ambiente contra las variaciones de temperatura, la contaminación y la entrada de insectos.
+position: 2
 images:
   - ../../assets/images/portas-de-empacotar-1.png
   - ../../assets/images/portas-de-empacotar-2.png

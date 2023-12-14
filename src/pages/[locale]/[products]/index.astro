@@ -23,7 +23,9 @@ const page = "produtos";
 
 const { locale } = Astro.params;
 
-const products = await getCollection("products");
+const products = (await getCollection("products")).sort(
+  (a, b) => a.data.position - b.data.position,
+);
 const config = await getEntry("config", "index");
 ---
 

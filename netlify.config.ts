@@ -1,4 +1,4 @@
-import { defineConfig, defineFileCollection, defineFileCollectionEntry, defineFolderCollection, defineImageWidget, defineListWidget, defineMarkdownWidget, defineObjectWidget, defineStringWidget } from "@caiquecamargo/vite-plugin-netlify-cms";
+import { defineConfig, defineFileCollection, defineFileCollectionEntry, defineFolderCollection, defineImageWidget, defineListWidget, defineMarkdownWidget, defineObjectWidget, defineStringWidget, defineNumberWidget } from "@caiquecamargo/vite-plugin-netlify-cms";
 
 const createLocalizedField = (widget: any) => {
   return [
@@ -53,6 +53,12 @@ const products = defineFolderCollection({
         required: true,
       }),
     ),
+    defineNumberWidget({
+      name: 'position',
+      label: 'Posição',
+      min: 1,
+      default: 100,
+    }),
     defineImageWidget({
       name: 'images',
       allow_multiple: true,

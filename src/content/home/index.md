@@ -27,4 +27,13 @@ images:
   - ../../assets/images/logo-brf-1024.png
   - ../../assets/images/logo-jbs-1024.png
   - ../../assets/images/aurora-alimentos-1024.png
+  - ../../assets/images/ajinomoto.png
+  - ../../assets/images/comgroup.png
+  - ../../assets/images/gtfoods.png
+  - ../../assets/images/kellogs-parati.png
+  - ../../assets/images/laclelo.png
+  - ../../assets/images/levo-alimentos.png
+  - ../../assets/images/palmali.webp
+  - ../../assets/images/tirol.png
+  - ../../assets/images/vibra.png
 ---
