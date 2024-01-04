@@ -30,7 +30,7 @@ applications_es:
   - CD de archivo
   - Mayoristas
   - Centros de distribución
-position: 8
+position: 11
 images:
   - ../../assets/images/cortinas-de-ar.png
 ---
