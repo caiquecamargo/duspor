@@ -32,8 +32,8 @@ applications_es:
   - Centros de distribución
 position: 3
 images:
-  - ../../assets/images/portas-rapidas-para-docas-1.png
-  - ../../assets/images/portas-rapidas-para-docas-2.png
+  - ../../assets/images/portas-rapidas-2.png
+  - ../../assets/images/porta-rapida.png
 ---
 
 Soluções rápidas e inteligentes para os mais diversos locais que necessitam realizar a divisão de ambientes e salas especiais, o que gera melhor aproveitamento dos espaços e processos. Elas também podem atuar como verdadeiras barreiras sanitárias e evitam a entrada de contaminantes no ambiente. Garantem uma passagem rápida de pessoas e equipamentos, além de proteger o ambiente contra variações de temperaturas, contaminações e entrada de insetos.
