@@ -15,7 +15,7 @@ titleBackground: ../../assets/images/kelly-sikkema-xcvXS6wDCAY-unsplash.jpg
 description: Somos uma empresa completa e especializada na montagem e manutenção
   de Portas Industriais. Nossa trajetória começou com a Dinâmica Montagem
   Industrial e, com o objetivo de proporcionar excelência aos nossos clientes,
-  evoluímos para a Duspor. Concebemos e desencolvemos nossos produtos com foco
+  evoluímos para a Duspor. Concebemos e desenvolvemos nossos produtos com foco
   em proporcionar segurança, eficiência e qualidade para nossos clientes.
 description_en: We are a complete company specializing in the assembly and
   maintenance of Industrial Doors. Our trajectory began with Dinâmica Montagem
