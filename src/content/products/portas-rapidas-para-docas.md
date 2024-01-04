@@ -2,12 +2,25 @@
 title: Portas Rápidas para docas
 title_en: Fast dock doors
 title_es: Puertas de muelle rápidas
-applications: 
+body_en: Fast and intelligent solutions for the most diverse locations that need
+  to divide environments and special rooms, which generates better use of spaces
+  and processes. They can also act as true sanitary barriers and prevent
+  contaminants from entering the environment. They guarantee quick passage of
+  people and equipment, in addition to protecting the environment against
+  temperature variations, contamination and the entry of insects.
+body_es: Soluciones rápidas e inteligentes para las más diversas ubicaciones que
+  necesitan dividir ambientes y salas especiales, lo que genera un mejor
+  aprovechamiento de espacios y procesos. También pueden actuar como verdaderas
+  barreras sanitarias e impedir la entrada de contaminantes al medio ambiente.
+  Garantizan el rápido paso de personas y equipos, además de proteger el
+  ambiente contra las variaciones de temperatura, la contaminación y la entrada
+  de insectos.
+applications:
   - Áreas frigoríficas
   - CDs de estocagem
   - Atacadistas
   - Centros de distribuição
-applications_en: 
+applications_en:
   - Refrigerated areas
   - Stock CDs
   - Wholesalers
@@ -17,11 +30,7 @@ applications_es:
   - CD de archivo
   - Mayoristas
   - Centros de distribución
-body_en: |-
-  Fast and intelligent solutions for the most diverse locations that need to divide environments and special rooms, which generates better use of spaces and processes. They can also act as true sanitary barriers and prevent contaminants from entering the environment. They guarantee quick passage of people and equipment, in addition to protecting the environment against temperature variations, contamination and the entry of insects.
-body_es: |-
-  Soluciones rápidas e inteligentes para las más diversas ubicaciones que necesitan dividir ambientes y salas especiales, lo que genera un mejor aprovechamiento de espacios y procesos. También pueden actuar como verdaderas barreras sanitarias e impedir la entrada de contaminantes al medio ambiente. Garantizan el rápido paso de personas y equipos, además de proteger el ambiente contra las variaciones de temperatura, la contaminación y la entrada de insectos.
-position: 4
+position: 3
 images:
   - ../../assets/images/portas-rapidas-para-docas-1.png
   - ../../assets/images/portas-rapidas-para-docas-2.png
