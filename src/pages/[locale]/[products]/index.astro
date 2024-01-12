@@ -68,7 +68,7 @@ const config = await getEntry("config", "index");
               {resolvePropByLocale(product.data, "title", locale)}
             </h2>
             <div class="flex flex-grow justify-center">
-              {product.data.images.map((image, index) => (
+              {product.data.images.slice(0, 3).map((image, index) => (
                 <div
                   class="text-border"
                   transition:name={`product-${product.slug}-${index}`}

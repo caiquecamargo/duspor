@@ -56,7 +56,7 @@ const youtubeId =
         <Logo class="w-[100px] md:w-[200px] h-10 md:h-20 text-white md:mt-4" />
       </div>
       {
-        product.data.images.map((image, index) => (
+        product.data.images.slice(0, 3).map((image, index) => (
           <div
             class="text-border-primary"
             transition:name={`product-${product.slug}-${index}`}
