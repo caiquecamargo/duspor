@@ -1,10 +1,11 @@
 ---
 import MobileMenu from "@/components/v-mobile-menu.vue";
 import type { Locales, TranslationKey } from "@/i18n";
-import { $t, resolveLocaleURL } from "@/i18n";
+import { $t, resolveLocaleURL, resolvePropByLocale } from "@/i18n";
 import Logo from "~icons/local/logo";
 import BaseHeader from "./base-header.astro";
 import TranslationButton from "./translation-button.astro";
+import { getCollection } from "astro:content";
 
 type Props = {
   page: string;
@@ -12,7 +13,16 @@ type Props = {
   colored?: boolean;
 };
 
+type Link = {
+  href: TranslationKey;
+  name: TranslationKey;
+  label: TranslationKey;
+  menu?: Array<{ href: string; label: string }>;
+};
+
 const { page, locale = "pt", colored = false } = Astro.props as Props;
+
+const products = await getCollection("products");
 
 const links = [
   {
@@ -29,6 +39,10 @@ const links = [
     href: "routes.products.path",
     name: "routes.products.page",
     label: "routes.products.title",
+    menu: products.map(({ data, slug }) => ({
+      href: `${resolveLocaleURL("routes.products.path", locale)}/${slug}`,
+      label: resolvePropByLocale(data, "title", locale),
+    })),
   },
   {
     href: "routes.budget.path",
@@ -40,13 +54,18 @@ const links = [
     name: "routes.contact.page",
     label: "routes.contact.title",
   },
-] satisfies Array<Record<string, TranslationKey>>;
+] satisfies Link[];
 ---
 
 <BaseHeader class:list={[colored ? "bg-primary" : "bg-white"]}>
   <a href={`/${locale}`} slot="start" class="flex-grow-0">
     <span class="sr-only">Duspor logo</span>
-    <Logo class:list={["w-60 h-12", colored ? "text-white" : "text-primary"]} />
+    <Logo
+      class:list={[
+        "w-40 md:w-60 h-10 md:h-12",
+        colored ? "text-white" : "text-primary",
+      ]}
+    />
   </a>
 
   <nav
@@ -55,9 +74,9 @@ const links = [
   >
     {
       links.map((link) => (
-        <a
+        <div
           class:list={[
-            "whitespace-nowrap text-sm font-bold",
+            "whitespace-nowrap text-sm font-bold relative group",
             colored ? "hover:text-black" : "hover:text-primary",
             page === $t(link.name)
               ? colored
@@ -67,10 +86,36 @@ const links = [
                 ? "text-white"
                 : "text-black",
           ]}
-          href={resolveLocaleURL(link.href, locale)}
         >
-          {$t(link.label, locale).toUpperCase()}
-        </a>
+          <a href={resolveLocaleURL(link.href, locale)}>
+            {$t(link.label, locale).toUpperCase()}
+          </a>
+
+          {link.menu && (
+            <div
+              class:list={[
+                "absolute w-fit max-h-96 overflow-y-auto p-2 translate-y-4 opacity-0 transition-all duration-150 pointer-events-none group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto",
+                colored ? "bg-primary text-white" : "bg-white text-black",
+              ]}
+            >
+              <ul>
+                {link.menu.map(({ href, label }) => (
+                  <li class="px-1 py-2">
+                    <a
+                      class:list={[
+                        "font-semibold",
+                        colored ? "hover:text-black" : "hover:text-primary",
+                      ]}
+                      href={href}
+                    >
+                      {label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       ))
     }
 
@@ -85,7 +130,7 @@ const links = [
           colored ? "text-white bg-primary" : "text-primary bg-white",
         ]}
       >
-        <nav class="flex flex-col gap-2">
+        <nav class="flex flex-col gap-2 overflow-y-auto pb-2">
           <a href={`/${locale}`} slot="start" class="flex-grow-0 pb-4">
             <span class="sr-only">Duspor logo</span>
             <Logo
@@ -97,21 +142,42 @@ const links = [
           </a>
           {
             links.map((link) => (
-              <a
+              <div
                 class:list={[
                   "text-left",
                   colored ? "hover:text-black" : "hover:text-primary",
                   page === $t(link.name) ? "font-semibold" : "",
                 ]}
-                href={resolveLocaleURL(link.href, locale)}
               >
-                {$t(link.label, locale).toUpperCase()}
-              </a>
+                <a href={resolveLocaleURL(link.href, locale)}>
+                  {$t(link.label, locale).toUpperCase()}
+                </a>
+
+                {link.menu && (
+                  <ul>
+                    {link.menu.map(({ href, label }) => (
+                      <li class="px-2 py-1 text-sm">
+                        <a
+                          class:list={[
+                            "font-semibold",
+                            colored ? "hover:text-black" : "hover:text-primary",
+                          ]}
+                          href={href}
+                        >
+                          {label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             ))
           }
         </nav>
 
-        <nav class="self-start flex items-center justify-between w-full">
+        <nav
+          class="self-start flex items-center justify-between w-full flex-shrink-0"
+        >
           <div><TranslationButton colored={colored} locale={locale} /></div>
         </nav>
       </div>
