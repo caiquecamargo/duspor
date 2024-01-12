@@ -28,10 +28,19 @@ description_es: Somos una empresa completa especializada en el montaje y
   nuestros clientes, evolucionamos hasta Duspor. Diseñamos y desarrollamos
   nuestros productos con el objetivo de brindar seguridad, eficiencia y calidad
   a nuestros clientes.
+mission: Oferecer soluções em portas industriais com excelência, segurança e qualidade.
+mission_en: Offer industrial door solutions with excellence, safety and quality.
+mission_es: Ofrecer soluciones en puertas industriales con excelencia, seguridad y calidad.
+vision: Ser referência no mercado de portas industriais.
+vision_en: Be a reference in the industrial doors market.
+vision_es: Ser referencia en el mercado de puertas industriales.
+values: Ser referência no mercado de portas industriais.
+values_en: Be a reference in the industrial doors market.
+values_es: Ser referencia en el mercado de puertas industriales.
 dna: Nosso DNA
 dna_en: Our DNA
 dna_es: Nuestro ADN
-values:
+dnas:
   - title: Tranquilidade
     title_en: Tranquility
     title_es: Tranquilidad

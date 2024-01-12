@@ -161,6 +161,33 @@ const aboutPage = defineFileCollectionEntry({
     ),
     ...createLocalizedField(
       defineMarkdownWidget({
+        name: 'mission',
+        label: 'Missão',
+        editor_components: [],
+        modes: ["rich_text"],
+        required: true,
+      })
+    ),
+    ...createLocalizedField(
+      defineMarkdownWidget({
+        name: 'vision',
+        label: 'Visão',
+        editor_components: [],
+        modes: ["rich_text"],
+        required: true,
+      })
+    ),
+    ...createLocalizedField(
+      defineMarkdownWidget({
+        name: 'values',
+        label: 'Valores',
+        editor_components: [],
+        modes: ["rich_text"],
+        required: true,
+      })
+    ),
+    ...createLocalizedField(
+      defineMarkdownWidget({
         name: 'dna',
         label: 'Nosso DNA',
         editor_components: [],
@@ -169,7 +196,7 @@ const aboutPage = defineFileCollectionEntry({
       })
     ),
     defineListWidget({
-      name: 'values',
+      name: 'dnas',
       label: 'DNAs',
       allow_add: true,
       max: 5,

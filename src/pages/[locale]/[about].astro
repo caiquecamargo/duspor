@@ -24,6 +24,24 @@ const { locale } = Astro.params;
 
 const about = await getEntry("about", "index");
 const config = await getEntry("config", "index");
+
+const mission = {
+  title: "Missão",
+  title_en: "Mission",
+  title_es: "Misión",
+};
+
+const vision = {
+  title: "Visão",
+  title_en: "Vision",
+  title_es: "Visión",
+};
+
+const values = {
+  title: "Valores",
+  title_en: "Values",
+  title_es: "Valores",
+};
 ---
 
 <Layout colored title={$t("routes.about.title", locale)}>
@@ -69,7 +87,7 @@ const config = await getEntry("config", "index");
 
       <div class="relative h-64 mt-16 hidden lg:block">
         {
-          about.data.values.map((dna, index) => (
+          about.data.dnas.map((dna, index) => (
             <div
               class:list={[
                 "flex justify-center items-center absolute",
@@ -98,7 +116,7 @@ const config = await getEntry("config", "index");
 
       <div class="relative h-80 mt-16 hidden md:block lg:hidden">
         {
-          about.data.values.map((dna, index) => (
+          about.data.dnas.map((dna, index) => (
             <div
               class:list={[
                 "flex justify-center items-center absolute w-[150px]",
@@ -127,7 +145,7 @@ const config = await getEntry("config", "index");
 
       <div class="relative h-72 mt-8 block md:hidden">
         {
-          about.data.values.map((dna, index) => (
+          about.data.dnas.map((dna, index) => (
             <div
               class:list={[
                 "flex justify-center items-center absolute w-[100px]",
@@ -165,6 +183,48 @@ const config = await getEntry("config", "index");
       icon={IcSharpWhatsapp}
       text={$t("home.contact", locale)}
     />
+
+    <section class="text-white">
+      <h3
+        class="uppercase text-xl md:text-3xl font-bold"
+        set:html={resolvePropByLocale(mission, "title", locale)}
+      />
+
+      <div class="text-white mt-4 text-justify leading-relaxed md:text-lg">
+        <div
+          class="text-justify"
+          set:html={marked(resolvePropByLocale(about.data, "mission", locale))}
+        />
+      </div>
+    </section>
+
+    <section class="text-white mt-12">
+      <h3
+        class="uppercase text-xl md:text-3xl font-bold"
+        set:html={resolvePropByLocale(vision, "title", locale)}
+      />
+
+      <div class="text-white mt-4 text-justify leading-relaxed md:text-lg">
+        <div
+          class="text-justify"
+          set:html={marked(resolvePropByLocale(about.data, "vision", locale))}
+        />
+      </div>
+    </section>
+
+    <section class="text-white mt-12">
+      <h3
+        class="uppercase text-xl md:text-3xl font-bold"
+        set:html={resolvePropByLocale(values, "title", locale)}
+      />
+
+      <div class="text-white mt-4 text-justify leading-relaxed md:text-lg">
+        <div
+          class="text-justify"
+          set:html={marked(resolvePropByLocale(about.data, "values", locale))}
+        />
+      </div>
+    </section>
   </Container>
 
   <Footer colored />
