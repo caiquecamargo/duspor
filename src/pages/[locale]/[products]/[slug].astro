@@ -34,6 +34,12 @@ const product = await getEntry("products", slug);
 const description =
   resolvePropByLocale(product.data, "body" as any, locale) ?? product.body;
 const Description = await marked(description);
+
+const youtubeId =
+  product.data.youtube &&
+  (product.data.youtube.startsWith("http")
+    ? product.data.youtube.split("v=").pop()
+    : product.data.youtube);
 ---
 
 <Layout colored title={$t("routes.products.title", locale)}>
@@ -124,6 +130,20 @@ const Description = await marked(description);
         ))
       }
     </ul>
+
+    {
+      youtubeId && (
+        <iframe
+          class="w-full h-auto aspect-video pr-2 mt-12"
+          width="560"
+          height="315"
+          src={`https://www.youtube.com/embed/${youtubeId}`}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        />
+      )
+    }
   </Container>
 
   <Footer colored />

@@ -59,6 +59,11 @@ const products = defineFolderCollection({
       min: 1,
       default: 100,
     }),
+    defineStringWidget({
+      name: 'youtube',
+      label: 'Link do Youtube (pode ser apenas o ID)',
+      required: false,
+    }),
     defineImageWidget({
       name: 'images',
       allow_multiple: true,

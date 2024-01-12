@@ -12,6 +12,7 @@ const products = defineCollection({
     applications_en: z.array(z.string()),
     applications_es: z.array(z.string()),
     position: z.number(),
+    youtube: z.ostring(),
     images: z.array(image()),
   })
 })
