@@ -1,6 +1,7 @@
 ---
 import Container from "@/components/container.astro";
 import Footer from "@/components/footer.astro";
+import GalleryModal from "@/components/gallery-modal.astro";
 import Header from "@/components/header.astro";
 import Hexagon from "@/components/hexagon.astro";
 import { $t, locales, resolvePropByLocale } from "@/i18n";
@@ -142,6 +143,24 @@ const youtubeId =
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         />
+      )
+    }
+
+    {
+      (
+        <div class="mt-12">
+          <GalleryModal>
+            {product.data.images.map((image) => (
+              <Image
+                class={
+                  image.height > image.width ? "h-full w-auto" : "w-full h-auto"
+                }
+                src={image}
+                alt={product.data.title}
+              />
+            ))}
+          </GalleryModal>
+        </div>
       )
     }
   </Container>

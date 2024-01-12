@@ -1,0 +1,167 @@
+---
+type Props = {
+  color?: "primary" | "secondary";
+  class?: string;
+};
+
+const { color = "primary", class: _class } = Astro.props as Props;
+---
+
+<gallery-modal>
+  <div class="gallery grid lg:grid-cols-2 gap-4 p-1 pr-2">
+    <slot />
+  </div>
+
+  <div
+    class="gallery-modal fixed inset-0 z-50 py-24 px-8 transition-all duration-300"
+  >
+    <div class="gallery-background absolute inset-0 z-0 bg-black/50"></div>
+    <div class:list={["swiper", _class]} data-color={color}>
+      <div class="swiper-wrapper">
+        <slot />
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <style>
+    .gallery-modal {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .gallery-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</gallery-modal>
+
+<style is:global>
+  .swiper {
+    --swiper-pagination-bullet-border-radius: 0;
+    --swiper-pagination-bullet-width: 2rem;
+    --swiper-pagination-bullet-height: 0.18rem;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bottom: 12px;
+    --swiper-pagination-bullet-inactive-color: rgb(209 213 219);
+  }
+</style>
+
+<script>
+  import type { Props } from "astro";
+  import Swiper from "swiper";
+  import "swiper/css";
+  import "swiper/css/navigation";
+  import "swiper/css/pagination";
+  import { Navigation, Pagination } from "swiper/modules";
+
+  class GalleryModal extends HTMLElement {
+    #swiper: Swiper | undefined;
+
+    constructor() {
+      super();
+
+      const gallery = this.querySelector(".gallery") as HTMLElement;
+      const background = this.querySelector(
+        ".gallery-background",
+      ) as HTMLElement;
+      const modal = this.querySelector(".gallery-modal") as HTMLElement;
+      const element = this.querySelector(".swiper") as HTMLElement;
+      const color = element.dataset.color as Props["color"];
+      const wrapper = element.querySelector(".swiper-wrapper") as HTMLElement;
+      const pagination = element.querySelector(
+        ".swiper-pagination",
+      ) as HTMLElement;
+
+      if (
+        !modal ||
+        !background ||
+        !gallery ||
+        !gallery.children.length ||
+        !element ||
+        !element.children.length ||
+        !wrapper ||
+        !wrapper.children.length ||
+        !pagination
+      ) {
+        return;
+      }
+
+      document.body.style.setProperty(
+        "--swiper-pagination-color",
+        `rgb(var(--color-${color}))`,
+      );
+
+      document.body.style.setProperty(
+        "--swiper-navigation-color",
+        `rgb(var(--color-${color}))`,
+      );
+
+      background.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      Array.from(gallery.children).forEach((child, index) => {
+        child.addEventListener("click", () => {
+          modal.classList.add("active");
+
+          this.#swiper?.slideTo(index);
+        });
+      });
+
+      Array.from(wrapper.children).forEach((child) => {
+        const div = document.createElement("div");
+        div.classList.add(
+          "swiper-slide",
+          "h-[80vh]",
+          "flex",
+          "items-center",
+          "justify-center",
+        );
+
+        div.addEventListener("click", () => {
+          modal.classList.remove("active");
+        });
+
+        child.addEventListener("click", (event) => {
+          event.stopPropagation();
+        });
+
+        div.appendChild(child);
+        wrapper.appendChild(div);
+      });
+
+      this.#swiper = new Swiper(element, {
+        modules: [Pagination, Navigation],
+
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        pagination: {
+          el: pagination,
+          clickable: true,
+        },
+      });
+
+      document.addEventListener(
+        "astro:after-swap",
+        this.updateSwiper.bind(this),
+        { once: true },
+      );
+    }
+
+    updateSwiper() {
+      this.#swiper?.update();
+    }
+  }
+
+  customElements.define("gallery-modal", GalleryModal);
+</script>
