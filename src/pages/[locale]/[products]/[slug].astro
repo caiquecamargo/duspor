@@ -31,6 +31,8 @@ const page = "produtos";
 const { locale, slug } = Astro.params;
 
 const product = await getEntry("products", slug);
+const hasSubproducts =
+  !!product.data.subproducts && product.data.subproducts.length > 0;
 
 const description =
   resolvePropByLocale(product.data, "body" as any, locale) ?? product.body;
@@ -151,17 +153,78 @@ const youtubeId =
         <div class="mt-12">
           <GalleryModal>
             {product.data.images.map((image) => (
+              <div class="flex items-center justify-center cursor-pointer">
+                <Hexagon size="3xl">
+                  <Image
+                    class={
+                      image.height < image.width
+                        ? "h-full w-auto"
+                        : "w-full h-auto"
+                    }
+                    src={image}
+                    alt={product.data.title}
+                  />
+                </Hexagon>
+              </div>
+            ))}
+
+            {product.data.images.map((image) => (
               <Image
                 class={
                   image.height > image.width ? "h-full w-auto" : "w-full h-auto"
                 }
                 src={image}
                 alt={product.data.title}
+                slot="gallery"
               />
             ))}
           </GalleryModal>
         </div>
       )
+    }
+
+    {
+      hasSubproducts &&
+        product.data.subproducts?.map((subproduct) => (
+          <div class="mt-16">
+            <h2 class="uppercase font-bold text-2xl lg:text-4xl text-white underline underline-offset-8">
+              {resolvePropByLocale(subproduct, "title", locale)}
+            </h2>
+
+            <div class="mt-12">
+              <GalleryModal>
+                {subproduct.images.map((image) => (
+                  <div class="flex items-center justify-center cursor-pointer">
+                    <Hexagon size="3xl">
+                      <Image
+                        class={
+                          image.height < image.width
+                            ? "h-full w-auto"
+                            : "w-full h-auto"
+                        }
+                        src={image}
+                        alt={subproduct.title}
+                      />
+                    </Hexagon>
+                  </div>
+                ))}
+
+                {subproduct.images.map((image) => (
+                  <Image
+                    class={
+                      image.height > image.width
+                        ? "h-full w-auto"
+                        : "w-full h-auto"
+                    }
+                    src={image}
+                    alt={subproduct.title}
+                    slot="gallery"
+                  />
+                ))}
+              </GalleryModal>
+            </div>
+          </div>
+        ))
     }
   </Container>
 

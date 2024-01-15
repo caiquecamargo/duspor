@@ -35,6 +35,19 @@ images:
   - ../../assets/images/portas-rapidas-1.png
   - ../../assets/images/imagem-do-whatsapp-de-2023-09-29-à-s-16.13.40.jpg
   - ../../assets/images/porta-rápida-resfriados.jpeg
+subproducts:
+  - images:
+      - ../../assets/images/img-20230914-wa0083.jpg
+      - ../../assets/images/img-20230801-wa0120.jpg
+    title: Portas estocagem congelados
+    title_en: Frozen storage doors
+    title_es: Puertas de almacenamiento de congelados
+  - title: Portas túneis de congelamento
+    images:
+      - ../../assets/images/portas-rapidas-para-docas-1.png
+      - ../../assets/images/portas-rapidas-para-docas-2.png
+    title_es: Puertas de túnel de congelación
+    title_en: Freezing tunnel doors
 ---
 
 Soluções rápidas e inteligentes para os mais diversos locais que necessitam realizar a divisão de ambientes e salas especiais, o que gera melhor aproveitamento dos espaços e processos. Elas também podem atuar como verdadeiras barreiras sanitárias e evitam a entrada de contaminantes no ambiente. Garantem uma passagem rápida de pessoas e equipamentos, além de proteger o ambiente contra variações de temperaturas, contaminações e entrada de insetos.

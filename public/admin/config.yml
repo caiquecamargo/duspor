@@ -1,7 +1,8 @@
+local_backend: true
 backend:
   name: git-gateway
   branch: main
-locale: pt-BR
+locale: pt
 media_folder: src/assets/images
 public_folder: ../../assets/images
 collections:
@@ -78,6 +79,36 @@ collections:
         allow_multiple: true
         label: Imagens
         required: true
+        media_library:
+          config:
+            multiple: true
+      - widget: list
+        name: subproducts
+        label: Subprodutos
+        allow_add: true
+        label_singular: Subproduto
+        required: false
+        fields:
+          - widget: string
+            name: title
+            label: Título
+            required: true
+          - widget: string
+            name: title_en
+            label: Título (Inglês)
+            required: true
+          - widget: string
+            name: title_es
+            label: Título (Espanhol)
+            required: true
+          - widget: image
+            name: images
+            label: Imagems
+            required: true
+            allow_multiple: true
+            media_library:
+              config:
+                multiple: true
   - name: pages
     label: Configuração das páginas
     files:
@@ -137,6 +168,9 @@ collections:
             label: Imagem da descrição
             required: true
             allow_multiple: true
+            media_library:
+              config:
+                multiple: true
           - widget: markdown
             name: clients
             label: Clientes
@@ -160,6 +194,9 @@ collections:
             name: images
             allow_multiple: true
             label: Logo dos clients
+            media_library:
+              config:
+                multiple: true
       - name: about
         label: Página sobre
         file: src/content/about/index.md

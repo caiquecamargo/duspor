@@ -69,6 +69,34 @@ const products = defineFolderCollection({
       allow_multiple: true,
       label: 'Imagens',
       required: true,
+      media_library: {
+        config: {
+          multiple: true
+        }
+      }
+    }),
+    defineListWidget({
+      name: 'subproducts',
+      label: 'Subprodutos',
+      allow_add: true,
+      label_singular: 'Subproduto',
+      required: false,
+      fields: [
+          ...createLocalizedField(
+            defineStringWidget({ name: 'title', label: 'Título', required: true }),
+          ),
+          defineImageWidget({ 
+            name: 'images', 
+            label: 'Imagems', 
+            required: true, 
+            allow_multiple: true,
+            media_library: {
+              config: {
+                multiple: true
+              }
+            }
+          }),
+        ]
     })
   ]
 })
@@ -112,6 +140,11 @@ const homePage = defineFileCollectionEntry({
       label: 'Imagem da descrição',
       required: true,
       allow_multiple: true,
+      media_library: {
+        config: {
+          multiple: true
+        }
+      }
     }),
     ...createLocalizedField(
       defineMarkdownWidget({
@@ -126,6 +159,11 @@ const homePage = defineFileCollectionEntry({
       name: 'images',
       allow_multiple: true,
       label: 'Logo dos clients',
+      media_library: {
+        config: {
+          multiple: true
+        }
+      }
     })
   ]
 });
@@ -346,11 +384,12 @@ const config = defineFileCollection({
 })
 
 export default defineConfig({
+  local_backend: true,
   backend: {
     name: 'git-gateway',
     branch: 'main',
   },
-  locale: 'pt-BR',
+  locale: 'pt',
   media_folder: 'src/assets/images',
   public_folder: '../../assets/images',
 

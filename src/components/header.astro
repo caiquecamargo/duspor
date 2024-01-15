@@ -22,7 +22,9 @@ type Link = {
 
 const { page, locale = "pt", colored = false } = Astro.props as Props;
 
-const products = await getCollection("products");
+const products = (await getCollection("products")).sort(
+  (a, b) => a.data.position - b.data.position,
+);
 
 const links = [
   {

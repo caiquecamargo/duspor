@@ -8,7 +8,7 @@ const { color = "primary", class: _class } = Astro.props as Props;
 ---
 
 <gallery-modal>
-  <div class="gallery grid lg:grid-cols-2 gap-4 p-1 pr-2">
+  <div class="gallery grid lg:grid-cols-2 xl:grid-cols-3 gap-4 p-1 pr-2">
     <slot />
   </div>
 
@@ -18,7 +18,7 @@ const { color = "primary", class: _class } = Astro.props as Props;
     <div class="gallery-background absolute inset-0 z-0 bg-black/50"></div>
     <div class:list={["swiper", _class]} data-color={color}>
       <div class="swiper-wrapper">
-        <slot />
+        <slot name="gallery" />
       </div>
 
       <div class="swiper-pagination"></div>

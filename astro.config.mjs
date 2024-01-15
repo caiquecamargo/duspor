@@ -29,7 +29,10 @@ export default defineConfig({
           local: FileSystemIconLoader('./src/assets/icons'),
         },
       }),
-      NetlifyCMS(),
+      NetlifyCMS({
+        iconUrl: "/logo-min.svg",
+        title: "Duspor | Admin",
+      }),
       I18nPlugin({
         locales: ["pt", "en", "es"],
         defaultLocale: "pt",
