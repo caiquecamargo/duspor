@@ -32,7 +32,8 @@
   },
   "products": {
     "title": "Nuestros productos",
-    "applications": "Aplicaciones"
+    "applications": "Aplicaciones",
+    "manuals": "Manuales"
   },
   "contact": {
     "talkToUs": "Hable con nosotros"

@@ -74,6 +74,25 @@ collections:
         name: youtube
         label: Link do Youtube (pode ser apenas o ID)
         required: false
+      - widget: list
+        name: manuals
+        label: Manuais
+        required: false
+        allow_add: true
+        fields:
+          - widget: string
+            name: title
+            label: Título
+            required: true
+          - widget: file
+            name: link
+            label: Manual
+            required: true
+            allow_multiple: false
+            media_folder: /public/assets/manuals
+            media_library:
+              config:
+                multiple: false
       - widget: image
         name: images
         allow_multiple: true

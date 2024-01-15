@@ -31,6 +31,11 @@ applications_es:
   - Mayoristas
   - Centros de distribución
 position: 1
+manuals:
+  - title: Passagem de cabos
+    link: /public/assets/manuals/dus-op000-passagem-cabos-sensor.pdf
+  - title: Encoder
+    link: /public/assets/manuals/dus-op000-encoder.pdf
 images:
   - ../../assets/images/portas-rapidas-1.png
   - ../../assets/images/imagem-do-whatsapp-de-2023-09-29-à-s-16.13.40.jpg

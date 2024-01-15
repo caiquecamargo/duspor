@@ -10,6 +10,7 @@ import { Image } from "astro:assets";
 import { getCollection, getEntry } from "astro:content";
 import { marked } from "marked";
 import Logo from "~icons/local/logo";
+import PDFIcon from "~icons/mdi/file-pdf";
 
 export async function getStaticPaths() {
   const products = await getCollection("products");
@@ -34,6 +35,8 @@ const product = await getEntry("products", slug);
 const hasSubproducts =
   !!product.data.subproducts && product.data.subproducts.length > 0;
 
+const hasManuals = !!product.data.manuals && product.data.manuals.length > 0;
+
 const description =
   resolvePropByLocale(product.data, "body" as any, locale) ?? product.body;
 const Description = await marked(description);
@@ -43,6 +46,10 @@ const youtubeId =
   (product.data.youtube.startsWith("http")
     ? product.data.youtube.split("v=").pop()
     : product.data.youtube);
+
+const resolvePublicPath = (path: string) => {
+  return path.startsWith("/public") ? path.replace("/public", "") : path;
+};
 ---
 
 <Layout colored title={$t("routes.products.title", locale)}>
@@ -110,9 +117,9 @@ const youtubeId =
       set:html={Description}
     />
 
-    <h3 class="mt-12 text-xl md:text-4xl uppercase text-white font-bold">
+    <h2 class="mt-12 text-xl md:text-4xl uppercase text-white font-bold">
       {$t("products.applications", locale)}:
-    </h3>
+    </h2>
 
     <ul class="mt-4 text-white">
       {
@@ -133,6 +140,29 @@ const youtubeId =
         ))
       }
     </ul>
+
+    {
+      hasManuals && (
+        <section>
+          <h2 class="mt-12 text-xl md:text-4xl uppercase text-white font-bold">
+            {$t("products.manuals", locale)}:
+          </h2>
+          {product.data.manuals?.map(({ title, link }) => (
+            <div class="flex items-center mt-4">
+              <PDFIcon class="size-6 text-white mr-2" />
+              <a
+                class="text-white"
+                href={resolvePublicPath(link)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {title}
+              </a>
+            </div>
+          ))}
+        </section>
+      )
+    }
 
     {
       youtubeId && (

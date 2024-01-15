@@ -13,6 +13,10 @@ const products = defineCollection({
     applications_es: z.array(z.string()),
     position: z.number(),
     youtube: z.ostring(),
+    manuals: z.array(z.object({
+      title: z.string(),
+      link: z.string(),
+    })).optional(),
     images: z.array(image()),
     subproducts: z.array(z.object({
       title: z.string(),

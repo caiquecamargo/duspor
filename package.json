@@ -38,6 +38,7 @@
     "@iconify-json/heroicons": "^1.1.19",
     "@iconify-json/ic": "^1.1.17",
     "@iconify-json/material-symbols": "^1.1.70",
+    "@iconify-json/mdi": "^1.1.55",
     "@iconify-json/ph": "^1.1.10",
     "@iconify-json/twemoji": "^1.1.15",
     "@iconify-json/typcn": "^1.1.9"
