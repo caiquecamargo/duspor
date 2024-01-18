@@ -22,6 +22,10 @@ const products = defineCollection({
       title: z.string(),
       title_en: z.string(),
       title_es: z.string(),
+      description: z.ostring(),
+      description_en: z.ostring(),
+      description_es: z.ostring(),
+      youtube: z.ostring(),
       images: z.array(image()),
     })).optional()
   })

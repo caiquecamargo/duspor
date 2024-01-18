@@ -106,6 +106,14 @@ const products = defineFolderCollection({
           ...createLocalizedField(
             defineStringWidget({ name: 'title', label: 'Título', required: true }),
           ),
+          ...createLocalizedField(
+            defineStringWidget({ name: 'description', label: 'Descrição', required: false }),
+          ),
+          defineStringWidget({
+            name: 'youtube',
+            label: 'Link do Youtube (pode ser apenas o ID)',
+            required: false,
+          }),
           defineImageWidget({ 
             name: 'images', 
             label: 'Imagems', 

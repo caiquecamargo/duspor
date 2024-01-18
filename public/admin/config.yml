@@ -120,6 +120,22 @@ collections:
             name: title_es
             label: Título (Espanhol)
             required: true
+          - widget: string
+            name: description
+            label: Descrição
+            required: false
+          - widget: string
+            name: description_en
+            label: Descrição (Inglês)
+            required: false
+          - widget: string
+            name: description_es
+            label: Descrição (Espanhol)
+            required: false
+          - widget: string
+            name: youtube
+            label: Link do Youtube (pode ser apenas o ID)
+            required: false
           - widget: image
             name: images
             label: Imagems

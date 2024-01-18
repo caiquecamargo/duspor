@@ -41,11 +41,15 @@ const description =
   resolvePropByLocale(product.data, "body" as any, locale) ?? product.body;
 const Description = await marked(description);
 
-const youtubeId =
-  product.data.youtube &&
-  (product.data.youtube.startsWith("http")
-    ? product.data.youtube.split("v=").pop()
-    : product.data.youtube);
+const resolveYoutubeId = (url?: string) => {
+  if (!url) return null;
+  if (url.startsWith("http")) {
+    return url.split("/").pop();
+  }
+  return url;
+};
+
+const youtubeId = resolveYoutubeId(product.data.youtube);
 
 const resolvePublicPath = (path: string) => {
   return path.startsWith("/public") ? path.replace("/public", "") : path;
@@ -221,6 +225,17 @@ const resolvePublicPath = (path: string) => {
               {resolvePropByLocale(subproduct, "title", locale)}
             </h2>
 
+            {subproduct.description && (
+              <section
+                class="space-y-4 text-white leading-relaxed mt-4 md:mt-12 md:text-lg"
+                set:html={resolvePropByLocale(
+                  subproduct,
+                  "description",
+                  locale,
+                )}
+              />
+            )}
+
             <div class="mt-12">
               <GalleryModal>
                 {subproduct.images.map((image) => (
@@ -253,6 +268,20 @@ const resolvePublicPath = (path: string) => {
                 ))}
               </GalleryModal>
             </div>
+
+            {subproduct.youtube && (
+              <iframe
+                class="w-full h-auto aspect-video pr-2 mt-12"
+                width="560"
+                height="315"
+                src={`https://www.youtube.com/embed/${resolveYoutubeId(
+                  subproduct.youtube,
+                )}`}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              />
+            )}
           </div>
         ))
     }
