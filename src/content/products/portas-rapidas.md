@@ -32,19 +32,15 @@ applications_es:
   - Centros de distribución
 position: 1
 youtube: https://youtube.com/shorts/JLarNa6WSUo
-manuals:
-  - title: Passagem de cabos
-    link: /public/assets/manuals/dus-op000-passagem-cabos-sensor.pdf
-  - title: Encoder
-    link: /public/assets/manuals/dus-op000-encoder.pdf
+manuals: []
 images:
-  - ../../assets/images/portas-rapidas-1.png
-  - ../../assets/images/imagem-do-whatsapp-de-2023-09-29-à-s-16.13.40.jpg
-  - ../../assets/images/porta-rápida-resfriados.jpeg
+  - ../../assets/images/07-portas-de-passagem-interna-e-externa-01.png
+  - ../../assets/images/04-portas-túneis-de-congelamento-02.png
+  - ../../assets/images/01-portas-rápidas-01.png
 subproducts:
   - images:
-      - ../../assets/images/img-20230914-wa0083.jpg
-      - ../../assets/images/img-20230801-wa0120.jpg
+      - ../../assets/images/01-portas-rápidas-01.png
+      - ../../assets/images/02-portas-rápidas-02.png
     title: Portas Estocagem Congelados
     title_en: Frozen storage doors
     title_es: Puertas de almacenamiento de congelados
@@ -72,22 +68,22 @@ subproducts:
     youtube: 8omAoyi7rNo
   - title: Portas Túneis de Congelamento
     images:
-      - ../../assets/images/portas-rapidas-para-docas-1.png
-      - ../../assets/images/portas-rapidas-para-docas-2.png
+      - ../../assets/images/03-portas-túneis-de-congelamento-01.png
+      - ../../assets/images/04-portas-túneis-de-congelamento-02.png
     title_es: Puertas de túnel de congelación
     title_en: Freezing tunnel doors
   - title: "Portas Estocagem de Resfriados "
     title_en: Cold Storage Doors
     title_es: Puertas de almacenamiento en frío
     images:
-      - ../../assets/images/foto-5.jpg
-      - ../../assets/images/foto-6.jpg
+      - ../../assets/images/05-portas-estocagem-resfriados-01.png
+      - ../../assets/images/06-portas-estocagem-resfriados-02.png
   - title: "Portas de Passagem Internas e Externas "
     title_es: Puertas de paso interior y exterior
     title_en: Internal and External Passage Doors
     images:
-      - ../../assets/images/foto-7.jpg
-      - ../../assets/images/foto-8.jpg
+      - ../../assets/images/07-portas-de-passagem-interna-e-externa-01.png
+      - ../../assets/images/08-portas-de-passagem-interna-e-externa-02.png
 ---
 
 Soluções rápidas e inteligentes para os mais diversos locais que necessitam realizar a divisão de ambientes e salas especiais, o que gera melhor aproveitamento dos espaços e processos. Elas também podem atuar como verdadeiras barreiras sanitárias e evitam a entrada de contaminantes no ambiente. Garantem uma passagem rápida de pessoas e equipamentos, além de proteger o ambiente contra variações de temperaturas, contaminações e entrada de insetos.
