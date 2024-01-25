@@ -31,6 +31,7 @@ applications_es:
   - Mayoristas
   - Centros de distribución
 position: 3
+youtube: https://www.youtube.com/shorts/JLarNa6WSUo
 images:
   - ../../assets/images/portas-rapidas-2.png
   - ../../assets/images/img-20230914-wa0083.jpg
