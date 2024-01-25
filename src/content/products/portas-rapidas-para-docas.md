@@ -30,7 +30,7 @@ applications_es:
   - CD de archivo
   - Mayoristas
   - Centros de distribución
-position: 3
+position: 2
 youtube: https://www.youtube.com/shorts/JLarNa6WSUo
 images:
   - ../../assets/images/portas-rapidas-2.png
