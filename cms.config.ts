@@ -90,9 +90,11 @@ const products = defineFolderCollection({
       allow_multiple: true,
       label: 'Imagens',
       required: true,
+      media_folder: '/src/assets/images',
+      public_folder: '../../assets/images',
       media_library: {
         config: {
-          multiple: true
+          multiple: true,
         }
       }
     }),
@@ -119,9 +121,11 @@ const products = defineFolderCollection({
             label: 'Imagems', 
             required: true, 
             allow_multiple: true,
+            media_folder: '/src/assets/images',
+            public_folder: '../../assets/images',
             media_library: {
               config: {
-                multiple: true
+                multiple: true,
               }
             }
           }),
