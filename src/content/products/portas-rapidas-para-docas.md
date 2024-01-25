@@ -33,9 +33,9 @@ applications_es:
 position: 2
 youtube: https://www.youtube.com/shorts/JLarNa6WSUo
 images:
-  - ../../assets/images/portas-rapidas-2.png
-  - ../../assets/images/img-20230914-wa0083.jpg
   - ../../assets/images/img-20230801-wa0120.jpg
+  - ../../assets/images/09-portas-rápidas-para-docas-01.png
+  - ../../assets/images/10-portas-rápidas-para-docas-02.png
 ---
 
 Soluções rápidas e inteligentes para os mais diversos locais que necessitam realizar a divisão de ambientes e salas especiais, o que gera melhor aproveitamento dos espaços e processos. Elas também podem atuar como verdadeiras barreiras sanitárias e evitam a entrada de contaminantes no ambiente. Garantem uma passagem rápida de pessoas e equipamentos, além de proteger o ambiente contra variações de temperaturas, contaminações e entrada de insetos.
