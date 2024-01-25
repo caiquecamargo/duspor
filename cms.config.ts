@@ -97,7 +97,7 @@ const products = defineFolderCollection({
           multiple: true,
         }
       }
-    }),
+    } as any),
     defineListWidget({
       name: 'subproducts',
       label: 'Subprodutos',
@@ -128,7 +128,7 @@ const products = defineFolderCollection({
                 multiple: true,
               }
             }
-          }),
+          } as any),
         ]
     })
   ]

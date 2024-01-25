@@ -15,21 +15,6 @@ body_es: Las puertas batientes y correderas con núcleo PIR o EPS, al tener
   semicontinuos y continuos, entre otras aplicaciones donde se requiere mayor
   robustez. En todas las situaciones, orientamos a nuestros clientes a elegir la
   mejor opción, para que la adquisición sea asertiva.
-applications:
-  - Áreas frigoríficas
-  - CDs de estocagem
-  - Atacadistas
-  - Centros de distribuição
-applications_en:
-  - Refrigerated areas
-  - Stock CDs
-  - Wholesalers
-  - Distribution centers
-applications_es:
-  - Áreas refrigeradas
-  - CD de archivo
-  - Mayoristas
-  - Centros de distribución
 position: 7
 images:
   - ../../assets/images/29-portas-de-correr-automáticas-e-manuais-02.png

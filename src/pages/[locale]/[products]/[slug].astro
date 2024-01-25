@@ -37,6 +37,13 @@ const hasSubproducts =
 
 const hasManuals = !!product.data.manuals && product.data.manuals.length > 0;
 
+const applications =
+  (resolvePropByLocale(
+    product.data,
+    "applications",
+    locale,
+  ) as unknown as string[]) ?? [];
+
 const description =
   resolvePropByLocale(product.data, "body" as any, locale) ?? product.body;
 const Description = await marked(description);
@@ -121,29 +128,33 @@ const resolvePublicPath = (path: string) => {
       set:html={Description}
     />
 
-    <h2 class="mt-12 text-xl md:text-4xl uppercase text-white font-bold">
-      {$t("products.applications", locale)}:
-    </h2>
+    {
+      !!applications.length && (
+        <section>
+          <h2 class="mt-12 text-xl md:text-4xl uppercase text-white font-bold">
+            {$t("products.applications", locale)}:
+          </h2>
 
-    <ul class="mt-4 text-white">
-      {
-        product.data.applications.map((application) => (
-          <li class="flex items-center space-x-2 md:text-lg">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-2 w-2"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <circle cx="10" cy="10" r="10" />
-              </svg>
-            </span>
-            <span>{application}</span>
-          </li>
-        ))
-      }
-    </ul>
+          <ul class="mt-4 text-white">
+            {applications.map((application) => (
+              <li class="flex items-center space-x-2 md:text-lg">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-2 w-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <circle cx="10" cy="10" r="10" />
+                  </svg>
+                </span>
+                <span>{application}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
 
     {
       hasManuals && (

@@ -8,9 +8,9 @@ const products = defineCollection({
     title_es: z.string(),
     body_en: z.string(),
     body_es: z.string(),
-    applications: z.array(z.string()),
-    applications_en: z.array(z.string()),
-    applications_es: z.array(z.string()),
+    applications: z.array(z.string()).optional(),
+    applications_en: z.array(z.string()).optional(),
+    applications_es: z.array(z.string()).optional(),
     position: z.number(),
     youtube: z.ostring(),
     manuals: z.array(z.object({

@@ -11,21 +11,6 @@ body_es: El modelo de puerta enrollable manual está pensado para su instalació
   ningún dispositivo de resorte, por lo que su mantenimiento es bajo. La
   estructura de la puerta puede ser de acero inoxidable o chapa prepintada de
   color blanco, con o sin visera.
-applications:
-  - Áreas frigoríficas
-  - CDs de estocagem
-  - Atacadistas
-  - Centros de distribuição
-applications_en:
-  - Refrigerated areas
-  - Stock CDs
-  - Wholesalers
-  - Distribution centers
-applications_es:
-  - Áreas refrigeradas
-  - CD de archivo
-  - Mayoristas
-  - Centros de distribución
 position: 3
 images:
   - ../../assets/images/11-portas-de-enrolar-manual-01.png
