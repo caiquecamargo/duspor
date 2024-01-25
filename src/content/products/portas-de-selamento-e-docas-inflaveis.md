@@ -30,7 +30,7 @@ applications_es:
   - CD de archivo
   - Mayoristas
   - Centros de distribución
-position: 2
+position: 4
 images:
   - ../../assets/images/portas-de-selamento-e-docas-inflaveis-1.png
   - ../../assets/images/portas-de-selamento-e-docas-inflaveis-2.png
