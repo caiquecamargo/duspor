@@ -35,6 +35,13 @@ images:
   - ../../assets/images/18-portas-vai-e-vem-01.png
   - ../../assets/images/19-portas-vai-e-vem-02.png
   - ../../assets/images/20-portas-vai-e-vem-03.png
+subproducts:
+  - title: "Portas Vai e Vem Flexíveis "
+    title_en: Flexible back and forth doors
+    title_es: Puertas flexibles de ida y vuelta
+    images:
+      - ../../assets/images/21-portas-vai-e-vem-flexíveis-01.png
+      - ../../assets/images/22-portas-vai-e-vem-flexíveis-02.png
 ---
 
 Soluções rápidas e inteligentes para os mais diversos locais que necessitam realizar a divisão de ambientes e salas especiais, o que gera melhor aproveitamento dos espaços e processos. Elas também podem atuar como verdadeiras barreiras sanitárias e evitam a entrada de contaminantes no ambiente. Garantem uma passagem rápida de pessoas e equipamentos, além de proteger o ambiente contra variações de temperaturas, contaminações e entrada de insetos.
