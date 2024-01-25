@@ -47,7 +47,7 @@ const products = defineFolderCollection({
     ...createLocalizedField(
       defineListWidget({
         name: 'applications',
-        label: 'Aplicações',
+        label: 'Aplicações (seperadas por vírgula, ex. "Aplicação 1, Aplicação 2")',
         allow_add: true,
         label_singular: 'Aplicação',
         required: true,
