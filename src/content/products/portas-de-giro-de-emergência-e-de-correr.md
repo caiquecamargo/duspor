@@ -15,6 +15,21 @@ body_es: Las puertas batientes y correderas con núcleo PIR o EPS, al tener
   semicontinuos y continuos, entre otras aplicaciones donde se requiere mayor
   robustez. En todas las situaciones, orientamos a nuestros clientes a elegir la
   mejor opción, para que la adquisición sea asertiva.
+applications:
+  - Portas de giro para túneis de congelamento com ou sem aquecimento
+  - Câmaras de resfriados
+  - Salas limpas
+  - Saídas de emergência com barra antipânico (vermelha ou branca)
+applications_en:
+  - Swing doors for freezing tunnels with or without heating
+  - Refrigeration chambers
+  - Clean rooms
+  - Emergency exits with anti-panic bars (red or white)
+applications_es:
+  - Puertas batientes para túneles de congelación con o sin calefacción
+  - Cámaras frigoríficas
+  - Salas blancas
+  - Salidas de emergencia con barras antipánico (rojas o blancas)
 position: 7
 images:
   - ../../assets/images/29-portas-de-correr-automáticas-e-manuais-02.png
@@ -40,5 +55,21 @@ subproducts:
     images:
       - ../../assets/images/28-portas-de-correr-automáticas-e-manuais-01.png
       - ../../assets/images/29-portas-de-correr-automáticas-e-manuais-02.png
+    description: "Portas de correr automáticas e manuais com e sem
+      aquecimento.  Fabricação de portas de correr automáticas com sistema de
+      embreagem magnética, na falta de energia, a porta fica liberada para a
+      abertura, também dispomos de portas manuais, todas com dimensões que
+      atendem a demanda solicitada, ou seja conforme a necessidade do cliente. "
+    description_en: Automatic and manual sliding doors with and without heating.
+      Manufacture of automatic sliding doors with a magnetic clutch system, in
+      the event of a power outage, the door is free to open. We also have manual
+      doors, all with dimensions that meet the requested demand, that is,
+      according to the customer's needs.
+    description_es: Puertas correderas automáticas y manuales con y sin calefacción.
+      Fabricación de puertas automáticas corredizas con sistema de embrague
+      magnético, ante un corte de energía eléctrica la puerta se abre
+      libremente, también contamos con puertas manuales, todas con dimensiones
+      que se ajustan a la demanda solicitada, es decir, según las necesidades
+      del cliente.
 ---
 Portas de giro e de correr com núcleo em PIR ou EPS, por terem objetividade no seu funciona- mento e baixa manutenção, é uma ótima opção para diversas áreas. Dispomos de alguns mode- los especiais, com marco aquecimento a óleo em aço inox, para serem instalados em túneis de congelamento semicontínuo, contínuo, entre outras aplicações onde demanda uma maior robustez. Em todas as situações orientamos nossos clientes a escolher a melhor opção, para que a aquisição seja assertiva.
