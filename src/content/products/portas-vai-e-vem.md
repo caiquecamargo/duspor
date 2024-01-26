@@ -2,19 +2,15 @@
 title: Portas vai e vem
 title_en: Doors come and go
 title_es: Puertas van y vienen
-body_en: Fast and intelligent solutions for the most diverse locations that need
-  to divide environments and special rooms, which generates better use of spaces
-  and processes. They can also act as true sanitary barriers and prevent
-  contaminants from entering the environment. They guarantee quick passage of
-  people and equipment, in addition to protecting the environment against
-  temperature variations, contamination and the entry of insects.
-body_es: Soluciones rápidas e inteligentes para las más diversas ubicaciones que
-  necesitan dividir ambientes y salas especiales, lo que genera un mejor
-  aprovechamiento de espacios y procesos. También pueden actuar como verdaderas
-  barreras sanitarias e impedir la entrada de contaminantes al medio ambiente.
-  Garantizan el rápido paso de personas y equipos, además de proteger el
-  ambiente contra las variaciones de temperatura, la contaminación y la entrada
-  de insectos.
+body_en: "Used in places with temperatures close to ambient, they are designed
+  to be used in light traffic of carts and people. Doors with or without
+  glazing, with finishing plates that can be produced in stainless steel or
+  white plate. Used in all segments that need doors to divide rooms:"
+body_es: "Utilizados en lugares con temperaturas cercanas a la ambiental, están
+  diseñados para ser utilizados en tránsito ligero de carros y personas. Puertas
+  con o sin acristalamiento, con chapas de acabado que pueden realizarse en
+  acero inoxidable o chapa blanca. Utilizado en todos los segmentos que
+  necesitan puertas para dividir ambientes:"
 applications:
   - Supermercados
   - Centros de Distribuição
@@ -75,6 +71,4 @@ subproducts:
       alguien pasa, ayudando a mantener la temperatura, la higiene y la
       seguridad en el ambiente.
 ---
-
-Soluções rápidas e inteligentes para os mais diversos locais que necessitam realizar a divisão de ambientes e salas especiais, o que gera melhor aproveitamento dos espaços e processos. Elas também podem atuar como verdadeiras barreiras sanitárias e evitam a entrada de contaminantes no ambiente. Garantem uma passagem rápida de pessoas e equipamentos, além de proteger o ambiente contra variações de temperaturas, contaminações e entrada de insetos.
-
+Utilizada em locais com temperatura próxima à ambiente, são projetadas para serem usadas em tráfego leve de carrinhos e pessoas. Portas com ou sem visor, com chapas de acabamento que podem ser produzidas em aço inox ou chapa branca. Usadas em todos os segmentos que precisam de portas para divisões de ambientes:
