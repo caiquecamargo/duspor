@@ -16,20 +16,23 @@ body_es: Soluciones rápidas e inteligentes para las más diversas ubicaciones q
   ambiente contra las variaciones de temperatura, la contaminación y la entrada
   de insectos.
 applications:
-  - Áreas frigoríficas
-  - CDs de estocagem
-  - Atacadistas
-  - Centros de distribuição
+  - Armazéns
+  - Silos de Grãos
+  - Depósitos Secos
+  - Hangares
+  - Condomínios Logísticos
 applications_en:
-  - Refrigerated areas
-  - Stock CDs
-  - Wholesalers
-  - Distribution centers
+  - Warehouses
+  - Grain Silos
+  - Dry Deposits
+  - Hangars
+  - Logistics Condominiums
 applications_es:
-  - Áreas refrigeradas
-  - CD de archivo
-  - Mayoristas
-  - Centros de distribución
+  - Almacenes
+  - Silos de Granos
+  - Depósitos Secos
+  - Hangares
+  - Condominios Logísticos
 position: 5
 youtube: https://youtube.com/shorts/bxQR4Qcyu40
 images:
