@@ -2,19 +2,31 @@
 title: Portais de selamento e docas infláveis
 title_en: Sealing doors and inflatable docks
 title_es: Sellado de puertas y muelles inflables.
-body_en: Fast and intelligent solutions for the most diverse locations that need
-  to divide environments and special rooms, which generates better use of spaces
-  and processes. They can also act as true sanitary barriers and prevent
-  contaminants from entering the environment. They guarantee quick passage of
-  people and equipment, in addition to protecting the environment against
-  temperature variations, contamination and the entry of insects.
-body_es: Soluciones rápidas e inteligentes para las más diversas ubicaciones que
-  necesitan dividir ambientes y salas especiales, lo que genera un mejor
-  aprovechamiento de espacios y procesos. También pueden actuar como verdaderas
-  barreras sanitarias e impedir la entrada de contaminantes al medio ambiente.
-  Garantizan el rápido paso de personas y equipos, además de proteger el
-  ambiente contra las variaciones de temperatura, la contaminación y la entrada
-  de insectos.
+body_en: Dock sealing is an essential resource to ensure environmental control
+  during cargo loading and unloading operations. Some segments require
+  controlled environments as a prerequisite to ensure the efficiency of their
+  operations. We have two options, one of which is the inflatable sealing
+  portal, developed for environments that require excellent sealing, preventing
+  the entry of insects, heat exchange, among others. Its constructive form is
+  independent of air from the local system, inflation automation via electric
+  motor. The second system is the Dry Sealing Portal, developed to allow better
+  coupling and sealing, where it absorbs frontal impacts from trucks on existing
+  rubber, by using a flexible and retractable structure. This difference results
+  in a considerable reduction in maintenance, as it eliminates damage to metal
+  structures and parts fixed to walls.
+body_es: El sellado de muelles es un recurso esencial para garantizar el control
+  ambiental durante las operaciones de carga y descarga de carga. Algunos
+  segmentos requieren entornos controlados como requisito previo para garantizar
+  la eficiencia de sus operaciones. Contamos con dos opciones, una de ellas es
+  el portal sellador inflable, desarrollado para ambientes que requieren un
+  excelente sellado, evitando el ingreso de insectos, intercambio de calor,
+  entre otros. Su forma constructiva es independiente del aire del sistema
+  local, automatización del inflado mediante motor eléctrico. El segundo sistema
+  es el Dry Sealing Portal, desarrollado para permitir un mejor acoplamiento y
+  sellado, donde absorbe los impactos frontales de los camiones sobre el caucho
+  existente, mediante el uso de una estructura flexible y retráctil. Esta
+  diferencia se traduce en una reducción considerable del mantenimiento, ya que
+  elimina daños en las estructuras metálicas y piezas fijadas a las paredes.
 applications:
   - Áreas frigoríficas
   - CDs de estocagem
@@ -36,6 +48,4 @@ images:
   - ../../assets/images/portas-de-selamento-e-docas-inflaveis-2.png
   - ../../assets/images/14-portais-de-selamento-e-docas-infláveis-02.png
 ---
-
-Soluções rápidas e inteligentes para os mais diversos locais que necessitam realizar a divisão de ambientes e salas especiais, o que gera melhor aproveitamento dos espaços e processos. Elas também podem atuar como verdadeiras barreiras sanitárias e evitam a entrada de contaminantes no ambiente. Garantem uma passagem rápida de pessoas e equipamentos, além de proteger o ambiente contra variações de temperaturas, contaminações e entrada de insetos.
-
+A vedação de docas é um recurso imprescindível para garantir o controle do ambiente nas operações de carga e descarga de mercadorias. Alguns segmentos exigem ambientes controlados como pré-requisito para garantir a eficiência de suas operações. Dispomos de duas opções, uma delas é o portal de selamento inflável, desenvolvido para ambientes que necessitam de uma vedação excelente, evitando entrada de insetos, troca de calor, entre outros. Sua forma construtiva independe de ar do sistema local, automação de inflamento via motor elétrico. O segundo sistema é o Portal de Selamento a Seco, desenvolvido para permitir um melhor acoplamento e vedação, onde o mesmo absorve impactos frontais dos caminhões nas borrachas existentes, por utilizar uma estrutura flexível e retrátil. Este diferencial resulta em uma diminuição considerável na sua manutenção, pois eliminam danos nas estruturas metálicas e nas partes fixadas nas paredes.
