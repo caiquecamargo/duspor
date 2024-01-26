@@ -2,19 +2,20 @@
 title: Portas Rápidas para docas
 title_en: Fast dock doors
 title_es: Puertas de muelle rápidas
-body_en: Fast and intelligent solutions for the most diverse locations that need
-  to divide environments and special rooms, which generates better use of spaces
-  and processes. They can also act as true sanitary barriers and prevent
-  contaminants from entering the environment. They guarantee quick passage of
-  people and equipment, in addition to protecting the environment against
-  temperature variations, contamination and the entry of insects.
-body_es: Soluciones rápidas e inteligentes para las más diversas ubicaciones que
-  necesitan dividir ambientes y salas especiales, lo que genera un mejor
-  aprovechamiento de espacios y procesos. También pueden actuar como verdaderas
-  barreras sanitarias e impedir la entrada de contaminantes al medio ambiente.
-  Garantizan el rápido paso de personas y equipos, además de proteger el
-  ambiente contra las variaciones de temperatura, la contaminación y la entrada
-  de insectos.
+body_en: Fast doors for shipping, logistics centers and other applications. This
+  high-speed door model meets a very large demand regarding the maintenance of
+  existing traditional doors. Due to this request, we developed a special
+  project, so that we have the maximum possible performance, with the minimum of
+  maintenance. Another extremely important point is the safety of people
+  operating older models. With this in mind, we chose to manufacture and deliver
+  maximum safety to our customers.
+body_es: Puertas rápidas para envíos, centros logísticos y otras aplicaciones.
+  Este modelo de puerta rápida responde a una demanda muy grande en cuanto al
+  mantenimiento de las puertas tradicionales existentes, debido a esta petición
+  desarrollamos un proyecto especial, para que tengamos el máximo rendimiento
+  posible, con el mínimo mantenimiento. Otro punto sumamente importante es la
+  seguridad de las personas que operan modelos más antiguos, con esto en mente
+  elegimos fabricar y entregar la máxima seguridad a nuestros clientes.
 applications:
   - Áreas frigoríficas
   - CDs de estocagem
@@ -37,6 +38,4 @@ images:
   - ../../assets/images/09-portas-rápidas-para-docas-01.png
   - ../../assets/images/10-portas-rápidas-para-docas-02.png
 ---
-
-Soluções rápidas e inteligentes para os mais diversos locais que necessitam realizar a divisão de ambientes e salas especiais, o que gera melhor aproveitamento dos espaços e processos. Elas também podem atuar como verdadeiras barreiras sanitárias e evitam a entrada de contaminantes no ambiente. Garantem uma passagem rápida de pessoas e equipamentos, além de proteger o ambiente contra variações de temperaturas, contaminações e entrada de insetos.
-
+Portas rápidas para expedição, centros logísticos entre outras aplicações. Esse modelo de porta rápida vem de encontro a uma demanda muito grande com relação a manutenção de portas tradicionais existentes, devido a essa solicitação, desenvolvemos um projeto especial, para que tenhamos o máximo de desempenho possível, com o mínimo de manutenção. Também outro ponto de extrema importância é a segurança das pessoas que operam os modelos mais antigos, tendo em vista isso, optamos por fabricar e entregar ao nosso cliente o máximo de segurança.
