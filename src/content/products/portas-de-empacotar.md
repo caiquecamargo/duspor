@@ -2,19 +2,20 @@
 title: Portas de empacotar
 title_en: Packaging doors
 title_es: Puertas de embalaje
-body_en: Fast and intelligent solutions for the most diverse locations that need
-  to divide environments and special rooms, which generates better use of spaces
-  and processes. They can also act as true sanitary barriers and prevent
-  contaminants from entering the environment. They guarantee quick passage of
-  people and equipment, in addition to protecting the environment against
-  temperature variations, contamination and the entry of insects.
-body_es: Soluciones rápidas e inteligentes para las más diversas ubicaciones que
-  necesitan dividir ambientes y salas especiales, lo que genera un mejor
-  aprovechamiento de espacios y procesos. También pueden actuar como verdaderas
-  barreras sanitarias e impedir la entrada de contaminantes al medio ambiente.
-  Garantizan el rápido paso de personas y equipos, además de proteger el
-  ambiente contra las variaciones de temperatura, la contaminación y la entrada
-  de insectos.
+body_en: They work from a command system, which receives external opening
+  signals through buttons, movement sensors, remote control systems or induction
+  loops. The doors can close automatically, using timers, preventing the door
+  from being left open for too long. They feature a hygienic and easy-to-clean
+  design, an electronic barrier that prevents accidents. This door model fits
+  very well for large light gaps, where cargo vehicles, such as trucks, will
+  pass.
+body_es: Funcionan a partir de un sistema de mando, que recibe señales externas
+  de apertura mediante pulsadores, sensores de movimiento, sistemas de control
+  remoto o bucles inductivos. Las puertas pueden cerrarse automáticamente,
+  mediante temporizadores, evitando que la puerta quede abierta durante
+  demasiado tiempo. Cuentan con un diseño higiénico y de fácil limpieza, barrera
+  electrónica que previene accidentes. Este modelo de puerta se adapta muy bien
+  a grandes huecos de luz, por donde pasarán vehículos de carga, como camiones.
 applications:
   - Armazéns
   - Silos de Grãos
@@ -39,6 +40,4 @@ images:
   - ../../assets/images/portas-de-empacotar-2.png
   - ../../assets/images/17-portas-de-empacotar-02.png
 ---
-
-Soluções rápidas e inteligentes para os mais diversos locais que necessitam realizar a divisão de ambientes e salas especiais, o que gera melhor aproveitamento dos espaços e processos. Elas também podem atuar como verdadeiras barreiras sanitárias e evitam a entrada de contaminantes no ambiente. Garantem uma passagem rápida de pessoas e equipamentos, além de proteger o ambiente contra variações de temperaturas, contaminações e entrada de insetos.
-
+Funcionam a partir de um sistema de comando, que recebe sinais externos de abertura através de botoeiras, sensores de movimento, sistemas de controle remoto ou laço de indução. O fechamento das portas pode ocorrer de forma automática, através de temporizadores, evitando que a porta fique muito tempo aberta. Apresentam um desenho higiênico e de fácil limpeza, barreira eletrônica que evita acidentes. Esse modelo de porta se enquadra muito bem para grandes vãos de luz, onde passarão veículos de cargas, como caminhões.
