@@ -16,20 +16,23 @@ body_es: Soluciones rápidas e inteligentes para las más diversas ubicaciones q
   ambiente contra las variaciones de temperatura, la contaminación y la entrada
   de insectos.
 applications:
-  - Áreas frigoríficas
-  - CDs de estocagem
-  - Atacadistas
-  - Centros de distribuição
+  - Supermercados
+  - Centros de Distribuição
+  - Padarias
+  - Frigoríficos
+  - Cervejarias
 applications_en:
-  - Refrigerated areas
-  - Stock CDs
-  - Wholesalers
-  - Distribution centers
+  - Supermarkets
+  - Distribution Centers
+  - Bakeries
+  - Refrigerators
+  - Breweries
 applications_es:
-  - Áreas refrigeradas
-  - CD de archivo
-  - Mayoristas
-  - Centros de distribución
+  - Supermercados
+  - Centros de Distribución
+  - Panaderías
+  - Refrigeradores
+  - Cervecerías
 position: 6
 images:
   - ../../assets/images/18-portas-vai-e-vem-01.png
