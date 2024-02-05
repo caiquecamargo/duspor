@@ -49,19 +49,21 @@ collections:
         required: true
       - widget: list
         name: applications
-        label: Aplicações
+        label: Aplicações (seperadas por vírgula, ex. "Aplicação 1, Aplicação 2")
         allow_add: true
         label_singular: Aplicação
         required: true
       - widget: list
         name: applications_en
-        label: Aplicações (Inglês)
+        label: Aplicações (seperadas por vírgula, ex. "Aplicação 1, Aplicação 2")
+          (Inglês)
         allow_add: true
         label_singular: Aplicação
         required: true
       - widget: list
         name: applications_es
-        label: Aplicações (Espanhol)
+        label: Aplicações (seperadas por vírgula, ex. "Aplicação 1, Aplicação 2")
+          (Espanhol)
         allow_add: true
         label_singular: Aplicação
         required: true

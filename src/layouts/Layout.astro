@@ -1,5 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
+import FloatWaButton from "@/components/float-wa-button.astro";
 import "@/assets/style.css";
 
 interface Props {
@@ -64,5 +65,7 @@ const resolvedTitle = `DUSPOR${title ? " | " + title : ""}`;
 		</script>
 
 		<slot />
+
+		<FloatWaButton />
 	</body>
 </html>

@@ -1,0 +1,26 @@
+---
+import LogosWhatsappIcon from "~icons/logos/whatsapp-icon";
+import { getEntry } from "astro:content";
+
+const processWaNumber = (number: string) => {
+  return number.match(/\d+/g)?.join("") ?? "";
+};
+
+const config = await getEntry("config", "index");
+const number = processWaNumber(config.data.whatsapp.number);
+const href = `https://wa.me/${number}?text=${encodeURIComponent(
+  config.data.whatsapp.message,
+)}`;
+---
+
+<div class="fixed bottom-4 right-4">
+  <a
+    href={href}
+    target="_blank"
+    class="drop-shadow-md"
+    rel="nofollow noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <LogosWhatsappIcon class="size-12" />
+  </a>
+</div>
