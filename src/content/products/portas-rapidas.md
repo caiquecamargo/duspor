@@ -72,6 +72,7 @@ subproducts:
       - ../../assets/images/04-portas-túneis-de-congelamento-02.png
     title_es: Puertas de túnel de congelación
     title_en: Freezing tunnel doors
+    youtube: https://www.youtube.com/shorts/8omAoyi7rNo
   - title: "Portas Estocagem de Resfriados "
     title_en: Cold Storage Doors
     title_es: Puertas de almacenamiento en frío
