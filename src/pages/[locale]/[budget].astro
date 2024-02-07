@@ -3,7 +3,7 @@ import Container from "@/components/container.astro";
 import Footer from "@/components/footer.astro";
 import Header from "@/components/header.astro";
 import Separator from "@/components/separator.astro";
-import { $t, locales } from "@/i18n";
+import { $t, locales, resolveLocaleURL } from "@/i18n";
 import Layout from "@/layouts/Layout.astro";
 import LogoMin from "~icons/local/logo-min";
 
@@ -80,7 +80,7 @@ const form = [
     <form
       class="flex flex-col relative text-xs md:text-base mt-12 md:mt-20"
       name="Orçamento"
-      action="/sucesso"
+      action={resolveLocaleURL("routes.success.page", locale)}
       method="POST"
       netlify-honeypot="bot-field"
       data-netlify-recaptcha="true"
