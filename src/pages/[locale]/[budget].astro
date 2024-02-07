@@ -57,6 +57,38 @@ const form = [
 ];
 ---
 
+<script>
+  const form = document.querySelector("form") as HTMLFormElement;
+
+  form?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const myForm = event.target as HTMLFormElement;
+    const action = form.dataset.action as string;
+
+    if (!myForm) {
+      alert("Erro ao enviar formulário");
+      return;
+    }
+
+    const formData = new FormData(myForm);
+
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
+    });
+
+    if (!response.ok) {
+      alert("Erro ao enviar formulário");
+      console.log(response);
+      return;
+    }
+
+    window.location.href = action;
+  });
+</script>
+
 <Layout title={$t("routes.budget.title", locale)}>
   <Header locale={locale} page={page} />
 
@@ -85,6 +117,7 @@ const form = [
       netlify-honeypot="bot-field"
       data-netlify-recaptcha="true"
       data-netlify="true"
+      data-action={resolveLocaleURL("routes.success.page", locale)}
     >
       <input type="hidden" name="form-name" value="budget-form" />
       <input
