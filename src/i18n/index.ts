@@ -47,6 +47,7 @@ export const translateRoute = (route: string, from: Locales, to: Locales): strin
     .with($t("routes.products.page", from), () => $t("routes.products.page", to))
     .with($t("routes.budget.page", from), () => $t("routes.budget.page", to))
     .with($t("routes.contact.page", from), () => $t("routes.contact.page", to))
+    .with($t("routes.success.page", from), () => $t("routes.success.page", to))
     .otherwise(() => route)
 
   return rootRoute ?? ""

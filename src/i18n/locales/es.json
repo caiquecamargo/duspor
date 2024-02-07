@@ -1,8 +1,8 @@
 {
   "routes": {
     "about": {
-      "path": "/acerca-de",
-      "page": "acerca-de",
+      "path": "/acerca de",
+      "page": "acerca de",
       "title": "Acerca de"
     },
     "products": {
@@ -22,8 +22,13 @@
     },
     "home": {
       "path": "/",
-      "page": "hogar",
+      "page": "hombre",
       "title": "Página de inicio"
+    },
+    "success": {
+      "path": "/exito",
+      "page": "exito",
+      "title": "Contacto enviado exitosamente"
     }
   },
   "home": {
@@ -32,7 +37,7 @@
   },
   "products": {
     "title": "Nuestros productos",
-    "applications": "Aplicaciones",
+    "applications": "aplicaciones",
     "manuals": "Manuales"
   },
   "contact": {
@@ -43,5 +48,10 @@
     "name": "presupuesto",
     "subtitle": "Habla con nuestro equipo y aumenta la agilidad y productividad de tu empresa",
     "send": "Mandar"
+  },
+  "success": {
+    "title": "¡Su contacto fue enviado con éxito!",
+    "subtitle": "Pronto nos pondremos en contacto contigo.",
+    "button": "Haga clic aquí para volver a la página de inicio"
   }
 }

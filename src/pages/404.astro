@@ -1,0 +1,32 @@
+---
+import Header from "@/components/header.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "@/components/footer.astro";
+import Container from "@/components/container.astro";
+import Logo from "@/assets/images/logo.png";
+import { Image } from "astro:assets";
+---
+
+<Layout>
+  <Header page="home" />
+
+  <Container class="pt-24 md:pt-32 mb-40 px-2">
+    <div class="w-full flex flex-col justify-center items-center">
+      <Image src={Logo} alt="Qualitti logo" />
+
+      <div class="my-12 flex flex-col items-center justify-center gap-4">
+        <p class="text-gray-500 text-xl md:text-2xl">
+          Huummm... parece que não encontramos essa página.
+        </p>
+
+        <a
+          href="/"
+          class="px-4 md:px-6 py-2 text-white bg-primary text-lg font-semibold mt-2 transition-colors duration-150 hover:bg-secondary rounded text-center"
+          >Clique aqui e retorne para o início</a
+        >
+      </div>
+    </div>
+  </Container>
+
+  <Footer />
+</Layout>

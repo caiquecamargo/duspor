@@ -22,8 +22,13 @@
     },
     "home": {
       "path": "/",
-      "page": "home",
+      "page": "man",
       "title": "home page"
+    },
+    "success": {
+      "path": "/success",
+      "page": "success",
+      "title": "Contact sent successfully"
     }
   },
   "home": {
@@ -33,15 +38,20 @@
   "products": {
     "title": "Our products",
     "applications": "applications",
-    "manuals": "manuals"
+    "manuals": "Manuals"
   },
   "contact": {
     "talkToUs": "Contact us"
   },
   "budget": {
-    "title": "Request a",
+    "title": "Request one",
     "name": "budget",
     "subtitle": "Talk to our team and increase your company's agility and productivity",
-    "send": "Send"
+    "send": "send"
+  },
+  "success": {
+    "title": "Your contact was successfully sent!",
+    "subtitle": "Soon, we will contact you.",
+    "button": "Click here to return to the home page"
   }
 }

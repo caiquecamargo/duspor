@@ -24,6 +24,11 @@
       "path": "/contato",
       "page": "contato",
       "title": "Contato"
+    },
+    "success": {
+      "path": "/sucesso",
+      "page": "sucesso",
+      "title": "Contato enviado com sucesso"
     }
   },
   "home": {
@@ -43,5 +48,10 @@
     "name": "orçamento",
     "subtitle": "Converse com nossa equipe e aumente a agilidade e a produtividade da sua empresa",
     "send": "Enviar"
+  },
+  "success": {
+    "title": "Seu contato foi enviado com sucesso!",
+    "subtitle": "Em breve entraremos em contato com você.",
+    "button": "Click aqui para voltar à página inicial"
   }
 }
