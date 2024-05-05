@@ -238,6 +238,53 @@ collections:
             media_library:
               config:
                 multiple: true
+          - widget: markdown
+            name: testimonialsTitle
+            label: Depoimentos - título
+            editor_components: &a9 []
+            modes: &a10
+              - rich_text
+            required: true
+          - widget: markdown
+            name: testimonialsTitle_en
+            label: Depoimentos - título (Inglês)
+            editor_components: *a9
+            modes: *a10
+            required: true
+          - widget: markdown
+            name: testimonialsTitle_es
+            label: Depoimentos - título (Espanhol)
+            editor_components: *a9
+            modes: *a10
+            required: true
+          - widget: list
+            name: testimonials
+            label: Depoimentos
+            allow_add: true
+            fields:
+              - widget: string
+                name: name
+                label: Nome
+                required: false
+              - widget: markdown
+                name: testimonial
+                label: Depoimento
+                editor_components: &a11 []
+                modes: &a12
+                  - rich_text
+                required: true
+              - widget: markdown
+                name: testimonial_en
+                label: Depoimento (Inglês)
+                editor_components: *a11
+                modes: *a12
+                required: true
+              - widget: markdown
+                name: testimonial_es
+                label: Depoimento (Espanhol)
+                editor_components: *a11
+                modes: *a12
+                required: true
       - name: about
         label: Página sobre
         file: src/content/about/index.md
@@ -249,21 +296,21 @@ collections:
           - widget: markdown
             name: title
             label: Título
-            editor_components: &a9 []
-            modes: &a10
+            editor_components: &a13 []
+            modes: &a14
               - rich_text
             required: true
           - widget: markdown
             name: title_en
             label: Título (Inglês)
-            editor_components: *a9
-            modes: *a10
+            editor_components: *a13
+            modes: *a14
             required: true
           - widget: markdown
             name: title_es
             label: Título (Espanhol)
-            editor_components: *a9
-            modes: *a10
+            editor_components: *a13
+            modes: *a14
             required: true
           - widget: image
             name: titleBackground
@@ -273,97 +320,97 @@ collections:
           - widget: markdown
             name: description
             label: Descrição
-            editor_components: &a11 []
-            modes: &a12
-              - rich_text
-            required: true
-          - widget: markdown
-            name: description_en
-            label: Descrição (Inglês)
-            editor_components: *a11
-            modes: *a12
-            required: true
-          - widget: markdown
-            name: description_es
-            label: Descrição (Espanhol)
-            editor_components: *a11
-            modes: *a12
-            required: true
-          - widget: markdown
-            name: mission
-            label: Missão
-            editor_components: &a13 []
-            modes: &a14
-              - rich_text
-            required: true
-          - widget: markdown
-            name: mission_en
-            label: Missão (Inglês)
-            editor_components: *a13
-            modes: *a14
-            required: true
-          - widget: markdown
-            name: mission_es
-            label: Missão (Espanhol)
-            editor_components: *a13
-            modes: *a14
-            required: true
-          - widget: markdown
-            name: vision
-            label: Visão
             editor_components: &a15 []
             modes: &a16
               - rich_text
             required: true
           - widget: markdown
-            name: vision_en
-            label: Visão (Inglês)
+            name: description_en
+            label: Descrição (Inglês)
             editor_components: *a15
             modes: *a16
             required: true
           - widget: markdown
-            name: vision_es
-            label: Visão (Espanhol)
+            name: description_es
+            label: Descrição (Espanhol)
             editor_components: *a15
             modes: *a16
             required: true
           - widget: markdown
-            name: values
-            label: Valores
+            name: mission
+            label: Missão
             editor_components: &a17 []
             modes: &a18
               - rich_text
             required: true
           - widget: markdown
-            name: values_en
-            label: Valores (Inglês)
+            name: mission_en
+            label: Missão (Inglês)
             editor_components: *a17
             modes: *a18
             required: true
           - widget: markdown
-            name: values_es
-            label: Valores (Espanhol)
+            name: mission_es
+            label: Missão (Espanhol)
             editor_components: *a17
             modes: *a18
             required: true
           - widget: markdown
-            name: dna
-            label: Nosso DNA
+            name: vision
+            label: Visão
             editor_components: &a19 []
             modes: &a20
               - rich_text
             required: true
           - widget: markdown
-            name: dna_en
-            label: Nosso DNA (Inglês)
+            name: vision_en
+            label: Visão (Inglês)
             editor_components: *a19
             modes: *a20
             required: true
           - widget: markdown
-            name: dna_es
-            label: Nosso DNA (Espanhol)
+            name: vision_es
+            label: Visão (Espanhol)
             editor_components: *a19
             modes: *a20
+            required: true
+          - widget: markdown
+            name: values
+            label: Valores
+            editor_components: &a21 []
+            modes: &a22
+              - rich_text
+            required: true
+          - widget: markdown
+            name: values_en
+            label: Valores (Inglês)
+            editor_components: *a21
+            modes: *a22
+            required: true
+          - widget: markdown
+            name: values_es
+            label: Valores (Espanhol)
+            editor_components: *a21
+            modes: *a22
+            required: true
+          - widget: markdown
+            name: dna
+            label: Nosso DNA
+            editor_components: &a23 []
+            modes: &a24
+              - rich_text
+            required: true
+          - widget: markdown
+            name: dna_en
+            label: Nosso DNA (Inglês)
+            editor_components: *a23
+            modes: *a24
+            required: true
+          - widget: markdown
+            name: dna_es
+            label: Nosso DNA (Espanhol)
+            editor_components: *a23
+            modes: *a24
             required: true
           - widget: list
             name: dnas

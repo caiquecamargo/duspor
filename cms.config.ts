@@ -197,6 +197,36 @@ const homePage = defineFileCollectionEntry({
           multiple: true
         }
       }
+    }),
+    ...createLocalizedField(
+      defineMarkdownWidget({
+        name: 'testimonialsTitle',
+        label: 'Depoimentos - título',
+        editor_components: [],
+        modes: ["rich_text"],
+        required: true,
+      })
+    ),
+    defineListWidget({
+      name: 'testimonials',
+      label: 'Depoimentos',
+      allow_add: true,
+      fields: [
+        defineStringWidget({
+          name: 'name',
+          label: 'Nome',
+          required: false,
+        }),
+        ...createLocalizedField(
+          defineMarkdownWidget({
+            name: 'testimonial',
+            label: 'Depoimento',
+            editor_components: [],
+            modes: ["rich_text"],
+            required: true,
+          })
+        )
+      ]
     })
   ]
 });

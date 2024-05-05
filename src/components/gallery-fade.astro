@@ -2,13 +2,22 @@
 type Props = {
   color?: "primary" | "secondary";
   class?: string;
+  slidesPerView?: number;
 };
 
-const { color = "primary", class: _class } = Astro.props as Props;
+const {
+  color = "primary",
+  class: _class,
+  slidesPerView = 3,
+} = Astro.props as Props;
 ---
 
 <gallery-fade>
-  <div class:list={["swiper", _class]} data-color={color}>
+  <div
+    class:list={["swiper", _class]}
+    data-color={color}
+    data-slides-per-view={slidesPerView}
+  >
     <div class="swiper-wrapper">
       <slot />
     </div>
@@ -46,8 +55,13 @@ const { color = "primary", class: _class } = Astro.props as Props;
       super();
 
       const element = this.querySelector(".swiper") as HTMLElement;
-      const color = element.dataset.color as Props["color"];
+      const color = element.dataset.color as string;
+      const configuredSlidesPerView = Number(
+        element.dataset.slidesPerView as string,
+      );
       const wrapper = element.querySelector(".swiper-wrapper") as HTMLElement;
+      const next = element.querySelector(".swiper-button-next") as HTMLElement;
+      const prev = element.querySelector(".swiper-button-prev") as HTMLElement;
       const pagination = element.querySelector(
         ".swiper-pagination",
       ) as HTMLElement;
@@ -72,7 +86,10 @@ const { color = "primary", class: _class } = Astro.props as Props;
         `rgb(var(--color-${color}))`,
       );
 
-      const slidesPerView = wrapper.children.length > 3 ? 3 : 2;
+      const slidesPerView =
+        wrapper.children.length > configuredSlidesPerView
+          ? configuredSlidesPerView
+          : configuredSlidesPerView - 1;
 
       Array.from(wrapper.children).forEach((child) => {
         const div = document.createElement("div");
@@ -82,7 +99,7 @@ const { color = "primary", class: _class } = Astro.props as Props;
         wrapper.appendChild(div);
       });
 
-      this.#swiper = new Swiper(".swiper", {
+      this.#swiper = new Swiper(element, {
         modules: [Pagination, Navigation],
 
         effect: "fade",
@@ -90,8 +107,8 @@ const { color = "primary", class: _class } = Astro.props as Props;
         slidesPerView,
         loop: true,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: next,
+          prevEl: prev,
         },
 
         pagination: {

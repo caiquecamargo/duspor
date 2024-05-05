@@ -36,4 +36,36 @@ images:
   - ../../assets/images/palmali.webp
   - ../../assets/images/tirol.png
   - ../../assets/images/vibra.png
+testimonialsTitle: O que **nossos  clientes** estão dizendo
+testimonialsTitle_en: What **our customers** are saying
+testimonialsTitle_es: Lo que dicen **nuestros clientes**
+testimonials:
+  - testimonial: >-
+      Angelo, seu time está de parabéns. Todo time que foi ver a instalação e
+      qualidade do equipamento se surpreendeu.\
+
+      \
+
+      Belo equipamento, parabéns mesmo!
+    testimonial_en: >-
+      Angelo, your team is to be congratulated. Every team that went to see the
+      installation and quality of the equipment was surprised.
+
+
+      Beautiful equipment, congratulations indeed!
+    testimonial_es: >-
+      Angelo, hay que felicitar a tu equipo. Todos los equipos que fueron a ver
+      la instalación y calidad del equipo quedaron sorprendidos.
+
+
+      Hermoso equipo, ¡felicidades de verdad!
+  - testimonial: Passando para agradecer o amigo por ter nos apresentado o Angelo
+      das portas Duspor, acabaram de entregar um trabalho de qualidade
+      surpreendente, com uma equipe extremamente gentil e atenciosa.
+    testimonial_es: Paso a agradecer a mi amigo por presentarnos a Angelo das Portas
+      Duspor, acaban de entregar un trabajo de una calidad sorprendente, con un
+      equipo extremadamente amable y atento.
+    testimonial_en: Stopping by to thank my friend for introducing us to Angelo das
+      Portas Duspor, they just delivered work of surprising quality, with an
+      extremely kind and attentive team.
 ---

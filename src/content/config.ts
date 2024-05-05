@@ -46,6 +46,15 @@ const home = defineCollection({
     clients_en: z.string(),
     clients_es: z.string(),
     images: z.array(image()),
+    testimonialsTitle: z.string(),
+    testimonialsTitle_en: z.string(),
+    testimonialsTitle_es: z.string(),
+    testimonials: z.array(z.object({
+      name: z.ostring(),
+      testimonial: z.string(),
+      testimonial_en: z.string(),
+      testimonial_es: z.string(),
+    })),
 })})
 
 const about = defineCollection({
