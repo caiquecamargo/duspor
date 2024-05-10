@@ -40,13 +40,8 @@ testimonialsTitle: O que **nossos  clientes** estão dizendo
 testimonialsTitle_en: What **our customers** are saying
 testimonialsTitle_es: Lo que dicen **nuestros clientes**
 testimonials:
-  - testimonial: >-
-      Angelo, seu time está de parabéns. Todo time que foi ver a instalação e
-      qualidade do equipamento se surpreendeu.\
-
-      \
-
-      Belo equipamento, parabéns mesmo!
+  - testimonial: A equipe Duspor está de parabéns. Todo meu time que acompanhou a
+      instalação se surpreendeu com a qualidade do equipamento.
     testimonial_en: >-
       Angelo, your team is to be congratulated. Every team that went to see the
       installation and quality of the equipment was surprised.
@@ -59,9 +54,8 @@ testimonials:
 
 
       Hermoso equipo, ¡felicidades de verdad!
-  - testimonial: Passando para agradecer o amigo por ter nos apresentado o Angelo
-      das portas Duspor, acabaram de entregar um trabalho de qualidade
-      surpreendente, com uma equipe extremamente gentil e atenciosa.
+  - testimonial: Acabaram de entregar um trabalho de qualidade surpreendente, com
+      uma equipe extremamente gentil e atenciosa.
     testimonial_es: Paso a agradecer a mi amigo por presentarnos a Angelo das Portas
       Duspor, acaban de entregar un trabajo de una calidad sorprendente, con un
       equipo extremadamente amable y atento.
