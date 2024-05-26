@@ -116,9 +116,23 @@ const config = defineCollection({
   })
 })
 
+const blog = defineCollection({
+  type: "content",
+  schema: ({ image }) => z.object({
+    title: z.string(),
+    title_en: z.string(),
+    title_es: z.string(),
+    images: z.array(image()).nullable(),
+    body_en: z.string(),
+    body_es: z.string(),
+    date: z.string(),
+  })
+})
+
 export const collections = {
   products,
   home,
   about,
+  blog,
   config
 }

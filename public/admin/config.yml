@@ -436,6 +436,72 @@ collections:
                 label: Imagem
                 required: true
                 allow_multiple: false
+  - name: blog
+    label: Blog
+    folder: src/content/blog
+    create: true
+    delete: true
+    label_singular: Post
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.title}}"
+    fields:
+      - widget: string
+        name: title
+        label: Título
+        required: true
+      - widget: string
+        name: title_en
+        label: Título (Inglês)
+        required: true
+      - widget: string
+        name: title_es
+        label: Título (Espanhol)
+        required: true
+      - widget: markdown
+        name: body
+        label: Conteúdo
+        required: true
+        editor_components: &a25 []
+        buttons: &a26
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+        modes: &a27
+          - rich_text
+      - widget: markdown
+        name: body_en
+        label: Conteúdo (Inglês)
+        required: true
+        editor_components: *a25
+        buttons: *a26
+        modes: *a27
+      - widget: markdown
+        name: body_es
+        label: Conteúdo (Espanhol)
+        required: true
+        editor_components: *a25
+        buttons: *a26
+        modes: *a27
+      - widget: image
+        name: images
+        allow_multiple: true
+        label: Imagens
+        required: false
+        media_folder: /src/assets/images
+        public_folder: ../../assets/images
+        media_library:
+          config:
+            multiple: true
+      - widget: datetime
+        name: date
+        label: Data
+        required: true
+        date_format: YYYY-MM-DD
+        time_format: HH:mm
+        format: YYYY-MM-DD HH:mm
   - name: config
     label: Configurações gerais
     files:

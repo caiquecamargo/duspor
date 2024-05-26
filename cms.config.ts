@@ -1,4 +1,4 @@
-import { defineConfig, defineFileCollection, defineFileCollectionEntry, defineFolderCollection, defineImageWidget, defineListWidget, defineMarkdownWidget, defineObjectWidget, defineStringWidget, defineNumberWidget, defineFileWidget } from "@caiquecamargo/vite-plugin-netlify-cms";
+import { defineConfig, defineFileCollection, defineFileCollectionEntry, defineFolderCollection, defineImageWidget, defineListWidget, defineMarkdownWidget, defineObjectWidget, defineStringWidget, defineNumberWidget, defineFileWidget, defineDateTimeWidget } from "@caiquecamargo/vite-plugin-netlify-cms";
 
 const createLocalizedField = (widget: any) => {
   return [
@@ -444,6 +444,61 @@ const config = defineFileCollection({
       ]
     })
   ]
+});
+
+const blogCollection = defineFolderCollection({
+  name: 'blog',
+  label: 'Blog',
+  folder: 'src/content/blog',
+  create: true,
+  delete: true,
+  label_singular: 'Post',
+  editor: {
+    preview: false,
+  },
+  slug: '{{year}}-{{month}}-{{day}}-{{fields.title}}',
+  fields: [
+    ...createLocalizedField(
+      defineStringWidget({
+        name: 'title',
+        label: 'Título',
+        required: true,
+      }),
+    ),
+    ...createLocalizedField(
+      defineMarkdownWidget({
+        name: 'body',
+        label: 'Conteúdo',
+        required: true,
+        editor_components: [],
+        buttons: ["bold", "italic", "link", "heading-two", "heading-three"],
+        modes: ["rich_text"],
+      }),
+    ),
+    defineImageWidget({
+      name: 'images',
+      allow_multiple: true,
+      label: 'Imagens',
+      required: false,
+      media_folder: '/src/assets/images',
+      public_folder: '../../assets/images',
+      media_library: {
+        config: {
+          multiple: true,
+        }
+      }
+    } as any),
+    defineDateTimeWidget({
+      name: 'date',
+      label: 'Data',
+      required: true,
+
+      date_format: 'YYYY-MM-DD',
+      time_format: 'HH:mm',
+      format: 'YYYY-MM-DD HH:mm',
+      
+    }),
+  ]
 })
 
 export default defineConfig({
@@ -459,6 +514,7 @@ export default defineConfig({
   collections: [
     products,
     pages,
+    blogCollection,
     config
   ],
 })

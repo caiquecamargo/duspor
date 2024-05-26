@@ -29,6 +29,11 @@
       "path": "/success",
       "page": "success",
       "title": "Contact sent successfully"
+    },
+    "blog": {
+      "path": "/blog",
+      "page": "blog",
+      "title": "Blog"
     }
   },
   "home": {
@@ -53,5 +58,10 @@
     "title": "Your contact was successfully sent!",
     "subtitle": "Soon, we will contact you.",
     "button": "Click here to return to the home page"
+  },
+  "blog": {
+    "title": "Our",
+    "name": "Blog",
+    "subtitle": "See our latest news and tips for your company here"
   }
 }

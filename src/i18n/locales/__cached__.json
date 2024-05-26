@@ -25,6 +25,11 @@
       "page": "contato",
       "title": "Contato"
     },
+    "blog": {
+      "path": "/blog",
+      "page": "blog",
+      "title": "Blog"
+    },
     "success": {
       "path": "/sucesso",
       "page": "sucesso",
@@ -48,6 +53,11 @@
     "name": "orçamento",
     "subtitle": "Converse com nossa equipe e aumente a agilidade e a produtividade da sua empresa",
     "send": "Enviar"
+  },
+  "blog": {
+    "title": "Nosso",
+    "name": "Blog",
+    "subtitle": "Veja aqui nossas últimas novidades e dicas para sua empresa"
   },
   "success": {
     "title": "Seu contato foi enviado com sucesso!",

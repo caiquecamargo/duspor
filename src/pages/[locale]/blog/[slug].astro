@@ -1,0 +1,152 @@
+---
+import Container from "@/components/container.astro";
+import Footer from "@/components/footer.astro";
+import GalleryModal from "@/components/gallery-modal.astro";
+import Header from "@/components/header.astro";
+import Hexagon from "@/components/hexagon.astro";
+import { $t, locales, resolvePropByLocale } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import { localeDate } from "@caiquecamargo/utils/core";
+import { Image } from "astro:assets";
+import { getCollection, getEntry } from "astro:content";
+import { marked } from "marked";
+import Logo from "~icons/local/logo";
+import PDFIcon from "~icons/mdi/file-pdf";
+
+export async function getStaticPaths() {
+  const blog = await getCollection("blog");
+  return locales.flatMap((locale) => {
+    return blog.map((blog) => {
+      return {
+        params: {
+          locale,
+          slug: blog.slug,
+        },
+      };
+    });
+  });
+}
+
+const page = "blog";
+
+const { locale, slug } = Astro.params;
+
+const blog = await getEntry("blog", slug);
+
+const description =
+  resolvePropByLocale(blog.data, "body" as any, locale) ?? blog.body;
+const Description = await marked(description);
+---
+
+<Layout title={$t("routes.blog.title", locale)}>
+  <Header locale={locale} page={page} />
+
+  <Container class="my-16 md:my-28 p-1">
+    <section class="flex items-center">
+      <div class="lg:-ml-2">
+        <h1
+          class="uppercase font-bold text-lg md:text-4xl lg:text-6xl text-primary"
+        >
+          {resolvePropByLocale(blog.data, "title", locale)}
+        </h1>
+        <div class:list={["italic py-1 text-primary"]}>
+          {localeDate(new Date(blog.data.date), locale)}
+        </div>
+        <Logo
+          class="w-[100px] md:w-[200px] h-10 md:h-20 text-primary md:mt-4"
+        />
+      </div>
+      {
+        blog.data.images?.length &&
+          blog.data.images.slice(0, 3).map((image, index) => (
+            <div transition:name={`blog-${blog.slug}-${index}`}>
+              <Hexagon
+                size="3xl"
+                class:list={["hidden lg:flex", index > 0 && "-ml-12"]}
+              >
+                <Image
+                  class={
+                    image.height < image.width
+                      ? "h-full w-auto"
+                      : "w-full h-auto"
+                  }
+                  src={image}
+                  alt={blog.data.title}
+                />
+              </Hexagon>
+              <Hexagon
+                size="lg"
+                class:list={["hidden md:flex lg:hidden", index > 0 && "-ml-8"]}
+              >
+                <Image
+                  class={
+                    image.height < image.width
+                      ? "h-full w-auto"
+                      : "w-full h-auto"
+                  }
+                  src={image}
+                  alt={blog.data.title}
+                />
+              </Hexagon>
+              <Hexagon
+                size="xxs"
+                class:list={["flex md:hidden", index > 0 && "-ml-4"]}
+              >
+                <Image
+                  class={
+                    image.height < image.width
+                      ? "h-full w-auto"
+                      : "w-full h-auto"
+                  }
+                  src={image}
+                  alt={blog.data.title}
+                />
+              </Hexagon>
+            </div>
+          ))
+      }
+    </section>
+
+    <section
+      class="space-y-4 leading-relaxed mt-4 md:mt-12 md:text-lg"
+      set:html={Description}
+    />
+
+    {
+      blog.data.images?.length && (
+        <div class="mt-12">
+          <GalleryModal>
+            {blog.data.images.map((image) => (
+              <div class="flex items-center justify-center cursor-pointer">
+                <Hexagon size="3xl">
+                  <Image
+                    class={
+                      image.height < image.width
+                        ? "h-full w-auto"
+                        : "w-full h-auto"
+                    }
+                    src={image}
+                    alt={blog.data.title}
+                  />
+                </Hexagon>
+              </div>
+            ))}
+
+            {blog.data.images.map((image) => (
+              <Image
+                class={
+                  image.height > image.width ? "h-full w-auto" : "w-full h-auto"
+                }
+                src={image}
+                alt={blog.data.title}
+                slot="gallery"
+              />
+            ))}
+          </GalleryModal>
+        </div>
+      )
+    }
+  </Container>
+
+  <Footer />
+</Layout>
