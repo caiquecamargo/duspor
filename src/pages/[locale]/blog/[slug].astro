@@ -42,6 +42,7 @@ const Description = await marked(description);
   <Header locale={locale} page={page} />
 
   <Container class="my-16 md:my-28 p-1">
+    <!-- Header -->
     <section class="flex items-center">
       <div class="lg:-ml-2">
         <h1
@@ -108,7 +109,7 @@ const Description = await marked(description);
     </section>
 
     <section
-      class="space-y-4 leading-relaxed mt-4 md:mt-12 md:text-lg"
+      class="space-y-4 leading-relaxed mt-4 md:mt-12 md:text-lg [&_h2]:font-bold [&_h2]:text-2xl [&_h2]:pt-4 [&_h2]:text-primary [&_h3]:font-bold"
       set:html={Description}
     />
 
