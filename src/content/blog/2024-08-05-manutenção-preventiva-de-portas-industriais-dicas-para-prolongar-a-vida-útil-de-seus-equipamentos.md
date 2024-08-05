@@ -246,6 +246,8 @@ body_es: >-
 
 
   Invierta en mantenimiento preventivo y obtenga los beneficios de un entorno de trabajo seguro y productivo.
+images:
+  - ../../assets/images/11-portas-de-enrolar-manual-01.png
 date: 2024-08-05T17:50
 ---
 As portas industriais desempenham um papel crucial na operação eficiente e segura de diversos setores, desde armazéns e fábricas até centros de distribuição e instalações comerciais. Para garantir que essas portas funcionem de maneira eficiente e segura por um longo período, a manutenção preventiva é essencial. Neste artigo, discutiremos a importância da manutenção preventiva e forneceremos dicas práticas para prolongar a vida útil das suas portas industriais.
