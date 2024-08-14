@@ -155,7 +155,7 @@ const homePage = defineFileCollectionEntry({
     ),
     defineImageWidget({
       name: 'titleBackground',
-      label: 'Imagem de fundo do título',
+      label: 'Banner da página inicial',
       required: true,
       allow_multiple: false
     }),

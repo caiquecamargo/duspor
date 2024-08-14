@@ -45,26 +45,15 @@ const resolveMobileStyle = (index: number) =>
   <Header page="home" locale={locale} />
 
   <Container class="my-12 md:my-24 p-1">
-    <div
-      class="relative h-48 md:h-80 overflow-hidden flex flex-col justify-center"
-    >
-      <div
-        class="z-0 absolute right-0 w-[75%] flex justify-center items-center"
-      >
-        <Image
-          class="w-full h-auto object-cover absolute"
-          src={home.data.titleBackground}
-          alt="Duspor, portas industriais"
-        />
-      </div>
+    <div class="relative overflow-hidden flex flex-col justify-center">
+      <Image
+        class="w-full h-auto"
+        src={home.data.titleBackground}
+        alt="Duspor, portas industriais"
+      />
 
       <div
-        class="z-10 absolute inset-0 bg-gradient-to-r from-white from-30% to-transparent"
-      >
-      </div>
-
-      <div
-        class="relative z-10 uppercase text-4xl md:text-7xl max-w-[75%] [&_strong]:text-primary [&_strong]:font-extrabold tracking-wide"
+        class="relative z-10 uppercase text-4xl md:text-7xl max-w-[75%] [&_strong]:text-primary [&_strong]:font-extrabold tracking-wide sr-only"
         set:html={marked(resolvePropByLocale(home.data, "title", locale))}
       />
     </div>
