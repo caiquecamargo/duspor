@@ -1,5 +1,5 @@
 ---
-siteDescription: "Portas industriais.\\n Facilidade na montagem e operação. "
+siteDescription: "Portas industriais. Facilidade na montagem e operação. "
 email: duspor@duspor.com.br
 phone: +55 (49) 3329 2933
 whatsapp:
