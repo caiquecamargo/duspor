@@ -91,6 +91,7 @@ const about = defineCollection({
 const config = defineCollection({
   type: "content",
   schema: z.object({
+    siteDescription: z.string(),
     email: z.string(),
     phone: z.string(),
     whatsapp: z.object({

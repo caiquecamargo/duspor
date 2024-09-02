@@ -2,6 +2,7 @@
 import { ViewTransitions } from "astro:transitions";
 import FloatWaButton from "@/components/float-wa-button.astro";
 import "@/assets/style.css";
+import { getEntry } from "astro:content";
 
 interface Props {
 	title?: string;
@@ -11,6 +12,8 @@ interface Props {
 
 const { title, description, colored = false } = Astro.props;
 const resolvedTitle = `DUSPOR${title ? " | " + title : ""}`;
+
+const config = await getEntry("config", "index");
 ---
 
 <!doctype html>
@@ -36,8 +39,12 @@ const resolvedTitle = `DUSPOR${title ? " | " + title : ""}`;
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:url" content="https://duspor.caiquedecamargo.com.br" />
-		<meta property="og:description" content={description} />
-		<meta property="og:title" content={title} />
+		<meta property="og:description" content={config.data.siteDescription} />
+		<meta property="og:title" content="Duspor" />
+		<meta
+			property="og:image"
+			content="https://duspor.caiquedecamargo.com.br/logo-min.svg"
+		/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 
 		<script

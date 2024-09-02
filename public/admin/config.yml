@@ -513,6 +513,10 @@ collections:
         extension: md
         fields:
           - widget: string
+            name: siteDescription
+            label: Descrição do site
+            required: true
+          - widget: string
             name: email
             label: Email
             required: true

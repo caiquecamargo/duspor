@@ -11,7 +11,6 @@ import { Image } from "astro:assets";
 import { getCollection, getEntry } from "astro:content";
 import { marked } from "marked";
 import Logo from "~icons/local/logo";
-import PDFIcon from "~icons/mdi/file-pdf";
 
 export async function getStaticPaths() {
   const blog = await getCollection("blog");

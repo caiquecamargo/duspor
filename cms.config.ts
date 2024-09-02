@@ -349,6 +349,11 @@ const config = defineFileCollection({
       extension: 'md',
       fields: [
         defineStringWidget({
+          name: 'siteDescription',
+          label: 'Descrição do site',
+          required: true,
+        }),
+        defineStringWidget({
           name: 'email',
           label: 'Email',
           required: true,

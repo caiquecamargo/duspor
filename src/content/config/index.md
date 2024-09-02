@@ -1,4 +1,5 @@
 ---
+siteDescription: Agilidade na montagem e facilidade na operação
 email: duspor@duspor.com.br
 phone: +55 (49) 3329 2933
 whatsapp:
