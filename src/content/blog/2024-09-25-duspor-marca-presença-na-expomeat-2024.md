@@ -45,3 +45,7 @@ Entre os dias 24 e 26 de setembro, a Duspor, referência em portas industriais, 
 A Duspor, reconhecida pela qualidade e inovação em portas industriais, destaca-se por oferecer produtos que aliam segurança, eficiência e sustentabilidade. Durante o evento, a empresa apresentará seus mais recentes lançamentos e soluções, voltados especialmente para o setor de carnes, com foco em atender as exigências de segurança e higiene que o mercado exige.
 
 Visitar o estande da Duspor na ExpoMeat é uma chance única para conhecer de perto as soluções que estão transformando a indústria com qualidade e confiabilidade.
+
+Visite a ExpoMeat, até dia 26/09 no Distrito Anhembi | Av. Olavo Fontoura, 1209 - São Paulo/SP. 
+
+Das 14h às 20h.
