@@ -43,7 +43,8 @@
   "products": {
     "title": "Nuestros productos",
     "applications": "aplicaciones",
-    "manuals": "Manuales"
+    "manuals": "Manuales",
+    "contact": "Ponte en contacto y conoce más sobre el producto."
   },
   "contact": {
     "talkToUs": "Hable con nosotros"

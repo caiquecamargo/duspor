@@ -49,7 +49,7 @@ const blog = await getCollection("blog");
         blog
           .sort(
             (a, b) =>
-              new Date(b.data.date).getDate() - new Date(a.data.date).getDate(),
+              new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
           )
           .map(async (blog, index) => (
             <a

@@ -4,6 +4,7 @@ import Footer from "@/components/footer.astro";
 import GalleryModal from "@/components/gallery-modal.astro";
 import Header from "@/components/header.astro";
 import Hexagon from "@/components/hexagon.astro";
+import Separator from "@/components/separator.astro";
 import { $t, locales, resolvePropByLocale } from "@/i18n";
 import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
@@ -11,6 +12,7 @@ import { getCollection, getEntry } from "astro:content";
 import { marked } from "marked";
 import Logo from "~icons/local/logo";
 import PDFIcon from "~icons/mdi/file-pdf";
+import IcSharpWhatsapp from "~icons/ic/sharp-whatsapp";
 
 export async function getStaticPaths() {
   const products = await getCollection("products");
@@ -57,6 +59,16 @@ const resolveYoutubeId = (url?: string) => {
 };
 
 const youtubeId = resolveYoutubeId(product.data.youtube);
+
+const processWaNumber = (number: string) => {
+  return number.match(/\d+/g)?.join("") ?? "";
+};
+
+const config = await getEntry("config", "index");
+const number = processWaNumber(config.data.whatsapp.number);
+const href = `https://wa.me/${number}?text=${encodeURIComponent(
+  "Olá, gostaria de saber mais sobre o produto " + product.data.title,
+)}`;
 
 const resolvePublicPath = (path: string) => {
   return path.startsWith("/public") ? path.replace("/public", "") : path;
@@ -156,6 +168,15 @@ const resolvePublicPath = (path: string) => {
       )
     }
 
+    <Separator
+      href={href}
+      external
+      colored
+      class="!text-[0.7rem]"
+      icon={IcSharpWhatsapp}
+      text={$t("products.contact", locale)}
+    />
+
     {
       hasManuals && (
         <section>
@@ -227,6 +248,15 @@ const resolvePublicPath = (path: string) => {
         </div>
       )
     }
+
+    <Separator
+      href={href}
+      external
+      colored
+      class="!text-[0.7rem]"
+      icon={IcSharpWhatsapp}
+      text={$t("products.contact", locale)}
+    />
 
     {
       hasSubproducts &&
