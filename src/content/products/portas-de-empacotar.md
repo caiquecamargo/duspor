@@ -39,5 +39,6 @@ youtube: https://youtube.com/shorts/bxQR4Qcyu40
 images:
   - ../../assets/images/portas-de-empacotar-2.png
   - ../../assets/images/17-portas-de-empacotar-02.png
+  - ../../assets/images/empacotar-1.jpg
 ---
 Funcionam a partir de um sistema de comando, que recebe sinais externos de abertura através de botoeiras, sensores de movimento, sistemas de controle remoto ou laço de indução. O fechamento das portas pode ocorrer de forma automática, através de temporizadores, evitando que a porta fique muito tempo aberta. Apresentam um desenho higiênico e de fácil limpeza, barreira eletrônica que evita acidentes. Esse modelo de porta se enquadra muito bem para grandes vãos de luz, onde passarão veículos de cargas, como caminhões.
