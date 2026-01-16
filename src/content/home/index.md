@@ -2,7 +2,7 @@
 title: Crie espaços e **construa possibilidades**
 title_en: Create spaces and **build possibilities**
 title_es: Crear espacios y **construir posibilidades**
-titleBackground: ../../assets/images/capa-home.png
+titleBackground: ../../assets/images/duspor-capa-site-mercoagro.jpg
 description: "**Agilidade** na montagem e **facilidade** na operação"
 description_en: "**Agility** in assembly and **ease** of operation"
 description_es: "**Agilidad** en el montaje y **facilidad** de operación"
