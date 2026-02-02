@@ -6,11 +6,7 @@ titleBackground: ../../assets/images/duspor-capa-site-mercoagro.jpg
 description: "**Agilidade** na montagem e **facilidade** na operação"
 description_en: "**Agility** in assembly and **ease** of operation"
 description_es: "**Agilidad** en el montaje y **facilidad** de operación"
-descriptionBackgrounds:
-  - ../../assets/images/portas-vai-e-vem-2.png
-  - ../../assets/images/12-portas-de-enrolar-manual-02.png
-  - ../../assets/images/16-portas-de-empacotar-01.png
-  - ../../assets/images/06-portas-estocagem-resfriados-02.png
+descriptionBackgrounds: ../../assets/images/duspor-descricao.png
 clients: |-
   Conheça alguns de
 

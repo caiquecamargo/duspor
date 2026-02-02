@@ -18,6 +18,7 @@ const products = defineCollection({
       link: z.string(),
     })).optional(),
     images: z.array(image()),
+    titleImage: image(),
     subproducts: z.array(z.object({
       title: z.string(),
       title_en: z.string(),
@@ -41,7 +42,7 @@ const home = defineCollection({
     description: z.string(),
     description_en: z.string(),
     description_es: z.string(),
-    descriptionBackgrounds: z.array(image()),
+    descriptionBackgrounds: image(),
     clients: z.string(),
     clients_en: z.string(),
     clients_es: z.string(),

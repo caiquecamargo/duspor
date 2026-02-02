@@ -3,7 +3,6 @@ import Container from "@/components/container.astro";
 import Footer from "@/components/footer.astro";
 import GalleryFade from "@/components/gallery-fade.astro";
 import Header from "@/components/header.astro";
-import Hexagon from "@/components/hexagon.astro";
 import Separator from "@/components/separator.astro";
 import { $t, locales, resolveLocaleURL, resolvePropByLocale } from "@/i18n";
 import Layout from "@/layouts/Layout.astro";
@@ -11,7 +10,6 @@ import { generateWhatsappLink } from "@/utils";
 import { Image } from "astro:assets";
 import { getEntry } from "astro:content";
 import { marked } from "marked";
-import { match } from "ts-pattern";
 import IcSharpWhatsapp from "~icons/ic/sharp-whatsapp";
 import Logo from "~icons/local/logo";
 
@@ -23,22 +21,6 @@ const { locale } = Astro.params;
 
 const home = await getEntry("home", "index");
 const config = await getEntry("config", "index");
-
-const resolveStyle = (index: number) =>
-  match(index)
-    .with(0, () => ({ top: "0", left: "25px" }))
-    .with(1, () => ({ top: "65px", left: "calc(183px + 25px)" }))
-    .with(2, () => ({ top: "190px", left: "calc(33px + 25px)" }))
-    .with(3, () => ({ top: "255px", left: "calc(218px + 25px)" }))
-    .otherwise(() => ({}));
-
-const resolveMobileStyle = (index: number) =>
-  match(index)
-    .with(0, () => ({ top: "0", left: "25px" }))
-    .with(1, () => ({ top: "55px", left: "calc(135px + 25px)" }))
-    .with(2, () => ({ top: "140px", left: "calc(15px + 25px)" }))
-    .with(3, () => ({ top: "200px", left: "calc(155px + 25px)" }))
-    .otherwise(() => ({}));
 ---
 
 <Layout title="home">
@@ -63,35 +45,13 @@ const resolveMobileStyle = (index: number) =>
       text={$t("home.budget", locale)}
     />
 
-    <div class="grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2">
-      <div class="relative">
-        {
-          home.data.descriptionBackgrounds.slice(0, 4).map((image, index) => (
-            <>
-              <Hexagon
-                class="absolute hidden md:flex"
-                style={resolveStyle(index)}
-              >
-                <Image
-                  class="w-full h-auto object-cover"
-                  src={image}
-                  alt={`Duspor, portas industriais ${index}`}
-                />
-              </Hexagon>
-              <Hexagon
-                size="xs"
-                class="absolute flex md:hidden"
-                style={resolveMobileStyle(index)}
-              >
-                <Image
-                  class="w-full h-auto object-cover"
-                  src={image}
-                  alt={`Duspor, portas industriais ${index}`}
-                />
-              </Hexagon>
-            </>
-          ))
-        }
+    <div class="grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 items-stretch">
+      <div class="relative overflow-hidden min-h-full">
+        <Image
+          class="absolute w-full h-auto object-cover"
+          src={home.data.descriptionBackgrounds}
+          alt="Duspor, portas industriais"
+        />
       </div>
 
       <div

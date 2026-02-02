@@ -33,6 +33,7 @@ applications_es:
 position: 1
 youtube: https://youtube.com/shorts/JLarNa6WSUo
 manuals: []
+titleImage: ../../assets/images/duspor-produto.png
 images:
   - ../../assets/images/07-portas-de-passagem-interna-e-externa-01.png
   - ../../assets/images/04-portas-túneis-de-congelamento-02.png

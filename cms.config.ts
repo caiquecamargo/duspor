@@ -98,6 +98,11 @@ const products = defineFolderCollection({
         }
       }
     } as any),
+    defineImageWidget({
+      name: 'titleImage',
+      label: 'Imagem do título',
+      required: true,
+    }),
     defineListWidget({
       name: 'subproducts',
       label: 'Subprodutos',
@@ -172,12 +177,6 @@ const homePage = defineFileCollectionEntry({
       name: 'descriptionBackgrounds',
       label: 'Imagem da descrição',
       required: true,
-      allow_multiple: true,
-      media_library: {
-        config: {
-          multiple: true
-        }
-      }
     }),
     ...createLocalizedField(
       defineMarkdownWidget({

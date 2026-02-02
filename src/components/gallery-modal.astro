@@ -2,13 +2,21 @@
 type Props = {
   color?: "primary" | "secondary";
   class?: string;
+  max?: number;
 };
 
-const { color = "primary", class: _class } = Astro.props as Props;
+const { color = "primary", class: _class, max = 3 } = Astro.props as Props;
 ---
 
 <gallery-modal>
-  <div class="gallery grid lg:grid-cols-2 xl:grid-cols-3 gap-4 p-1 pr-2">
+  <div
+    class:list={[
+      `gallery grid gap-8 p-1 pr-2`,
+      max >= 2 ? "lg:grid-cols-2" : "lg:grid-cols-1",
+      max >= 3 ? "xl:grid-cols-3" : "xl:grid-cols-2",
+    ]}
+    ]
+  >
     <slot />
   </div>
 

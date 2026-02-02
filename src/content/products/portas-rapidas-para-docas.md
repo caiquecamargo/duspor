@@ -33,6 +33,7 @@ applications_es:
   - Centros de distribución
 position: 2
 youtube: https://www.youtube.com/shorts/JLarNa6WSUo
+titleImage: ../../assets/images/duspor-produto.png
 images:
   - ../../assets/images/img-20230801-wa0120.jpg
   - ../../assets/images/09-portas-rápidas-para-docas-01.png

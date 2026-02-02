@@ -12,6 +12,7 @@ body_es: El modelo de puerta enrollable manual está pensado para su instalació
   estructura de la puerta puede ser de acero inoxidable o chapa prepintada de
   color blanco, con o sin visera.
 position: 3
+titleImage: ../../assets/images/duspor-produto.png
 images:
   - ../../assets/images/11-portas-de-enrolar-manual-01.png
   - ../../assets/images/12-portas-de-enrolar-manual-02.png

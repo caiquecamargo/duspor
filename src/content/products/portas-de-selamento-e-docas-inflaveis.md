@@ -43,6 +43,7 @@ applications_es:
   - Mayoristas
   - Centros de distribución
 position: 4
+titleImage: ../../assets/images/duspor-produto.png
 images:
   - ../../assets/images/portas-de-selamento-e-docas-inflaveis-1.png
   - ../../assets/images/portas-de-selamento-e-docas-inflaveis-2.png

@@ -32,7 +32,7 @@ const config = await getEntry("config", "index");
 <Layout title={$t("routes.products.title", locale)}>
   <Header locale={locale} page={page} />
 
-  <Container class="my-16 md:my-28 p-1">
+  <Container class="my-16 md:my-28 p-1 w-screen overflow-hidden">
     <section class="flex items-center">
       <LogoMin
         class="h-28 sm:h-44 md:h-64 lg:h-96 w-28 sm:w-44 md:w-64 lg:w-96 text-gray-400 flex-shrink-0"
@@ -47,7 +47,9 @@ const config = await getEntry("config", "index");
       </div>
     </section>
 
-    <section class="mb-28 space-y-8 md:space-y-12 divide-y-2 divide-y-gray-400">
+    <section
+      class="mb-28 mt-12 space-y-8 md:space-y-12 divide-y-2 divide-y-gray-400 w-full"
+    >
       {
         products.map((product, index) => (
           <a
@@ -55,74 +57,32 @@ const config = await getEntry("config", "index");
               product.slug
             }`}
             class:list={[
-              "flex items-center pt-8 md:pt-12 group",
+              "flex items-center pt-12 group gap-4 md:gap-8",
               even(index) ? "flex-row" : "flex-row-reverse",
             ]}
           >
             <h2
               class:list={[
-                "md:w-1/3 uppercase text-primary text-lg sm:text-2xl md:text-4xl font-bold group-hover:text-black transition-colors duration-150 group-hover:duration-150",
+                "w-1/3 uppercase text-primary text-lg sm:text-2xl md:text-4xl font-bold group-hover:text-black transition-colors duration-150 group-hover:duration-150",
                 !even(index) && "text-right",
               ]}
             >
               {resolvePropByLocale(product.data, "title", locale)}
             </h2>
-            <div class="flex flex-grow justify-center">
+            <div class="flex flex-grow justify-center md:gap-2 h-32 md:h-80 relative">
               {product.data.images.slice(0, 3).map((image, index) => (
                 <div
-                  class="text-border"
+                  class:list={[
+                    "absolute md:static flex w-24 h-32 md:w-64 md:h-80 group-hover:translate-x-0 transition-transform duration-300",
+                    index == 0 && "left-0",
+                    index == 1 && "-top-4 md:-translate-y-8 md:-translate-x-8",
+                    index == 2 && "left-28 md:-translate-x-16",
+                  ]}
                   transition:name={`product-${product.slug}-${index}`}
                 >
-                  <Hexagon
-                    size="xl"
-                    class:list={[
-                      "hidden md:flex",
-                      index > 0 &&
-                        "-ml-12 group-hover:translate-x-6 transition-all duration-300",
-                    ]}
-                  >
+                  <Hexagon size="xl">
                     <Image
-                      class={
-                        image.height < image.width
-                          ? "h-full w-auto"
-                          : "w-full h-auto"
-                      }
-                      src={image}
-                      alt={product.data.title}
-                    />
-                  </Hexagon>
-                  <Hexagon
-                    size="xs"
-                    class:list={[
-                      "hidden sm:flex md:hidden",
-                      index > 0 &&
-                        "-ml-8 group-hover:translate-x-4 transition-all duration-300",
-                    ]}
-                  >
-                    <Image
-                      class={
-                        image.height < image.width
-                          ? "h-full w-auto"
-                          : "w-full h-auto"
-                      }
-                      src={image}
-                      alt={product.data.title}
-                    />
-                  </Hexagon>
-                  <Hexagon
-                    size="xxs"
-                    class:list={[
-                      "flex sm:hidden",
-                      index > 0 &&
-                        "-ml-4 group-hover:translate-x-2 transition-all duration-300",
-                    ]}
-                  >
-                    <Image
-                      class={
-                        image.height < image.width
-                          ? "h-full w-auto"
-                          : "w-full h-auto"
-                      }
+                      class="size-full object-cover"
                       src={image}
                       alt={product.data.title}
                     />

@@ -36,6 +36,7 @@ applications_es:
   - Condominios Logísticos
 position: 7
 youtube: https://youtube.com/shorts/y9Cbh1Phe9Q?feature=share
+titleImage: ../../assets/images/duspor-produto.png
 images:
   - ../../assets/images/portas-de-empacotar-2.png
   - ../../assets/images/17-portas-de-empacotar-02.png

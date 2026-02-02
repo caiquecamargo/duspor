@@ -105,6 +105,10 @@ collections:
         media_library:
           config:
             multiple: true
+      - widget: image
+        name: titleImage
+        label: Imagem do título
+        required: true
       - widget: list
         name: subproducts
         label: Subprodutos
@@ -208,10 +212,6 @@ collections:
             name: descriptionBackgrounds
             label: Imagem da descrição
             required: true
-            allow_multiple: true
-            media_library:
-              config:
-                multiple: true
           - widget: markdown
             name: clients
             label: Clientes

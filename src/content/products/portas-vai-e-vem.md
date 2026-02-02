@@ -30,6 +30,7 @@ applications_es:
   - Refrigeradores
   - Cervecerías
 position: 6
+titleImage: ../../assets/images/duspor-produto.png
 images:
   - ../../assets/images/18-portas-vai-e-vem-01.png
   - ../../assets/images/19-portas-vai-e-vem-02.png
