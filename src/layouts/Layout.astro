@@ -35,12 +35,27 @@ const config = await getEntry("config", "index");
 		<!-- End Google Tag Manager -->
 
 		<meta charset="UTF-8" />
-		<meta name="description" content={description ?? ""} />
+		<meta
+			name="description"
+			content={description ?? config.data.siteDescription}
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
-		<meta property="og:url" content="https://duspor.com.br" />
-		<meta property="og:description" content={config.data.siteDescription} />
-		<meta property="og:title" content="Duspor" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Duspor" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="canonical" href={Astro.url.href} />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="pt_BR" />
+		<meta property="og:site_name" content="Duspor" />
+		<meta property="og:url" content={Astro.url.href} />
+		<meta property="og:title" content={resolvedTitle} />
+		<meta
+			property="og:description"
+			content={description ?? config.data.siteDescription}
+		/>
 		<meta property="og:image" content="https://duspor.com.br/logo-min.png" />
 		<meta
 			property="og:image:secure_url"
@@ -48,15 +63,29 @@ const config = await getEntry("config", "index");
 		/>
 		<meta property="og:image:width" content="1802" />
 		<meta property="og:image:height" content="1695" />
-		<meta property="og:image:alt" content="Duspor logo" />
+		<meta property="og:image:alt" content="Duspor - Portas Industriais" />
 		<meta property="og:image:type" content="image/png" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={resolvedTitle} />
+		<meta
+			name="twitter:description"
+			content={description ?? config.data.siteDescription}
+		/>
+		<meta name="twitter:image" content="https://duspor.com.br/logo-min.png" />
+
+		<!-- Apple -->
 		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="apple-mobile-web-app-title" content="Duspor" />
 
 		<script
 			is:inline
 			src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 		<link rel="icon" type="image/svg+xml" href="/logo-min.svg" />
+		<link rel="shortcut icon" type="image/png" href="/logo-min.png" />
 		<title>{resolvedTitle}</title>
 
 		<ViewTransitions />

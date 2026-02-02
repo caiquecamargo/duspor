@@ -4,6 +4,7 @@ type Props = {
   style?: Record<string, string>;
   size?: "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
   noShadow?: boolean;
+  hexagon?: boolean;
 };
 
 const {
@@ -11,12 +12,14 @@ const {
   style,
   size = "md",
   noShadow = false,
+  hexagon = false,
 } = Astro.props as Props;
 ---
 
 <div
   class:list={[
     `flex items-center justify-center rounded-xl border-2 border-white ${noShadow ? "" : "shadow-[-4px_4px_12px_rgba(0,0,0,0.40)]"} overflow-hidden`,
+    hexagon && `hexagon hexagon-${size}`,
     _class,
   ]}
   style={style}
