@@ -28,13 +28,59 @@ description_es: Somos una empresa completa especializada en el montaje y
   nuestros clientes, evolucionamos hasta Duspor. Diseñamos y desarrollamos
   nuestros productos con el objetivo de brindar seguridad, eficiencia y calidad
   a nuestros clientes.
-mission: Oferecer soluções em portas industriais com excelência, segurança e qualidade.
-mission_en: Offer industrial door solutions with excellence, safety and quality.
-mission_es: Ofrecer soluciones en puertas industriales con excelencia, seguridad y calidad.
-vision: Ser referência no mercado de portas industriais.
-vision_en: Be a reference in the industrial doors market.
-vision_es: Ser referencia en el mercado de puertas industriales.
-values: Ser referência no mercado de portas industriais.
+mission: Proporcionar aos nossos clientes um atendimento humanizado e
+  personalizado, oferecendo produtos que atendam às necessidades do cliente com
+  máxima confiabilidade, durabilidade e adequação às suas realidades.
+mission_en: To provide our customers with humane and personalized service,
+  offering products that meet customer needs with maximum reliability,
+  durability, and suitability to their realities.
+mission_es: Brindar a nuestros clientes un servicio humano y personalizado,
+  ofreciendo productos que satisfagan las necesidades del cliente con la máxima
+  fiabilidad, durabilidad y adecuación a sus realidades.
+vision: Tornar-se a principal escolha dos clientes que buscam soluções
+  confiáveis e duráveis, reconhecida pela excelência e pela capacidade de
+  entregar produtos sob medida.
+vision_en: To become the top choice for customers seeking reliable and durable
+  solutions, recognized for excellence and the ability to deliver tailor-made
+  products.
+vision_es: Convertirnos en la mejor opción para los clientes que buscan
+  soluciones confiables y duraderas, reconocidos por la excelencia y la
+  capacidad de entregar productos a medida.
+values: >-
+  ## 1. Centralidade no Cliente
+
+
+  Colocamos as necessidades do cliente como prioridade absoluta, orientando cada decisão e cada entrega para gerar valor real e duradouro.
+
+
+  ## 2. Colaboração que Potencializa Resultados
+
+
+  Acreditamos que equipes alinhadas alcançam mais. Trabalhamos de forma integrada, com respeito e cooperação, para ampliar o impacto de cada ação.
+
+
+  ## 3. Evolução e Criatividade Contínuas
+
+
+  Buscamos constantemente novas ideias, abordagens diferentes e formas mais eficientes de operar, mantendo a inovação como parte natural do nosso dia a dia.
+
+
+  ## 4. Entrega que Gera Confiança
+
+
+  Somos movidos por resultados concretos. Assumimos compromissos, executamos com excelência e medimos nosso desempenho pelo impacto alcançado.
+
+
+  ## 5. Ética como Base de Tudo
+
+
+  Agimos com honestidade, clareza e responsabilidade. Mantemos relações transparentes e decisões guiadas por princípios sólidos.
+
+
+  ## 6. Diversidade e Abertura
+
+
+  Valorizamos diferentes perspectivas. Criamos um ambiente onde todos podem contribuir, crescer e serem respeitados.
 values_en: Be a reference in the industrial doors market.
 values_es: Ser referencia en el mercado de puertas industriales.
 dna: Nosso DNA
