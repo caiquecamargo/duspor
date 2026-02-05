@@ -33,11 +33,11 @@ applications_es:
 position: 1
 youtube: https://youtube.com/shorts/JLarNa6WSUo
 manuals: []
-titleImage: ../../assets/images/duspor-produto.png
 images:
-  - ../../assets/images/07-portas-de-passagem-interna-e-externa-01.png
-  - ../../assets/images/04-portas-túneis-de-congelamento-02.png
-  - ../../assets/images/01-portas-rápidas-01.png
+  - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.3.jpeg
+  - ../../assets/images/porta-rápida-estocagem-congelados-interna-duspor-1.2.jpg
+  - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.jpg
+titleImage: ../../assets/images/duspor-produto.png
 subproducts:
   - images:
       - ../../assets/images/01-portas-rápidas-01.png
