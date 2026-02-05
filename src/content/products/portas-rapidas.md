@@ -40,8 +40,8 @@ images:
 titleImage: ../../assets/images/duspor-produto.png
 subproducts:
   - images:
-      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.1.jpg.jpeg
-      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.2.jpg.jpeg
+      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.1.jpg
+      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.2.jpg
       - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.3.jpeg
     title: Portas Estocagem Congelados
     title_en: Frozen storage doors
@@ -67,7 +67,7 @@ subproducts:
       contaminantes al medio ambiente. Garantizan el rápido paso de personas y
       equipos, además de proteger el ambiente contra las variaciones de
       temperatura, la contaminación y la entrada de insectos.
-    youtube: 8omAoyi7rNo
+    youtube: https://youtu.be/WVTA67pt_Ik
   - title: Portas Túneis de Congelamento
     images:
       - ../../assets/images/03-portas-túneis-de-congelamento-01.png
