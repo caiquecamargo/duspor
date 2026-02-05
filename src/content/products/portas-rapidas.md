@@ -80,8 +80,10 @@ subproducts:
     title_en: Cold Storage Doors
     title_es: Puertas de almacenamiento en frío
     images:
-      - ../../assets/images/05-portas-estocagem-resfriados-01.png
-      - ../../assets/images/06-portas-estocagem-resfriados-02.png
+      - ../../assets/images/porta-rápida-estocagem_-resfriados-duspor-1.3.1.jpg
+      - ../../assets/images/porta-rápida-estocagem_-resfriados-duspor-1.3.2.jpeg
+      - ../../assets/images/porta-rápida-estocagem_-resfriados-duspor-1.3.3.jpeg
+    youtube: https://youtube.com/shorts/HogjWIb6WeU
   - title: "Portas de Passagem Internas e Externas "
     title_es: Puertas de paso interior y exterior
     title_en: Internal and External Passage Doors
