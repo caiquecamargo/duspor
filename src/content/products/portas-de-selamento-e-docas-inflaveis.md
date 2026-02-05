@@ -1,5 +1,5 @@
 ---
-title: Portais de selamento e docas infláveis
+title: Portais de selamento convencional e inflável
 title_en: Sealing doors and inflatable docks
 title_es: Sellado de puertas y muelles inflables.
 body_en: Dock sealing is an essential resource to ensure environmental control
@@ -43,10 +43,19 @@ applications_es:
   - Mayoristas
   - Centros de distribución
 position: 4
-titleImage: ../../assets/images/duspor-produto.png
 images:
-  - ../../assets/images/portas-de-selamento-e-docas-inflaveis-1.png
-  - ../../assets/images/portas-de-selamento-e-docas-inflaveis-2.png
-  - ../../assets/images/14-portais-de-selamento-e-docas-infláveis-02.png
+  - ../../assets/images/portal-de-selamento-convencional-duspor-4.1.jpeg
+  - ../../assets/images/portal-de-selamento-convencional-duspor-4.2.jpg
+  - ../../assets/images/portal-de-selamento-convencional-duspor-4.3.jpeg
+titleImage: ../../assets/images/duspor-produto.png
+subproducts:
+  - title: PORTAL DE SELAMENTO CONVENCIONAL
+    title_en: CONVENTIONAL SEALING PORTAL
+    title_es: PORTAL DE SELLADO CONVENCIONAL
+    images:
+      - ../../assets/images/portal-selamento-convencional-duspor-4.1.1.jpg
+      - ../../assets/images/portal-selamento-convencional-duspor-4.1.2.jpeg
+      - ../../assets/images/portal-selamento-convencional-duspor-4.1.3.jpeg
+    youtube: https://youtube.com/shorts/KGE_O1zz4O8
 ---
 A vedação de docas é um recurso imprescindível para garantir o controle do ambiente nas operações de carga e descarga de mercadorias. Alguns segmentos exigem ambientes controlados como pré-requisito para garantir a eficiência de suas operações. Dispomos de duas opções, uma delas é o portal de selamento inflável, desenvolvido para ambientes que necessitam de uma vedação excelente, evitando entrada de insetos, troca de calor, entre outros. Sua forma construtiva independe de ar do sistema local, automação de inflamento via motor elétrico. O segundo sistema é o Portal de Selamento a Seco, desenvolvido para permitir um melhor acoplamento e vedação, onde o mesmo absorve impactos frontais dos caminhões nas borrachas existentes, por utilizar uma estrutura flexível e retrátil. Este diferencial resulta em uma diminuição considerável na sua manutenção, pois eliminam danos nas estruturas metálicas e nas partes fixadas nas paredes.
