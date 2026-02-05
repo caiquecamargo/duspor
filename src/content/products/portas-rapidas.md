@@ -88,8 +88,10 @@ subproducts:
     title_es: Puertas de paso interior y exterior
     title_en: Internal and External Passage Doors
     images:
-      - ../../assets/images/07-portas-de-passagem-interna-e-externa-01.png
-      - ../../assets/images/08-portas-de-passagem-interna-e-externa-02.png
+      - ../../assets/images/porta-rápida-de-passagem-duspor-1.4.1.jpg
+      - ../../assets/images/porta-rápida-de-passagem-duspor-1.4.2.jpg
+      - ../../assets/images/porta-rápida-de-passagem-duspor-1.4.3.jpeg
+    youtube: https://youtube.com/shorts/0eAu7O3W--s
 ---
 
 Soluções rápidas e inteligentes para os mais diversos locais que necessitam realizar a divisão de ambientes e salas especiais, o que gera melhor aproveitamento dos espaços e processos. Elas também podem atuar como verdadeiras barreiras sanitárias e evitam a entrada de contaminantes no ambiente. Garantem uma passagem rápida de pessoas e equipamentos, além de proteger o ambiente contra variações de temperaturas, contaminações e entrada de insetos.
