@@ -35,6 +35,16 @@ subproducts:
       - ../../assets/images/cortina-retrátil-duspor-4.1.2.jpg
       - ../../assets/images/cortina-retrátil-duspor-4.1.1.jpg
       - ../../assets/images/cortina-retrátil-duspor-4.1.3.jpeg
+  - title: CORTINA RETRÁTIL - PORTAL DE SELAMENTO INFLÁVEL
+    title_es: Cortina retráctil - Portal de sellado inflable
+    title_en: Retractable curtain - Inflatable sealing portal
+    youtube: https://youtube.com/shorts/yoclM7sMCDk
+    images:
+      - ../../assets/images/cortina-retrátil-duspor-4.2.1.jpeg
+      - ../../assets/images/cortina-retrátil-duspor-4.2.3.jpeg
+      - ../../assets/images/cortina-retrátil-duspor-4.2.4.jpeg
+      - ../../assets/images/cortina-retrátil-duspor-4.2.5.jpeg
+      - ../../assets/images/cortina-retrátil-duspor-4.2.6.jpeg
 ---
 As cortinas retráteis para portais de selamento são componentes essenciais para garantir a eficiência, a vedação e a durabilidade das operações em docas de carga e descarga. Projetadas para atuar em conjunto com o portal de selamento, elas se adaptam ao movimento dos veículos, reduzindo a entrada de ar externo, poeira, insetos e variações de temperatura.
 
