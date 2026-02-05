@@ -1,5 +1,5 @@
 ---
-title: Cortina Retrátil Para Portal de Selamento
+title: Cortina retrátil para portal de selamento
 title_en: Retractable Curtain for Sealing Portal
 title_es: Cortina retráctil para sellado de portal
 body_en: >-
