@@ -57,5 +57,19 @@ subproducts:
       - ../../assets/images/portal-selamento-convencional-duspor-4.1.2.jpeg
       - ../../assets/images/portal-selamento-convencional-duspor-4.1.3.jpeg
     youtube: https://youtube.com/shorts/KGE_O1zz4O8
+  - title: PORTAL DE SELAMENTO INFLÁVEL
+    title_en: INFLATABLE SEALING PORTAL
+    title_es: PORTAL DE SELLADO INFLABLE
+    youtube: https://youtube.com/shorts/grjo-qdRa4E
+    images:
+      - ../../assets/images/porta-rapida-doca-duspor-2.jpeg
+      - ../../assets/images/porta-rapida-doca-duspor-8.jpeg
+      - ../../assets/images/porta-rapida-doca-duspor-10.jpeg
+      - ../../assets/images/portal-selamento-inflável-duspor-4.2.1.jpg
+      - ../../assets/images/portal-selamento-inflável-duspor-4.2.2.jpg
+      - ../../assets/images/portal-selamento-inflável-duspor-4.2.3.jpeg
+      - ../../assets/images/portal-selamento-inflável-duspor-4.2.4.jpeg
+      - ../../assets/images/portal-selamento-inflável-duspor-4.2.5.jpeg
+      - ../../assets/images/portal-selamento-inflável-duspor-4.2.6.jpg
 ---
 A vedação de docas é um recurso imprescindível para garantir o controle do ambiente nas operações de carga e descarga de mercadorias. Alguns segmentos exigem ambientes controlados como pré-requisito para garantir a eficiência de suas operações. Dispomos de duas opções, uma delas é o portal de selamento inflável, desenvolvido para ambientes que necessitam de uma vedação excelente, evitando entrada de insetos, troca de calor, entre outros. Sua forma construtiva independe de ar do sistema local, automação de inflamento via motor elétrico. O segundo sistema é o Portal de Selamento a Seco, desenvolvido para permitir um melhor acoplamento e vedação, onde o mesmo absorve impactos frontais dos caminhões nas borrachas existentes, por utilizar uma estrutura flexível e retrátil. Este diferencial resulta em uma diminuição considerável na sua manutenção, pois eliminam danos nas estruturas metálicas e nas partes fixadas nas paredes.
