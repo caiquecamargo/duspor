@@ -33,10 +33,10 @@ applications_es:
   - Centros de distribución
 position: 2
 youtube: https://www.youtube.com/shorts/JLarNa6WSUo
-titleImage: ../../assets/images/duspor-produto.png
 images:
-  - ../../assets/images/img-20230801-wa0120.jpg
-  - ../../assets/images/09-portas-rápidas-para-docas-01.png
-  - ../../assets/images/10-portas-rápidas-para-docas-02.png
+  - ../../assets/images/2.-porta-rápida-doca-duspor-2.1.jpg
+  - ../../assets/images/2.-porta-rápida-doca-duspor-2.2.jpeg
+  - ../../assets/images/2.-porta-rápida-doca-duspor-2.3.jpg
+titleImage: ../../assets/images/duspor-produto.png
 ---
 Portas rápidas para expedição, centros logísticos entre outras aplicações. Esse modelo de porta rápida vem de encontro a uma demanda muito grande com relação a manutenção de portas tradicionais existentes, devido a essa solicitação, desenvolvemos um projeto especial, para que tenhamos o máximo de desempenho possível, com o mínimo de manutenção. Também outro ponto de extrema importância é a segurança das pessoas que operam os modelos mais antigos, tendo em vista isso, optamos por fabricar e entregar ao nosso cliente o máximo de segurança.
