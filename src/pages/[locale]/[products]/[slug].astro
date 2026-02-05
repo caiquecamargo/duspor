@@ -185,8 +185,8 @@ const resolvePublicPath = (path: string) => {
         <div class="mt-12">
           <GalleryModal>
             {product.data.images.map((image) => (
-              <div class="flex items-center justify-center cursor-pointer">
-                <Hexagon size="3xl">
+              <div class="flex items-center justify-center cursor-pointer max-h-[400px]">
+                <Hexagon size="3xl" class="h-full">
                   <Image
                     class={
                       image.height < image.width
@@ -236,8 +236,8 @@ const resolvePublicPath = (path: string) => {
               <div>
                 <GalleryModal max={2}>
                   {subproduct.images.map((image) => (
-                    <div class="flex items-center justify-center cursor-pointer">
-                      <Hexagon size="3xl">
+                    <div class="flex items-center justify-center cursor-pointer max-h-[400px]">
+                      <Hexagon size="3xl" class="h-full">
                         <Image
                           class={
                             image.height < image.width
