@@ -42,6 +42,7 @@ subproducts:
   - images:
       - ../../assets/images/01-portas-rápidas-01.png
       - ../../assets/images/02-portas-rápidas-02.png
+      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.3.jpeg
     title: Portas Estocagem Congelados
     title_en: Frozen storage doors
     title_es: Puertas de almacenamiento de congelados
