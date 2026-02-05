@@ -70,11 +70,12 @@ subproducts:
     youtube: https://youtu.be/WVTA67pt_Ik
   - title: Portas Túneis de Congelamento
     images:
-      - ../../assets/images/03-portas-túneis-de-congelamento-01.png
-      - ../../assets/images/04-portas-túneis-de-congelamento-02.png
+      - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.1.jpeg
+      - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.2.jpg
+      - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.3.jpg
     title_es: Puertas de túnel de congelación
     title_en: Freezing tunnel doors
-    youtube: https://www.youtube.com/shorts/8omAoyi7rNo
+    youtube: https://youtube.com/shorts/x8Pj-M60zG4
   - title: "Portas Estocagem de Resfriados "
     title_en: Cold Storage Doors
     title_es: Puertas de almacenamiento en frío
