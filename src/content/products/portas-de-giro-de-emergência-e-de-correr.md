@@ -1,5 +1,5 @@
 ---
-title: "Portas de giro de emergência e de correr "
+title: "Portas de Giro de Emergência e de Correr "
 title_en: Emergency swing and sliding doors
 title_es: Puertas batientes y correderas de emergencia
 body_en: Swing and sliding doors with a PIR or EPS core, as they have direct
@@ -31,11 +31,11 @@ applications_es:
   - Salas blancas
   - Salidas de emergencia con barras antipánico (rojas o blancas)
 position: 7
-titleImage: ../../assets/images/duspor-produto.png
 images:
   - ../../assets/images/29-portas-de-correr-automáticas-e-manuais-02.png
   - ../../assets/images/23-portas-de-giro-simples-01.png
   - ../../assets/images/27-porta-de-emergência-folhas-simples-e-dupla-02.png
+titleImage: ../../assets/images/duspor-produto.png
 subproducts:
   - title: "Portas de giro simples "
     title_es: Puertas batientes simples
