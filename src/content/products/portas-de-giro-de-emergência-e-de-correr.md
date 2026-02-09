@@ -37,13 +37,14 @@ images:
   - ../../assets/images/porta-de-giso-com-marco-a-óleo-aquecido-duspor-7.jpeg
 titleImage: ../../assets/images/duspor-produto.png
 subproducts:
-  - title: "Portas de giro simples "
-    title_es: Puertas batientes simples
-    title_en: Single swing doors
+  - title: PORTAS DE GIRO
+    title_es: PUERTAS BATIENTES
+    title_en: SWING DOORS
     images:
-      - ../../assets/images/23-portas-de-giro-simples-01.png
-      - ../../assets/images/24-portas-de-giro-simples-02.png
-      - ../../assets/images/25-portas-de-giro-simples-03.png
+      - ../../assets/images/porta-giro-sala-limpa-duspor-7.1.3.jpg
+      - ../../assets/images/porta-giro-túnel-duspor-7.1.1.jpeg
+      - ../../assets/images/porta-giro-túnel-duspor-7.1.2.jpg
+    youtube: https://youtube.com/shorts/1MQIWzaAfiE
   - title: Portas de emergência, folhas simples e dupla
     title_en: Emergency doors, single and double leaves
     title_es: Puertas de emergencia, de simple y doble hoja.
