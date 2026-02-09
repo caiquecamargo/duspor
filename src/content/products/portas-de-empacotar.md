@@ -41,5 +41,14 @@ images:
   - ../../assets/images/porta-de-empacotar-duspor-6.2.jpeg
   - ../../assets/images/porta-de-empacotar-duspor-6.1.jpeg
 titleImage: ../../assets/images/duspor-produto.png
+subproducts:
+  - title: PORTAS DE EMPACOTAR
+    title_en: PACKING DOORS
+    title_es: PUERTAS DE EMBALAJE
+    youtube: https://youtube.com/shorts/gownsg6xodI
+    images:
+      - ../../assets/images/porta-de-empacotar-duspor-6.1.1.jpg
+      - ../../assets/images/porta-de-empacotar-duspor-6.1.2.jpeg
+      - ../../assets/images/porta-de-empacotar-duspor-6.1.3.jpg
 ---
 Funcionam a partir de um sistema de comando, que recebe sinais externos de abertura através de botoeiras, sensores de movimento, sistemas de controle remoto ou laço de indução. O fechamento das portas pode ocorrer de forma automática, através de temporizadores, evitando que a porta fique muito tempo aberta. Apresentam um desenho higiênico e de fácil limpeza, barreira eletrônica que evita acidentes. Esse modelo de porta se enquadra muito bem para grandes vãos de luz, onde passarão veículos de cargas, como caminhões.
