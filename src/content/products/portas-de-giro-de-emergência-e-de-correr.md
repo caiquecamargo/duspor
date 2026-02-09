@@ -55,12 +55,13 @@ subproducts:
       - ../../assets/images/porta-de-emergência-duspor-7.2.3.jpg
       - ../../assets/images/porta-de-emergência-duspor-7.2.2.jpg
       - ../../assets/images/porta-de-emergência-duspor-7.2.1.jpg
-  - title: "Portas de correr automáticas e manuais "
-    title_es: Puertas correderas automáticas y manuales.
-    title_en: Automatic and manual sliding doors
+  - title: PORTAS DE CORRER
+    title_es: PUERTAS CORREDERAS
+    title_en: SLIDING DOORS
     images:
-      - ../../assets/images/28-portas-de-correr-automáticas-e-manuais-01.png
-      - ../../assets/images/29-portas-de-correr-automáticas-e-manuais-02.png
+      - ../../assets/images/porta-de-correr-manual-duspor-7.3.3.jpeg
+      - ../../assets/images/porta-de-correr-manual-duspor-7.3.2.jpeg
+      - ../../assets/images/porta-de-correr-manual-duspor-7.3.1.jpg
     description: "Portas de correr automáticas e manuais com e sem
       aquecimento.  Fabricação de portas de correr automáticas com sistema de
       embreagem magnética, na falta de energia, a porta fica liberada para a
