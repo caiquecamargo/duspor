@@ -35,11 +35,11 @@ applications_es:
   - Hangares
   - Condominios Logísticos
 position: 7
-youtube: https://youtube.com/shorts/y9Cbh1Phe9Q?feature=share
+youtube: ""
 images:
-  - ../../assets/images/portas-de-empacotar-2.png
-  - ../../assets/images/17-portas-de-empacotar-02.png
-  - ../../assets/images/empacotar-1.jpg
+  - ../../assets/images/porta-de-empacotar-duspor-6.3.jpeg
+  - ../../assets/images/porta-de-empacotar-duspor-6.2.jpeg
+  - ../../assets/images/porta-de-empacotar-duspor-6.1.jpeg
 titleImage: ../../assets/images/duspor-produto.png
 ---
 Funcionam a partir de um sistema de comando, que recebe sinais externos de abertura através de botoeiras, sensores de movimento, sistemas de controle remoto ou laço de indução. O fechamento das portas pode ocorrer de forma automática, através de temporizadores, evitando que a porta fique muito tempo aberta. Apresentam um desenho higiênico e de fácil limpeza, barreira eletrônica que evita acidentes. Esse modelo de porta se enquadra muito bem para grandes vãos de luz, onde passarão veículos de cargas, como caminhões.
