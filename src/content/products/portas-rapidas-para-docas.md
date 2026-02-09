@@ -1,5 +1,5 @@
 ---
-title: Portas Rápidas para docas
+title: Portas Rápidas para Docas
 title_en: Fast dock doors
 title_es: Puertas de muelle rápidas
 body_en: Fast doors for shipping, logistics centers and other applications. This
