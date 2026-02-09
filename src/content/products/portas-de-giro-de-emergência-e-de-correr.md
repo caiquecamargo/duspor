@@ -45,12 +45,16 @@ subproducts:
       - ../../assets/images/porta-giro-túnel-duspor-7.1.1.jpeg
       - ../../assets/images/porta-giro-túnel-duspor-7.1.2.jpg
     youtube: https://youtube.com/shorts/1MQIWzaAfiE
-  - title: Portas de emergência, folhas simples e dupla
-    title_en: Emergency doors, single and double leaves
-    title_es: Puertas de emergencia, de simple y doble hoja.
+  - title: PORTAS DE EMERGÊNCIA
+    title_en: EMERGENCY DOORS
+    title_es: PUERTAS DE EMERGENCIA
     images:
-      - ../../assets/images/26-porta-de-emergência-folhas-simples-e-dupla-01.png
-      - ../../assets/images/27-porta-de-emergência-folhas-simples-e-dupla-02.png
+      - ../../assets/images/porta-de-emergência-duspor-7.2.6.jpg
+      - ../../assets/images/porta-de-emergência-duspor-7.2.5.jpg
+      - ../../assets/images/porta-de-emergência-duspor-7.2.4.jpg
+      - ../../assets/images/porta-de-emergência-duspor-7.2.3.jpg
+      - ../../assets/images/porta-de-emergência-duspor-7.2.2.jpg
+      - ../../assets/images/porta-de-emergência-duspor-7.2.1.jpg
   - title: "Portas de correr automáticas e manuais "
     title_es: Puertas correderas automáticas y manuales.
     title_en: Automatic and manual sliding doors
