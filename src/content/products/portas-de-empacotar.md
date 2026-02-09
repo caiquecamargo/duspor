@@ -1,5 +1,5 @@
 ---
-title: Portas de empacotar
+title: Portas de Empacotar
 title_en: Packaging doors
 title_es: Puertas de embalaje
 body_en: They work from a command system, which receives external opening
@@ -36,10 +36,10 @@ applications_es:
   - Condominios Logísticos
 position: 7
 youtube: https://youtube.com/shorts/y9Cbh1Phe9Q?feature=share
-titleImage: ../../assets/images/duspor-produto.png
 images:
   - ../../assets/images/portas-de-empacotar-2.png
   - ../../assets/images/17-portas-de-empacotar-02.png
   - ../../assets/images/empacotar-1.jpg
+titleImage: ../../assets/images/duspor-produto.png
 ---
 Funcionam a partir de um sistema de comando, que recebe sinais externos de abertura através de botoeiras, sensores de movimento, sistemas de controle remoto ou laço de indução. O fechamento das portas pode ocorrer de forma automática, através de temporizadores, evitando que a porta fique muito tempo aberta. Apresentam um desenho higiênico e de fácil limpeza, barreira eletrônica que evita acidentes. Esse modelo de porta se enquadra muito bem para grandes vãos de luz, onde passarão veículos de cargas, como caminhões.
