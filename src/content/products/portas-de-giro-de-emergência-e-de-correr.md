@@ -32,9 +32,9 @@ applications_es:
   - Salidas de emergencia con barras antipánico (rojas o blancas)
 position: 7
 images:
-  - ../../assets/images/29-portas-de-correr-automáticas-e-manuais-02.png
-  - ../../assets/images/23-portas-de-giro-simples-01.png
-  - ../../assets/images/27-porta-de-emergência-folhas-simples-e-dupla-02.png
+  - ../../assets/images/porta-de-correr-manual-duspor-7.jpeg
+  - ../../assets/images/porta-de-emergência-inox-duspor-7.jpg
+  - ../../assets/images/porta-de-giso-com-marco-a-óleo-aquecido-duspor-7.jpeg
 titleImage: ../../assets/images/duspor-produto.png
 subproducts:
   - title: "Portas de giro simples "
