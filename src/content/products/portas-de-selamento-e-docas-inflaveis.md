@@ -1,5 +1,5 @@
 ---
-title: Portais de selamento convencional e inflável
+title: Portais de Selamento Convencional e Inflável
 title_en: Sealing doors and inflatable docks
 title_es: Sellado de puertas y muelles inflables.
 body_en: Dock sealing is an essential resource to ensure environmental control
