@@ -30,11 +30,11 @@ applications_es:
   - Refrigeradores
   - Cervecerías
 position: 6
-titleImage: ../../assets/images/duspor-produto.png
 images:
-  - ../../assets/images/18-portas-vai-e-vem-01.png
-  - ../../assets/images/19-portas-vai-e-vem-02.png
-  - ../../assets/images/20-portas-vai-e-vem-03.png
+  - ../../assets/images/5.3-porta-vai-e-vem-inox-duspor.jpg
+  - ../../assets/images/5.2-porta-vai-e-vem-inox-duspor.jpg
+  - ../../assets/images/5.1-porta-vai-e-vem-inox-duspor.jpg
+titleImage: ../../assets/images/duspor-produto.png
 subproducts:
   - title: "Portas Vai e Vem Flexíveis "
     title_en: Flexible back and forth doors
