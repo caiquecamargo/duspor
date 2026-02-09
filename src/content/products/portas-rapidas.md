@@ -31,7 +31,7 @@ applications_es:
   - Mayoristas
   - Centros de distribución
 position: 1
-youtube: https://youtube.com/shorts/JLarNa6WSUo
+youtube: ""
 manuals: []
 images:
   - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.3.jpeg
