@@ -577,7 +577,7 @@ body_es: >-
 
   Un análisis técnico y preventivo da como resultado previsibilidad y fiabilidad.
 images:
-  - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.jpg
+  - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.webp
 date: 2026-02-25 17:58
 ---
 A escolha de uma porta industrial raramente é vista como um ponto crítico no projeto.

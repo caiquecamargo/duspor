@@ -8,7 +8,9 @@
     "build": "astro check && astro build",
     "preview": "astro preview --host",
     "astro": "astro",
-    "server": "npx decap-server"
+    "server": "npx decap-server",
+    "optimize:images": "zx ./scripts/optimize-images.mjs",
+    "optimize:videos": "zx ./scripts/optimize-videos.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
@@ -42,6 +44,7 @@
     "@iconify-json/mdi": "^1.1.64",
     "@iconify-json/ph": "^1.1.10",
     "@iconify-json/twemoji": "^1.1.15",
-    "@iconify-json/typcn": "^1.1.9"
+    "@iconify-json/typcn": "^1.1.9",
+    "zx": "^8.8.5"
   }
 }

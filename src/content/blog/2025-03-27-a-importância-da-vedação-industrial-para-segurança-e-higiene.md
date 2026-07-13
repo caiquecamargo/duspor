@@ -140,7 +140,7 @@ body_es: >-
 
   Contacta con Duspor y descubre las mejores soluciones para tu entorno industrial.
 images:
-  - ../../assets/images/portal-de-selamento-inflável-2.jpg
+  - ../../assets/images/portal-de-selamento-inflável-2.webp
 date: 2025-03-27 11:38
 ---
 No ambiente industrial, a segurança e a higiene são fatores essenciais para garantir a qualidade dos produtos, a proteção dos trabalhadores e a eficiência dos processos. Um dos elementos fundamentais para manter esses padrões elevados é a vedação industrial. Mas por que essa solução é tão importante?

@@ -32,36 +32,36 @@ applications_es:
   - Salidas de emergencia con barras antipánico (rojas o blancas)
 position: 7
 images:
-  - ../../assets/images/porta-de-correr-manual-duspor-7.jpeg
-  - ../../assets/images/porta-de-emergência-inox-duspor-7.jpg
-  - ../../assets/images/porta-de-giso-com-marco-a-óleo-aquecido-duspor-7.jpeg
-titleImage: ../../assets/images/duspor-produto.png
+  - ../../assets/images/porta-de-correr-manual-duspor-7.webp
+  - ../../assets/images/porta-de-emergência-inox-duspor-7.webp
+  - ../../assets/images/porta-de-giso-com-marco-a-óleo-aquecido-duspor-7.webp
+titleImage: ../../assets/images/duspor-produto.webp
 subproducts:
   - title: PORTAS DE GIRO
     title_es: PUERTAS BATIENTES
     title_en: SWING DOORS
     images:
-      - ../../assets/images/porta-giro-sala-limpa-duspor-7.1.3.jpg
-      - ../../assets/images/porta-giro-túnel-duspor-7.1.1.jpeg
-      - ../../assets/images/porta-giro-túnel-duspor-7.1.2.jpg
+      - ../../assets/images/porta-giro-sala-limpa-duspor-7.1.3.webp
+      - ../../assets/images/porta-giro-túnel-duspor-7.1.1.webp
+      - ../../assets/images/porta-giro-túnel-duspor-7.1.2.webp
     youtube: https://youtube.com/shorts/1MQIWzaAfiE
   - title: PORTAS DE EMERGÊNCIA
     title_en: EMERGENCY DOORS
     title_es: PUERTAS DE EMERGENCIA
     images:
-      - ../../assets/images/porta-de-emergência-duspor-7.2.6.jpg
-      - ../../assets/images/porta-de-emergência-duspor-7.2.5.jpg
-      - ../../assets/images/porta-de-emergência-duspor-7.2.4.jpg
-      - ../../assets/images/porta-de-emergência-duspor-7.2.3.jpg
-      - ../../assets/images/porta-de-emergência-duspor-7.2.2.jpg
-      - ../../assets/images/porta-de-emergência-duspor-7.2.1.jpg
+      - ../../assets/images/porta-de-emergência-duspor-7.2.6.webp
+      - ../../assets/images/porta-de-emergência-duspor-7.2.5.webp
+      - ../../assets/images/porta-de-emergência-duspor-7.2.4.webp
+      - ../../assets/images/porta-de-emergência-duspor-7.2.3.webp
+      - ../../assets/images/porta-de-emergência-duspor-7.2.2.webp
+      - ../../assets/images/porta-de-emergência-duspor-7.2.1.webp
   - title: PORTAS DE CORRER
     title_es: PUERTAS CORREDERAS
     title_en: SLIDING DOORS
     images:
-      - ../../assets/images/porta-de-correr-manual-duspor-7.3.3.jpeg
-      - ../../assets/images/porta-de-correr-manual-duspor-7.3.2.jpeg
-      - ../../assets/images/porta-de-correr-manual-duspor-7.3.1.jpg
+      - ../../assets/images/porta-de-correr-manual-duspor-7.3.3.webp
+      - ../../assets/images/porta-de-correr-manual-duspor-7.3.2.webp
+      - ../../assets/images/porta-de-correr-manual-duspor-7.3.1.webp
     description: "Portas de correr automáticas e manuais com e sem
       aquecimento.  Fabricação de portas de correr automáticas com sistema de
       embreagem magnética, na falta de energia, a porta fica liberada para a

@@ -205,7 +205,7 @@ body_es: >-
 
   Cuando se mira hacia el futuro, la inversión en automatización no es sólo una tendencia, sino una necesidad para las empresas que quieren seguir siendo competitivas en un mercado en constante evolución. Considerar las puertas automatizadas como parte de una estrategia de modernización podría marcar la diferencia que llevará su operación un paso adelante.
 images:
-  - ../../assets/images/porta-rápida-ll.jpeg
+  - ../../assets/images/porta-rápida-ll.webp
 date: 2024-10-23 18:24
 ---
 No cenário industrial atual, a busca por eficiência e produtividade está no centro das operações de muitas empresas. Com o avanço da tecnologia, as portas industriais automatizadas tornaram-se essenciais para atender às exigências de ambientes de alto desempenho. Elas não apenas melhoram o fluxo de trabalho e aumentam a segurança, como também reduzem custos operacionais e contribuem para um ambiente de trabalho mais ágil e organizado. Neste artigo, discutimos como as portas automatizadas estão revolucionando o setor industrial e por que se tornaram uma escolha estratégica para muitas empresas.

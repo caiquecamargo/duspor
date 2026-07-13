@@ -28,10 +28,10 @@ body_es: >-
   Duspor trabaja con un correcto dimensionamiento técnico, considerando la altura de la abertura, la intensidad de uso y las condiciones ambientales, garantizando que la cortina de aire cumpla su función de forma eficiente y segura.
 position: 100
 images:
-  - ../../assets/images/cortina-de-ar-inox-duspor-8.1.jpeg
-  - ../../assets/images/cortina-de-ar-inox-duspor-8.2.jpeg
-  - ../../assets/images/cortina-de-ar-inox-duspor-8.3.jpeg
-titleImage: ../../assets/images/01.png
+  - ../../assets/images/cortina-de-ar-inox-duspor-8.1.webp
+  - ../../assets/images/cortina-de-ar-inox-duspor-8.2.webp
+  - ../../assets/images/cortina-de-ar-inox-duspor-8.3.webp
+titleImage: ../../assets/images/01.webp
 ---
 As cortinas de ar industriais são soluções eficientes para separação de ambientes, criando uma barreira de ar contínua que reduz a troca térmica e a entrada de poeira, insetos e contaminantes, sem impedir o fluxo de pessoas ou equipamentos.
 

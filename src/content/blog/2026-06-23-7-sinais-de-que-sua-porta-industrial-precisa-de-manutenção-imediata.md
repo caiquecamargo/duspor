@@ -387,7 +387,7 @@ body_es: >-
 
   Si ha identificado alguna de estas señales en su operación, contar con un equipo técnico especializado puede ayudarle a evaluar las condiciones del equipo y definir la mejor solución para mantener su operación funcionando con seguridad y eficiencia.
 images:
-  - ../../assets/images/10-portas-rápidas-para-docas-02.png
+  - ../../assets/images/10-portas-rápidas-para-docas-02.webp
 date: 2026-06-23 17:51
 ---
 As portas industriais desempenham um papel fundamental na rotina de fábricas, centros logísticos, frigoríficos e armazéns. Elas influenciam diretamente a segurança, a eficiência operacional e o fluxo de pessoas, equipamentos e mercadorias.

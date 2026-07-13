@@ -375,7 +375,7 @@ body_es: >-
 
   Por lo tanto, tratar la puerta como una parte estratégica del proceso es una forma de evitar problemas que a menudo comienzan de forma imperceptible.
 images:
-  - ../../assets/images/gestao-de-paradas-de-maquina.jpg
+  - ../../assets/images/gestao-de-paradas-de-maquina.webp
 date: 2026-05-12 17:44
 ---
 

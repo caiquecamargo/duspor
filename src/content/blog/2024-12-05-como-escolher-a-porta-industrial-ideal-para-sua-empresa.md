@@ -194,7 +194,7 @@ body_es: >-
 
   Invertir en puertas de alta calidad es un paso importante para garantizar la seguridad y la productividad en su negocio. Al tomar la decisión correcta, creará un entorno más seguro, eficiente y sostenible para todos los involucrados.
 images:
-  - ../../assets/images/pr-estocagem-de-secos.jpg
+  - ../../assets/images/pr-estocagem-de-secos.webp
 date: 2024-12-05 15:18
 ---
 Quando se trata de garantir a segurança, eficiência e funcionalidade de uma instalação industrial, a escolha da porta certa desempenha um papel fundamental. As portas industriais não são apenas elementos de acesso; elas influenciam diretamente a produtividade, a segurança e até mesmo a imagem da empresa. Com uma ampla variedade de opções no mercado, escolher a porta ideal pode parecer uma tarefa desafiadora. Para ajudá-lo nesse processo, reunimos os principais fatores que devem ser considerados ao selecionar portas industriais para o seu negócio.

@@ -136,7 +136,7 @@ body_es: >-
 
   Invertir en mantenimiento regular y soporte especializado garantiza la longevidad de las puertas y evita tiempos de producción inesperados. Trabajar con proveedores confiables es esencial para obtener este apoyo.
 images:
-  - ../../assets/images/03-portas-túneis-de-congelamento-01.png
+  - ../../assets/images/03-portas-túneis-de-congelamento-01.webp
 date: 2025-01-29 12:25
 ---
 No setor alimentício, a eficiência operacional e o controle de contaminação são prioridades absolutas. Uma infraestrutura adequada é essencial para garantir a segurança dos alimentos e o cumprimento das normas regulamentadoras. Nesse contexto, as portas industriais desempenham um papel crucial, oferecendo soluções que aliam segurança, funcionalidade e sustentabilidade.

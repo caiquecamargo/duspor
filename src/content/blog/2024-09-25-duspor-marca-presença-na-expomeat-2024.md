@@ -35,9 +35,9 @@ body_es: >-
 
   Visitar el stand de Duspor en ExpoMeat es una oportunidad única para conocer de cerca las soluciones que están transformando la industria con calidad y confiabilidad.
 images:
-  - ../../assets/images/imagem-do-whatsapp-de-2024-09-25-à-s-15.37.23_f58dc559.jpg
-  - ../../assets/images/imagem-do-whatsapp-de-2024-09-25-à-s-15.31.12_e28772c3.jpg
-  - ../../assets/images/imagem-do-whatsapp-de-2024-09-25-à-s-15.37.10_ef31e2aa.jpg
+  - ../../assets/images/imagem-do-whatsapp-de-2024-09-25-à-s-15.37.23_f58dc559.webp
+  - ../../assets/images/imagem-do-whatsapp-de-2024-09-25-à-s-15.31.12_e28772c3.webp
+  - ../../assets/images/imagem-do-whatsapp-de-2024-09-25-à-s-15.37.10_ef31e2aa.webp
 date: 2024-09-25 15:47
 ---
 Entre os dias 24 e 26 de setembro, a Duspor, referência em portas industriais, participa da ExpoMeat 2024, um dos maiores eventos da indústria de processamento de carnes e proteínas no Brasil. A feira, que acontece em São Paulo, é uma excelente oportunidade para empresas apresentarem inovações e soluções tecnológicas ao setor.

@@ -113,7 +113,7 @@ body_es: >-
 
   Con la orientación adecuada y la elección de proveedores especializados, como Duspor, su empresa tendrá puertas industriales de alta calidad instaladas y listas para satisfacer sus necesidades diarias.
 images:
-  - ../../assets/images/porta-rápida-cong-interna-3.jpg
+  - ../../assets/images/porta-rápida-cong-interna-3.webp
 date: 2025-08-21 18:09
 ---
 A instalação de uma porta industrial é um processo que exige atenção, técnica e conhecimento específico. Quando realizada de forma incorreta, pode comprometer a eficiência da operação, gerar custos desnecessários e até colocar em risco a segurança dos colaboradores.

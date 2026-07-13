@@ -34,15 +34,15 @@ position: 1
 youtube: ""
 manuals: []
 images:
-  - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.3.jpeg
-  - ../../assets/images/porta-rápida-estocagem-congelados-interna-duspor-1.2.jpg
-  - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.jpg
-titleImage: ../../assets/images/duspor-produto.png
+  - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.3.webp
+  - ../../assets/images/porta-rápida-estocagem-congelados-interna-duspor-1.2.webp
+  - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.webp
+titleImage: ../../assets/images/duspor-produto.webp
 subproducts:
   - images:
-      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.1.jpg
-      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.2.jpg
-      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.3.jpeg
+      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.1.webp
+      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.2.webp
+      - ../../assets/images/porta-rápida-estocagem-congelados-duspor-1.1.3.webp
     title: Portas Estocagem Congelados
     title_en: Frozen storage doors
     title_es: Puertas de almacenamiento de congelados
@@ -70,9 +70,9 @@ subproducts:
     youtube: https://youtu.be/WVTA67pt_Ik
   - title: Portas Túneis de Congelamento
     images:
-      - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.1.jpeg
-      - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.2.jpg
-      - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.3.jpg
+      - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.1.webp
+      - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.2.webp
+      - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.3.webp
     title_es: Puertas de túnel de congelación
     title_en: Freezing tunnel doors
     youtube: https://youtube.com/shorts/x8Pj-M60zG4
@@ -80,17 +80,17 @@ subproducts:
     title_en: Cold Storage Doors
     title_es: Puertas de almacenamiento en frío
     images:
-      - ../../assets/images/porta-rápida-estocagem_-resfriados-duspor-1.3.1.jpg
-      - ../../assets/images/porta-rápida-estocagem_-resfriados-duspor-1.3.2.jpeg
-      - ../../assets/images/porta-rápida-estocagem_-resfriados-duspor-1.3.3.jpeg
+      - ../../assets/images/porta-rápida-estocagem_-resfriados-duspor-1.3.1.webp
+      - ../../assets/images/porta-rápida-estocagem_-resfriados-duspor-1.3.2.webp
+      - ../../assets/images/porta-rápida-estocagem_-resfriados-duspor-1.3.3.webp
     youtube: https://youtube.com/shorts/HogjWIb6WeU
   - title: "Portas de Passagem Internas e Externas "
     title_es: Puertas de paso interior y exterior
     title_en: Internal and External Passage Doors
     images:
-      - ../../assets/images/porta-rápida-de-passagem-duspor-1.4.1.jpg
-      - ../../assets/images/porta-rápida-de-passagem-duspor-1.4.2.jpg
-      - ../../assets/images/porta-rápida-de-passagem-duspor-1.4.3.jpeg
+      - ../../assets/images/porta-rápida-de-passagem-duspor-1.4.1.webp
+      - ../../assets/images/porta-rápida-de-passagem-duspor-1.4.2.webp
+      - ../../assets/images/porta-rápida-de-passagem-duspor-1.4.3.webp
     youtube: https://youtube.com/shorts/0eAu7O3W--s
 ---
 

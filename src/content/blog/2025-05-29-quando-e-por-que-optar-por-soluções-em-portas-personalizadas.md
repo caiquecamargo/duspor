@@ -172,7 +172,7 @@ body_es: >-
 
   En Duspor, desarrollamos puertas industriales personalizadas según las necesidades específicas de cada cliente, con tecnología, precisión y un compromiso con la excelencia. Contáctenos y descubra cómo podemos transformar su entorno con la solución ideal.
 images:
-  - ../../assets/images/10-portas-rápidas-para-docas-02.png
+  - ../../assets/images/10-portas-rápidas-para-docas-02.webp
 date: 2025-05-29 14:42
 ---
 Em ambientes industriais, a eficiência e a segurança começam por escolhas estruturais inteligentes: e uma delas é a porta. Enquanto muitos optam por modelos padronizados, há situações em que uma solução personalizada faz toda a diferença. Portas industriais sob medida oferecem benefícios importantes para setores com necessidades específicas, como logística, frigoríficos, indústrias alimentícias, farmacêuticas e outras.

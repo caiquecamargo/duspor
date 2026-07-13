@@ -89,7 +89,7 @@ body_es: >-
 
   Invertir en puertas industriales adecuadas no es solo una cuestión de estructura física, sino una decisión estratégica que impacta directamente en la seguridad, productividad y confiabilidad de su cadena de suministro. Si el movimiento interno de su empresa requiere fluidez y protección, cuente con la experiencia de Duspor para brindarle la solución adecuada.
 images:
-  - ../../assets/images/movimentacao-centro-de-distribuicao.jpg
+  - ../../assets/images/movimentacao-centro-de-distribuicao.webp
 date: 2025-07-22 15:15
 ---
 O transporte interno de mercadorias em ambientes industriais exige atenção especial à segurança e fluidez do processo. Um dos elementos fundamentais para garantir esse desempenho é a porta industrial. Muito além de separar ambientes, ela interfere diretamente na mobilidade, no controle de riscos e na eficiência da operação como um todo.

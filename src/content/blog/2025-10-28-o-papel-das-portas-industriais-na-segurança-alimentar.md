@@ -160,7 +160,7 @@ body_es: >-
 
   Porque garantizar la calidad de los alimentos empieza por estructuras seguras, funcionales y fiables.
 images:
-  - ../../assets/images/20190524_agb_agenda_ubirata11.jpg
+  - ../../assets/images/20190524_agb_agenda_ubirata11.webp
 date: 2025-10-28 12:18
 ---
 A segurança alimentar é um dos pilares mais importantes para qualquer indústria que atua na produção, armazenamento ou distribuição de alimentos. Garantir que o produto final chegue ao consumidor livre de contaminações exige controle rigoroso em todas as etapas, e as portas industriais desempenham um papel essencial nesse processo.

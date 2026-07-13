@@ -98,7 +98,7 @@ body_es: >-
 
   Las puertas exteriores requieren un cuidado específico para seguir ofreciendo seguridad y eficiencia. Con materiales adecuados, un buen sellado y un mantenimiento regular, el equipo se vuelve más resistente, ahorra energía y reduce los riesgos operativos. La puerta adecuada protege la estructura y permite el flujo de operaciones, incluso en condiciones climáticas adversas.
 images:
-  - ../../assets/images/08-portas-de-passagem-interna-e-externa-02.png
+  - ../../assets/images/08-portas-de-passagem-interna-e-externa-02.webp
 date: 2025-12-12 17:10
 ---
 Portas industriais instaladas em áreas externas enfrentam condições muito mais agressivas do que aquelas posicionadas dentro do galpão. Chuva, poeira, vento e variação de temperatura aceleram o desgaste e podem gerar falhas prematuras. Por isso, a escolha correta dos materiais e da instalação faz toda diferença na segurança e no desempenho.

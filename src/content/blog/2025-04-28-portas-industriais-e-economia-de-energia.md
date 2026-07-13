@@ -120,7 +120,7 @@ body_es: >-
 
   Si quieres reducir costes y mejorar el rendimiento energético de tu empresa, habla con nosotros. Tenemos la puerta adecuada para cada desafío.
 images:
-  - ../../assets/images/porta-rápida-resfriados.jpeg
+  - ../../assets/images/porta-rápida-resfriados.webp
 date: 2025-04-28 17:02
 ---
 Em ambientes industriais, cada detalhe conta quando o assunto é eficiência. Entre climatização, armazenamento e movimentação de cargas, um ponto muitas vezes negligenciado pode fazer toda a diferença: o tipo de porta industrial utilizada.

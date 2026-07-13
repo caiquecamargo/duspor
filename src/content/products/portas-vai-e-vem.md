@@ -31,24 +31,24 @@ applications_es:
   - Cervecerías
 position: 6
 images:
-  - ../../assets/images/5.3-porta-vai-e-vem-inox-duspor.jpg
-  - ../../assets/images/5.2-porta-vai-e-vem-inox-duspor.jpg
-  - ../../assets/images/5.1-porta-vai-e-vem-inox-duspor.jpg
-titleImage: ../../assets/images/duspor-produto.png
+  - ../../assets/images/5.3-porta-vai-e-vem-inox-duspor.webp
+  - ../../assets/images/5.2-porta-vai-e-vem-inox-duspor.webp
+  - ../../assets/images/5.1-porta-vai-e-vem-inox-duspor.webp
+titleImage: ../../assets/images/duspor-produto.webp
 subproducts:
   - title: PORTA VAI E VEM BRANCA
     title_en: WHITE SWING DOOR
     title_es: PUERTA BATIENTE BLANCA
     youtube: https://youtube.com/shorts/gtBssRVP1vo
     images:
-      - ../../assets/images/porta-vai-e-vem-duspor-5.1.3.jpg
-      - ../../assets/images/porta-vai-e-vem-duspor-5.1.2.jpg
-      - ../../assets/images/porta-vai-e-vem-duspor-5.1.1.jpg
+      - ../../assets/images/porta-vai-e-vem-duspor-5.1.3.webp
+      - ../../assets/images/porta-vai-e-vem-duspor-5.1.2.webp
+      - ../../assets/images/porta-vai-e-vem-duspor-5.1.1.webp
   - youtube: https://youtube.com/shorts/7TgVfdf6W8k?feature=share
     images:
-      - ../../assets/images/porta-vai-e-vem-inox-c-bumber-duspor-5.2.3.jpg
-      - ../../assets/images/porta-vai-e-vem-inox-c-bumber-duspor-5.2.2.jpeg
-      - ../../assets/images/porta-vai-e-vem-inox-c-bumber-duspor-5.2.1.jpg
+      - ../../assets/images/porta-vai-e-vem-inox-c-bumber-duspor-5.2.3.webp
+      - ../../assets/images/porta-vai-e-vem-inox-c-bumber-duspor-5.2.2.webp
+      - ../../assets/images/porta-vai-e-vem-inox-c-bumber-duspor-5.2.1.webp
     title: PORTA VAI E VEM INOX
     title_es: Puerta batiente de acero inoxidable
     title_en: Stainless steel swing door

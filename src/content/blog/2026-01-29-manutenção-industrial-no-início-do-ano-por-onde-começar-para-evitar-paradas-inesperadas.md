@@ -84,7 +84,7 @@ body_es: >-
 
   Comenzar el año con el mantenimiento al día es una decisión estratégica. Los equipos revisados operan con más seguridad, eficiencia y previsibilidad. Al priorizar inspecciones, seguridad y planificación preventiva, la industria reduce riesgos, controla costos y garantiza una operación más estable desde el comienzo hasta el final del año.
 images:
-  - ../../assets/images/imagem_plugin_a0882e69-ff5e-4098-8b87-8baf347148bc.jpg
+  - ../../assets/images/imagem_plugin_a0882e69-ff5e-4098-8b87-8baf347148bc.webp
 date: 2026-01-29 16:29
 ---
 O início do ano é um momento estratégico para a indústria revisar processos, equipamentos e estruturas. Após férias coletivas, redução de turnos ou períodos de menor atividade, retomar a operação sem uma checagem adequada aumenta o risco de falhas, acidentes e paradas inesperadas. Um planejamento de manutenção bem estruturado no início do ano ajuda a evitar prejuízos e garante mais estabilidade produtiva ao longo do ano.

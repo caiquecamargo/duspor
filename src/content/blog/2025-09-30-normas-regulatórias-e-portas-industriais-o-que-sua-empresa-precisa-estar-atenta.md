@@ -87,7 +87,7 @@ body_es: >-
 
   En 2025, estar al tanto de las responsabilidades legales y las actualizaciones de la NR será un factor diferenciador estratégico. Inspeccionar regularmente sus instalaciones, recurrir a proveedores especializados e invertir en mantenimiento preventivo son pasos esenciales para mantener su empresa segura, productiva y preparada para el futuro.
 images:
-  - ../../assets/images/normas-regulamentadoras.png
+  - ../../assets/images/normas-regulamentadoras.webp
 date: 2025-09-30 14:27
 ---
 Manter a operação industrial em conformidade com as normas de segurança não é apenas uma obrigação legal: é uma forma de proteger colaboradores, reduzir riscos e garantir a continuidade da produção. Em 2025, as exigências regulatórias estão ainda mais no radar das empresas, e um dos pontos que merece atenção é a infraestrutura de acesso, em especial as portas industriais.

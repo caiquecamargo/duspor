@@ -11,7 +11,7 @@ title_es: |-
   Nuestra
 
   Historia
-titleBackground: ../../assets/images/kelly-sikkema-xcvXS6wDCAY-unsplash.jpg
+titleBackground: ../../assets/images/kelly-sikkema-xcvXS6wDCAY-unsplash.webp
 description: Somos uma empresa completa e especializada na montagem e manutenção
   de Portas Industriais. Nossa trajetória começou com a Dinâmica Montagem
   Industrial e, com o objetivo de proporcionar excelência aos nossos clientes,
@@ -90,21 +90,21 @@ dnas:
   - title: Tranquilidade
     title_en: Tranquility
     title_es: Tranquilidad
-    image: ../../assets/images/oluwatobi-fasipe-e8etavo85ay-unsplash.jpg
+    image: ../../assets/images/oluwatobi-fasipe-e8etavo85ay-unsplash.webp
   - title: Visão sistêmica
     title_en: Systemic View
-    image: ../../assets/images/nathan-defiesta-rdakt5rtuk8-unsplash.jpg
+    image: ../../assets/images/nathan-defiesta-rdakt5rtuk8-unsplash.webp
     title_es: Mirada Consultiva
   - title: Realista
     title_en: Realist
-    image: ../../assets/images/alvaro-reyes-qwwphwip31m-unsplash.jpg
+    image: ../../assets/images/alvaro-reyes-qwwphwip31m-unsplash.webp
     title_es: Realista
   - title: Compromisso
     title_en: Commitment
-    image: ../../assets/images/cytonn-photography-vwchrczcqwm-unsplash.jpg
+    image: ../../assets/images/cytonn-photography-vwchrczcqwm-unsplash.webp
     title_es: Compromiso
   - title: Olhar consultivo
     title_en: Advisory Look
-    image: ../../assets/images/annie-spratt-g9kfpafq5bc-unsplash.jpg
+    image: ../../assets/images/annie-spratt-g9kfpafq5bc-unsplash.webp
     title_es: Mirada Consultiva
 ---

@@ -167,7 +167,7 @@ body_es: >-
 
   Ignorar esta necesidad puede generar impactos que no son inmediatos, sino que se acumulan con el tiempo y comprometen el rendimiento de la operación en su conjunto.
 images:
-  - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.2-1-.jpg
+  - ../../assets/images/porta-rápida-túnel-de-congelamento-duspor-1.2.2-1-.webp
 date: 2026-04-14 15:21
 ---
 Nem toda operação precisa de uma porta termoisolante. Mas quando precisa, e não tem, o impacto aparece rápido.

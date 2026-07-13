@@ -34,18 +34,18 @@ applications_es:
 position: 2
 youtube: https://www.youtube.com/shorts/JLarNa6WSUo
 images:
-  - ../../assets/images/2.-porta-rápida-doca-duspor-2.1.jpg
-  - ../../assets/images/2.-porta-rápida-doca-duspor-2.2.jpeg
-  - ../../assets/images/2.-porta-rápida-doca-duspor-2.3.jpg
-titleImage: ../../assets/images/duspor-produto.png
+  - ../../assets/images/2.-porta-rápida-doca-duspor-2.1.webp
+  - ../../assets/images/2.-porta-rápida-doca-duspor-2.2.webp
+  - ../../assets/images/2.-porta-rápida-doca-duspor-2.3.webp
+titleImage: ../../assets/images/duspor-produto.webp
 subproducts:
   - title: "PORTAS RÁPIDAS PARA DOCAS "
     title_en: HIGH-SPEED DOORS FOR DOCKS
     title_es: PUERTAS DE ALTA RÁPIDA PARA MUELLES
     youtube: https://youtube.com/shorts/s2zuqM3kXSw
     images:
-      - ../../assets/images/porta-rapida-doca-duspor-10.jpeg
-      - ../../assets/images/porta-rápida-doca-duspor-2.1.2.jpg
-      - ../../assets/images/porta-rápida-doca-duspor-2.1.1.jpg
+      - ../../assets/images/porta-rapida-doca-duspor-10.webp
+      - ../../assets/images/porta-rápida-doca-duspor-2.1.2.webp
+      - ../../assets/images/porta-rápida-doca-duspor-2.1.1.webp
 ---
 Portas rápidas para expedição, centros logísticos entre outras aplicações. Esse modelo de porta rápida vem de encontro a uma demanda muito grande com relação a manutenção de portas tradicionais existentes, devido a essa solicitação, desenvolvemos um projeto especial, para que tenhamos o máximo de desempenho possível, com o mínimo de manutenção. Também outro ponto de extrema importância é a segurança das pessoas que operam os modelos mais antigos, tendo em vista isso, optamos por fabricar e entregar ao nosso cliente o máximo de segurança.

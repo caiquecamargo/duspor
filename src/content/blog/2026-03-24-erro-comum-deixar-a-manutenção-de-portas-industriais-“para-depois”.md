@@ -337,7 +337,7 @@ body_es: >-
 
   En muchos casos, la diferencia entre una operación estable y una vulnerable radica precisamente en la atención al detalle, y el mantenimiento de las puertas industriales es uno de ellos.
 images:
-  - ../../assets/images/men-safety-equipment-work.jpg
+  - ../../assets/images/men-safety-equipment-work.webp
 date: 2026-03-24 19:04
 ---
 Na rotina industrial, é comum priorizar o que parou e adiar o que “ainda está funcionando”.

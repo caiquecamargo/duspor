@@ -77,7 +77,7 @@ body_es: >-
 
   Las puertas industriales no son solo un componente físico. Influyen en el consumo energético, el entorno de trabajo, la seguridad operativa, la productividad y el cumplimiento normativo. Cuando se planifican adecuadamente, se alinean directamente con los objetivos ESG y ayudan a la industria a operar de forma más eficiente, responsable y sostenible. La tecnología está disponible y el impacto se produce cuando se aplica estratégicamente.
 images:
-  - ../../assets/images/ac7f5c34-1732-4773-8bab-528b99b9f10e.png
+  - ../../assets/images/ac7f5c34-1732-4773-8bab-528b99b9f10e.webp
 date: 2025-11-27 11:19
 ---
 Nos últimos anos, o ESG deixou de ser apenas um diferencial competitivo e passou a ser um requisito para atrair investidores, conquistar clientes e atender auditorias cada vez mais criteriosas. Dentro desse contexto, muitos gestores ainda enxergam as portas industriais apenas como itens operacionais, quando na verdade elas têm impacto direto em pilares ambientais, sociais e de governança. A escolha correta reduz consumo de energia, diminui riscos de acidentes, melhora a eficiência logística e fortalece a conformidade com normas de segurança e desempenho.

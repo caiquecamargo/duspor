@@ -1,0 +1,44 @@
+---
+import VideoMockup from "@/assets/images/video-site-mockup.webp";
+import { Image } from "astro:assets";
+---
+
+<section
+  class="relative w-screen supports-dvh:!h-[100dvh] h-screen text-white overflow-hidden"
+>
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    id="video-bg"
+    class="object-cover w-full h-full absolute top-0 left-0 -z-10"
+  >
+    <source src="/assets/videos/video-site.mp4" type="video/mp4" />
+  </video>
+
+  <Image
+    height={360}
+    quality={10}
+    src={VideoMockup}
+    alt="Vídeo de apresentação"
+    loading="eager"
+    class="object-cover w-full h-full absolute top-0 left-0 -z-20"
+  />
+
+  <slot />
+</section>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target as HTMLVideoElement;
+        entry.isIntersecting ? video.play() : video.pause();
+      });
+    },
+    { rootMargin: "0px", threshold: 0.1 },
+  );
+
+  observer.observe(document.querySelector("#video-bg") as HTMLVideoElement);
+</script>

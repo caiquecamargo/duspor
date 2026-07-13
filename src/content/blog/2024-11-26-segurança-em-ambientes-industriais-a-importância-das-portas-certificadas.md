@@ -135,7 +135,7 @@ body_es: >-
 
   Las puertas industriales certificadas son más que simples tabiques en un entorno industrial: son barreras protectoras que garantizan la seguridad de los empleados, la protección de la propiedad y el cumplimiento de normas y reglamentos. Desde la contención de incendios hasta el control de acceso en zonas de riesgo, estas puertas juegan un papel esencial en la rutina de cualquier industria, asegurando que el ambiente de trabajo sea seguro y eficiente. Invertir en puertas certificadas es invertir en la integridad de su negocio y el bienestar de todos los involucrados. Al considerar estos aspectos, su empresa no sólo protege vidas, sino que también solidifica su compromiso con la excelencia y la seguridad.
 images:
-  - ../../assets/images/emerg-inox-dupla.jpg
+  - ../../assets/images/emerg-inox-dupla.webp
 date: 2024-11-26 15:21
 ---
 Em ambientes industriais, a segurança é uma prioridade absoluta. O uso de equipamentos adequados e a adoção de práticas de segurança são essenciais para garantir que colaboradores e instalações estejam protegidos. Entre os diversos componentes que podem contribuir para a segurança industrial, as portas certificadas desempenham um papel crucial. Com a finalidade de proteger contra riscos como incêndios, contaminação e acidentes operacionais, essas portas são projetadas e fabricadas seguindo rigorosas normas e certificações. Neste artigo, exploraremos o que torna as portas certificadas tão importantes, as vantagens de investir nelas e o impacto direto na segurança do seu negócio.

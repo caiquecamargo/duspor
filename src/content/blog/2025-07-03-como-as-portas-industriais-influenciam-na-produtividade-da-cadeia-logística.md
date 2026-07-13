@@ -153,7 +153,7 @@ body_es: >-
 
   Ofrecemos una línea completa de puertas industriales diseñadas para cada etapa de su proceso logístico. Hable con nuestro equipo y descubra la solución que mejor se adapta a los retos de su negocio.
 images:
-  - ../../assets/images/alvaro-reyes-qwwphwip31m-unsplash.jpg
+  - ../../assets/images/alvaro-reyes-qwwphwip31m-unsplash.webp
 date: 2025-07-03 14:19
 ---
 Em operações logísticas, cada segundo e cada movimento fazem diferença. Quando pensamos em produtividade, é comum que o foco recaia sobre processos, tecnologias e gestão de estoque. Mas há um elemento fundamental, muitas vezes subestimado, que interfere diretamente na eficiência do fluxo logístico: as portas industriais.
